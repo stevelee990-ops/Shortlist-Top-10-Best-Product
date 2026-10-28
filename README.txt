@@ -11,7 +11,6 @@ THE SHORTLIST — YOUR AFFILIATE WEBSITE
    - Netlify gives you a live web address. Create a free account to keep it.
 
 3) BEFORE APPLYING TO AMAZON ASSOCIATES
-   - Replace hello@example.com on about.html and privacy.html with your email.
    - Replace https://www.example.com in sitemap.xml, robots.txt and the
      <link rel="canonical"> lines once you have your own domain.
    - Apply at https://affiliate-program.amazon.com using your live site address.
