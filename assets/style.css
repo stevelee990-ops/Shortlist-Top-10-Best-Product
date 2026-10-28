@@ -266,3 +266,30 @@ details p { margin: 10px 0 0; color: var(--muted); }
 .tint-earbuds { background: linear-gradient(135deg, #1d2b3a, #3f6d8f); color: #fff; }
 .tint-airfryer { background: linear-gradient(135deg, #5a2a10, #d98a2b); color: #fff; }
 .tint-vacuum { background: linear-gradient(135deg, #1e3a2f, #4f8f6b); color: #fff; }
+
+/* New category tints */
+.tint-desk { background: linear-gradient(135deg, #3b3226, #8a6e4b); color: #fff; }
+.tint-mattress { background: linear-gradient(135deg, #2c3550, #7b8fc0); color: #fff; }
+.tint-hairdryer { background: linear-gradient(135deg, #5b1f3a, #d0567f); color: #fff; }
+.tint-gift-him { background: linear-gradient(135deg, #14304a, #2f6e9b); color: #fff; }
+.tint-gift-her { background: linear-gradient(135deg, #6a1e3b, #e0607e); color: #fff; }
+.tint-gift-dad { background: linear-gradient(135deg, #1f3d2b, #4c8a5c); color: #fff; }
+.tint-gift-mom { background: linear-gradient(135deg, #6b3a1c, #e0914a); color: #fff; }
+
+/* Gift guide cards */
+.gift-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+.gift-card { position: relative; display: flex; flex-direction: column; gap: 8px; min-height: 230px; padding: 22px; border-radius: var(--radius); text-decoration: none; overflow: hidden; box-shadow: var(--shadow); transition: transform .2s ease; }
+.gift-card:hover { transform: translateY(-3px); }
+.gift-card h3 { font-size: 26px; font-weight: 600; color: #fff; }
+.gift-card p { margin: 0; font-size: 15px; color: rgba(255,255,255,.88); }
+.gift-card .go { margin-top: auto; font-weight: 600; font-size: 15px; color: #fff; }
+.gift-ico { width: 52px; height: 52px; border-radius: 14px; background: rgba(255,255,255,.16); display: grid; place-items: center; margin-bottom: 6px; }
+.gift-ico svg { width: 30px; height: 30px; }
+
+/* Tighter board now that it lists more categories */
+.board-row { padding: 10px 16px; gap: 12px; }
+.board-n { font-size: 34px; }
+.board-cat { font-size: 18px; }
+.board-pick { font-size: 13px; }
+.footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > div:first-child { grid-column: 1 / -1; } }
