@@ -263,3 +263,6 @@ details p { margin: 10px 0 0; color: var(--muted); }
 @media (max-width: 520px) { .board-row { grid-template-columns: 44px 1fr auto; gap: 10px; padding: 12px 10px; } .board-n { font-size: 38px; } .board-cat { font-size: 18px; } }
 .board-row { border-radius: 0; }
 .tint-espresso { background: linear-gradient(135deg, #3b2418, #9a5b34); color: #fff; }
+.tint-earbuds { background: linear-gradient(135deg, #1d2b3a, #3f6d8f); color: #fff; }
+.tint-airfryer { background: linear-gradient(135deg, #5a2a10, #d98a2b); color: #fff; }
+.tint-vacuum { background: linear-gradient(135deg, #1e3a2f, #4f8f6b); color: #fff; }
