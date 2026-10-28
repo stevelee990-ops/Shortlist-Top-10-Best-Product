@@ -4,5 +4,5 @@
    Every "Check price" button on the site will then use it.
    ============================================================ */
 window.SITE_CONFIG = {
-  amazonTag: "YOURTAG-20"
+  amazonTag: "shortlisttop1-20"
 };
