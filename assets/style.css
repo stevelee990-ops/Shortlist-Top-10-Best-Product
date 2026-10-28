@@ -293,3 +293,6 @@ details p { margin: 10px 0 0; color: var(--muted); }
 .board-pick { font-size: 13px; }
 .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
 @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > div:first-child { grid-column: 1 / -1; } }
+.tint-chair { background: linear-gradient(135deg, #1f2533, #55627e); color: #fff; }
+.tint-luggage { background: linear-gradient(135deg, #20414a, #4f98a6); color: #fff; }
+.tint-cookware { background: linear-gradient(135deg, #3a2a20, #a0603a); color: #fff; }
