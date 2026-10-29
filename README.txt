@@ -11,8 +11,8 @@ THE SHORTLIST — YOUR AFFILIATE WEBSITE
    - Netlify gives you a live web address. Create a free account to keep it.
 
 3) BEFORE APPLYING TO AMAZON ASSOCIATES
-   - Replace https://www.example.com in sitemap.xml, robots.txt and the
-     <link rel="canonical"> lines once you have your own domain.
+   - If you move to a custom domain later, ask Claude to update the
+     sitemap and canonical links to the new address.
    - Apply at https://affiliate-program.amazon.com using your live site address.
 
 4) RENAMING THE SITE
