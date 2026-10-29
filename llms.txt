@@ -1,0 +1,31 @@
+# The Shortlist
+
+> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated October 28, 2026.
+
+## Buying guides
+
+- [The 10 Best TVs to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-tvs.html): The best TV for most people in 2026 is the LG C6 OLED. Best flagship OLED: the Samsung S95H QD-OLED. Best for movie lovers: the LG G6 OLED. Best value RGB Mini-LED: the Hisense UR9.
+- [The 10 Best Projectors to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-projectors.html): The best projector for most people in 2026 is the Hisense C2 Ultra. Best for a home theater room: the Epson Home Cinema LS11000. Best value ultra-short throw: the Hisense PX4-Pro. Best premium ultra-short throw: the AWOL Vision Aetherion Max.
+- [The 10 Best Electric Shavers to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-electric-shavers.html): The best electric shaver for most people in 2026 is the Braun Series 9 Pro+. Best for sensitive skin: the Philips Norelco i9000 Prestige Ultra. Best for thick beards: the Panasonic Arc5 (ES-LV67-K). Best premium rotary value: the Philips Norelco 7800.
+- [The 10 Best Espresso Machines to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-espresso-machines.html): The best espresso machine for most people in 2026 is the Breville Barista Express Impress. Best guided experience: the De'Longhi La Specialista Touch. Best compact: the Breville Bambino Plus. Best under $300: the Breville Bambino.
+- [The 10 Best Wireless Earbuds to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-wireless-earbuds.html): The best wireless earbuds for most people in 2026 are the Sony WF-1000XM6. Best for iPhone: the Apple AirPods Pro 3. Best noise cancelling: the Bose QuietComfort Ultra Earbuds (2nd Gen). Best budget noise cancelling: the Soundcore Liberty 4 NC.
+- [The 10 Best Air Fryers to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-air-fryers.html): The best air fryer for most people in 2026 is the Ninja Air Fryer Max XL. Best value: the Ninja AF101 Air Fryer. Best for families: the Cosori TurboBlaze.
+- [The 10 Best Robot Vacuums to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-robot-vacuums.html): The best robot vacuum for most people in 2026 is the Dreame X60 Max Ultra Complete. Best tested by RTINGS: the Roborock Saros 10R. Best for pet hair: the Roborock Saros 20. Best value: the Roborock QV 35S.
+- [The 10 Best Standing Desks to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-standing-desks.html): The best standing desk for most people in 2026 is the Branch Duo Standing Desk. Best value: the FlexiSpot E7 Pro. Most customizable: the Uplift V3.
+- [The 10 Best Mattresses to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-mattresses.html): The best mattress for most people in 2026 is the Helix Midnight Luxe. Best for back & stomach sleepers: the DreamCloud Hybrid. Best memory foam: the Nectar Premier. Best budget: the Allswell Luxe.
+- [The 10 Best Hair Dryers & Stylers to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-hair-dryers.html): The best hair dryer for most people in 2026 is the T3 AireLuxe. Best luxury dryer: the Dyson Supersonic Nural. Best value: the BaBylissPRO Nano Titanium. Best multi-styler: the Dyson Airwrap Multi-Styler.
+- [The 10 Best Office Chairs to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-office-chairs.html): The best office chair for most people in 2026 is the Steelcase Series 2. Best design: the Branch Verve Chair. Best premium: the Herman Miller Aeron. Best value: the Boulies EP200.
+- [The 10 Best Luggage & Carry-Ons to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-luggage.html): The best carry-on for most people in 2026 is the Away Bigger Carry-On. Most stylish carry-on: the CALPAK Ambeur Carry-On. Best value: the Samsonite Freeform Carry-On. Best for business travel: the Monos Carry-On Pro Plus.
+- [The 10 Best Cookware Sets to Buy in 2026](https://the-shortlist-top10best.netlify.app/best-cookware-sets.html): The best cookware set for most people in 2026 is the All-Clad D3 Stainless 10-Piece. Best nonstick: the All-Clad HA1 Nonstick 10-Piece. Best premium: the Made In 10-Piece Stainless. Best value stainless: the Tramontina Tri-Ply Clad 10-Piece.
+
+## Gift guides
+
+- [The 10 Best Gifts for Him in 2026 (Husband, Boyfriend & Men)](https://the-shortlist-top10best.netlify.app/gifts-for-him.html): Our top gift ideas for him in 2026 are the Therabody Theragun Pro, the Solo Stove Bonfire 2.0 and the Ooni Karu 12. Under $50, we like the YETI Rambler 20 oz Travel Mug.
+- [The 10 Best Gifts for Her in 2026 (Wife, Girlfriend & Women)](https://the-shortlist-top10best.netlify.app/gifts-for-her.html): Our top gift ideas for her in 2026 are the Dyson Airwrap Multi-Styler, the Oura Ring 4 and the KitchenAid Artisan Stand Mixer. Under $50, we like the Capri Blue Volcano Candle.
+- [The 10 Best Gifts for Dad in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-dad.html): Our top gift ideas for dad in 2026 are the KODAK Luma 350 Projector, the Aura Carver Digital Photo Frame and the Breville Barista Express Impress. Under $50, we like the YETI Rambler Colster.
+- [The 10 Best Gifts for Mom in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-mom.html): Our top gift ideas for mom in 2026 are the Aura Carver Digital Photo Frame, the Kindle Paperwhite and the Ember Mug 3. Under $50, we like the Sunbeam Royal Luxe Heated Throw.
+
+## About
+
+- [How we pick](https://the-shortlist-top10best.netlify.app/about.html)
+- [Affiliate disclosure](https://the-shortlist-top10best.netlify.app/disclosure.html)
