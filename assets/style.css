@@ -296,3 +296,15 @@ details p { margin: 10px 0 0; color: var(--muted); }
 .tint-chair { background: linear-gradient(135deg, #1f2533, #55627e); color: #fff; }
 .tint-luggage { background: linear-gradient(135deg, #20414a, #4f98a6); color: #fff; }
 .tint-cookware { background: linear-gradient(135deg, #3a2a20, #a0603a); color: #fff; }
+
+/* SEO / trust additions */
+.byline { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
+.xref { margin: -6px 0 16px; font-size: 14px; color: var(--muted); }
+.xref a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.xref a:hover { text-decoration: underline; }
+.related { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.rel-card { display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); text-decoration: none; box-shadow: var(--shadow); transition: transform .2s ease, border-color .2s ease; }
+.rel-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+.rel-kind { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.rel-title { font-family: var(--serif); font-size: 22px; font-weight: 600; }
+.rel-sub { font-size: 14px; color: var(--muted); }
