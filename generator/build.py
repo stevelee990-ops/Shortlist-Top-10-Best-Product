@@ -1983,6 +1983,8 @@ def main():
     w("404.html", simple("404.html","Page not found",'<p>Sorry, that page doesn\'t exist. <a href="index.html">Go to the homepage</a>.</p>',"Page not found"))
     w("README.txt", README)
     w("ads.txt", "google.com, pub-7203025563112136, DIRECT, f08c47fec0942fa0\n")
+    # Google Search Console file verification -- never remove
+    w("google6a61f04b9d521fa6.html", "google-site-verification: google6a61f04b9d521fa6.html")
     print("built", sorted(os.listdir(OUT)))
 
 main()
