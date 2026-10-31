@@ -8,8 +8,8 @@ STYLE = os.path.join(HERE, "style.css")              # edit styles here
 SITE = "The Shortlist"
 DOMAIN = "https://the-shortlist-top10best.netlify.app"   # change after you buy a domain
 UPDATED = "October 2026"
-UPDATED_ISO = "2026-10-28"
-UPDATED_LONG = "October 28, 2026"
+UPDATED_ISO = "2026-10-31"
+UPDATED_LONG = "October 31, 2026"
 
 ICONS = {
  "tv": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="56" height="36" rx="4"/><path d="M24 52h16M32 40v12"/><path d="M12 32l10-10 7 7 9-11 14 14" stroke-width="2.5" opacity=".7"/></svg>',
@@ -60,7 +60,7 @@ def credit(key):
             f'<a href="https://unsplash.com/?utm_source=the_shortlist&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>')
 
 ASIN = {'LG C6 OLED': 'B0GRK5D3RW', 'Samsung S95H QD-OLED': 'B0H5G3H55T', 'TCL QM8L': 'B0GPSYT2KN', 'Hisense U7SG': 'B0GR9BLPJ8', 'Vizio Mini LED Quantum 4K': 'B0GVV3NXPV', 'TCL X11L': 'B0GFDJGFG7', 'Hisense C2 Ultra': 'B0DHLH7VPH', 'Epson Home Cinema LS11000': 'B09TS2M1ZS', 'Hisense PX4-Pro': 'B0H6DDBCNQ', 'AWOL Vision Aetherion Max': 'B0GN3XX19L', 'BenQ W2720i': 'B0DPJDK31N', 'Hisense M2 Pro': 'B0F6ZV1367', 'Sony Bravia Projector 8': 'B0DGRCB57X', 'JVC DLA-NZ800': 'B0D45ZGZ4N', 'Aurzen ZIP Tri-Fold': 'B0DYJP2JY6', 'Braun Series 9 Pro+': 'B0FGLF3SDT', 'Philips Norelco i9000 Prestige Ultra': 'B0F1P4RZMK', 'Panasonic Arc5 (ES-LV67-K)': 'B07W7XK55Q', 'Braun Series 8': 'B0CFBV91YQ', 'Philips Norelco 7800': 'B0BPZR1MBC', 'Philips Norelco 5400': 'B0BF9QHHLJ', 'Philips Norelco OneBlade 360': 'B0BZDPFH45', 'Remington F5-5800': 'B00BB5YHEI', 'Philips Norelco Shaver 3600': 'B0CLWDF9NK', 'Philips Norelco Head Shaver Pro 7000': 'B0FHJ55R4L', 'Breville Barista Express Impress': 'B0BBYNPV33', "De'Longhi La Specialista Touch": 'B0F6DY1DGR', 'Breville Bambino Plus': 'B07JVD78TT', 'Breville Bambino': 'B0B1JPPG2L', 'Gaggia Classic E24': 'B07RQ3NL76', "De'Longhi Stilosa": 'B08C96BG9H', 'Ninja Luxe Café Premier': 'B0D45PK5V4', 'Terra Kaffe Demi': 'B0FGWSD63C', 'Nespresso VertuoPlus': 'B01N7GO468', 'Sony WF-1000XM6': 'B0G6HLWS6Q', 'Apple AirPods Pro 3': 'B0FQFB8FMG', 'Bose QuietComfort Ultra Earbuds (2nd Gen)': 'B0F7M3HPBD', 'Samsung Galaxy Buds 4 Pro': 'B0G1PJLWLZ', 'Google Pixel Buds Pro 2': 'B0D79ND3N7', 'Beats Powerbeats Pro 2': 'B0DT2344N3', 'Sony WF-C710N': 'B0DWHPBK42', 'Soundcore Liberty 4 NC': 'B0BZV4QFP8', 'Sony WF-C510': 'B0D9R4GYTN', 'Ninja Air Fryer Max XL': 'B07S6529ZZ', 'Ninja AF101 Air Fryer': 'B07FDJMC9Q', 'Cosori TurboBlaze': 'B0C33CHG99', 'Instant Vortex Plus ClearCook': 'B096N3FTZP', 'Ninja Foodi DualZone 2-Basket': 'B089TQWJKK', 'Ninja Speedi Rapid Cooker': 'B0B3QT6H7H', 'Breville Smart Oven Air Fryer Pro': 'B01N5UPTZS', 'Dreo ChefMaker Combi Fryer': 'B0C5JHKGFP', 'Typhur Dome 2': 'B0CKP6Y6KB', 'BLACK+DECKER Purifry 2-Quart': 'B0D384TSVC', 'Dreame X60 Max Ultra Complete': 'B0G5X4H4PS', 'Roborock Saros 10R': 'B0DHCJ571Z', 'Roborock Saros 20': 'B0G64MM1HM', 'Shark PowerDetect UV Reveal': 'B0GJFVJGXL', 'Dyson Spot+Scrub Ai': 'B0GKC52QZP', 'Roborock QV 35S': 'B0FB419PLY', 'Dreame L40 Ultra': 'B0D6VS4SLX', 'Shark Matrix Plus': 'B0B8B6N2G4', 'SwitchBot Mini K10+': 'B0CHBC7BW1', 'Dreame D10 Plus Gen 2': 'B0D6TTRTPL', 'Branch Duo Standing Desk': 'B0C3WS16XP', 'FlexiSpot E7 Pro': 'B08B3X9CKH', 'Uplift V3': 'B07HYGZXP7', 'Fully Jarvis Bamboo': 'B07GVQF5HM', 'Secretlab Magnus Pro': 'B0G1S75G2K', 'ApexDesk Elite Pro (Curved)': 'B09CJJHJSJ', 'FEZIBO Electric Standing Desk': 'B0F8MHPVPH', 'FlexiSpot M7 Desk Converter': 'B078HGW7FP', 'FlexiSpot H7 Mobile Table': 'B0B2VZZQVG', 'Helix Midnight Luxe': 'B0D3SJ2FXN', 'DreamCloud Hybrid': 'B0DP3F2RWH', 'Nectar Premier': 'B0DCXHY632', 'Tuft & Needle Mint Hybrid': 'B0BV5CS62W', 'Leesa Sapira Chill Hybrid': 'B0F7B18GGP', 'Nolah Evolution': 'B0CDJ9RZ2T', 'Brooklyn Bedding Aurora Luxe': 'B0GQH4CL4L', 'Helix Plus': 'B0D54YMPNT', 'T3 AireLuxe': 'B09SPBNKGR', 'Dyson Supersonic Nural': 'B0DMXJPM4T', 'BaBylissPRO Nano Titanium': 'B091KB6H1F', 'Dyson Airwrap Multi-Styler': 'B0B61XH5YT', 'Shark FlexStyle': 'B0B89P16MC', 'Shark SpeedStyle Pro Flex': 'B0DDYDWVD1', 'Revlon One-Step Volumizer': 'B097CNMZF5', 'GA.MA iQ Perfetto': 'B092RD44N3', 'Therabody Theragun Pro': 'B0B6RL7NQJ', 'Solo Stove Bonfire 2.0': 'B0B7BFJ5Y6', 'Ooni Karu 12': 'B083WGMTGZ', 'LEGO Technic McLaren MCL39 F1 Car': 'B0FMZRRYFP', 'Leatherman ARC': 'B0D7JTK4KM', 'Cuisinart Griddler': 'B002YD99Y4', 'Ekster Leather Smart Wallet': 'B0F3P42YK1', 'KitchenAid Artisan Stand Mixer': 'B01H424IU4', 'Swarovski Matrix Tennis Bracelet': 'B0FG49S9N5', 'Hatch Restore 3': 'B0DLLSCVZW', 'Bearaby Cotton Weighted Blanket': 'B0C1F9MFH1', 'LEGO Botanicals Pretty Pink Bouquet': 'B0DHLJ6TR9', 'Capri Blue Volcano Candle': 'B07H14RYTV', 'Grace & Stella Under Eye Masks': 'B01DZ7C502', 'KODAK Luma 350 Projector': 'B07RB7P439', 'Aura Carver Digital Photo Frame': 'B0CBQRVL7H', 'TUMI Alpha Split Travel Kit': 'B09J1Q6F6B', 'Logitech MX Keys Mini': 'B098JPSVKY', 'Anker MagGo Power Bank': 'B0CFDSMNT7', 'Harry & David Meat & Cheese Gift Box': 'B07D19J4J1', 'YETI Rambler Colster': 'B0BVGF1DJG', 'Sunbeam Royal Luxe Heated Throw': 'B008BF2OF0', 'LEGO Botanicals Orchid': 'B09Q4L157D', 'LANEIGE Lip Sleeping Mask': 'B07XXPHQZK', 'TheraFace Mask Glo': 'B0FKD3826X', 'Tell Me Your Life Story, Mom': '1952568099', 'Steelcase Series 2': 'B08L8GCCDV', 'Branch Verve Chair': 'B0CK3NSMM6', 'Herman Miller Aeron': 'B007WU4NFO', 'Steelcase Leap V2': 'B00TYE4SKG', 'LiberNovo Omni': 'B0FYCKPWP9', 'Autonomous ErgoChair Pro': 'B0FL2JGMK5', 'SIHOO Doro C300 Pro V2': 'B0GSFPTKD5', 'FlexiSpot C7': 'B0DPQQ2L22', 'SIHOO M57': 'B07BDFW1Y7', 'CALPAK Ambeur Carry-On': 'B0HLSB3PGC', 'CALPAK Ambeur Large': 'B0HNNP4JWZ', 'Osprey Sojourn Porter 46L': 'B0CB6YWXNJ', 'CALPAK Luka Duffel': 'B0GKV9M82F', 'All-Clad D3 Stainless 10-Piece': 'B008PLB15Y', 'All-Clad HA1 Nonstick 10-Piece': 'B016SJHAOA', 'Made In 10-Piece Stainless': 'B09HR6MV21', 'HexClad Hybrid 12-Piece': 'B0CVH8FXKB', 'GreenPan Valencia Pro 11-Piece': 'B071HVQL76', 'Caraway 12-Piece Ceramic': 'B08XM1B6ZX', 'Tramontina Tri-Ply Clad 10-Piece': 'B00JDL0TA8', 'Calphalon Ceramic 12-Piece': 'B0GS7KS6MB', 'T-fal Advanced Nonstick 12-Piece': 'B076682L7W', 'Tramontina PrimaWare 18-Piece': 'B01M5H9UCV'}
-QUERY = {'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
+QUERY = {'JBL Go 4': 'JBL Go 4 portable Bluetooth speaker', 'Apple AirTag': 'Apple AirTag', 'Bialetti Moka Express (3-Cup)': 'Bialetti Moka Express 3 cup stovetop espresso maker', 'Warmies Microwavable Slippers': 'Warmies microwavable slippers', 'Kosterina Olive Oil & Balsamic Duo': 'Kosterina olive oil balsamic vinegar duo', 'Nodpod Gentle Pressure Sleep Mask': 'Nodpod gentle pressure sleep mask', 'Q-Less Crossword Dice Game': 'Q-Less crossword dice game', 'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
 
 def amz(name):
     """Direct product page when we've matched the exact listing, otherwise a focused search."""
@@ -1345,6 +1345,83 @@ CATS = [
    ("The Knot — Best gifts for your wife","https://www.theknot.com/content/romantic-gifts-for-wife"),
   ],
  },
+ {
+  "slug": "gifts-under-50", "kind": "gift", "icon": "gift", "tint": "tint-gift-50", "short": "Gifts Under $50",
+  "title": "The 10 Best Gifts Under $50 in 2026",
+  "card": "Crowd-pleasing gifts that feel bigger than their price tag.",
+  "lead": "Cozy, useful and fun gifts that all come in around $50 or less — picked from this season's most-trusted gift guides, for almost anyone on your list.",
+  "price_notes": {"$":"Under $25","$$":"About $25–$50"},
+  "no_price_filters": True,
+  "filters": [("home","Home & cozy"),("tech","Tech"),("food","Food & drink"),("selfcare","Self-care"),("fun","Games & hobbies")],
+  "products": [
+   dict(name="Sunbeam Royal Luxe Heated Throw", badge="Best overall", price="$$", f=["home","selfcare"],
+        tags=["Heated blanket","Auto shut-off"],
+        summary="A soft electric throw with several warmth settings and an automatic shut-off — an easy winter win for parents, partners, friends or coworkers.",
+        pros=["Useful for almost anyone","Several heat settings","Shuts itself off"],
+        cons=["Has to sit near an outlet"]),
+   dict(name="JBL Go 4", badge="Best tech gift", price="$$", f=["tech"],
+        tags=["Bluetooth speaker","Waterproof"],
+        summary="A palm-size Bluetooth speaker that shrugs off water and dust and plays for up to about seven hours per charge, according to BestReviews.",
+        pros=["Tiny enough for a bag or pocket","Water- and dust-resistant","Several colors to choose from"],
+        cons=["Small speaker, modest bass"]),
+   dict(name="Apple AirTag", badge="Best for iPhone owners", price="$$", f=["tech"],
+        tags=["Item tracker"],
+        summary="A coin-size tracker that helps Apple users locate keys, bags or luggage through the Find My app — a practical pick highlighted by NBC Select.",
+        pros=["Finds lost keys and bags","Long-lasting replaceable battery","Great for travelers"],
+        cons=["Only works with Apple devices","Holder or keyring sold separately"]),
+   dict(name="Bialetti Moka Express (3-Cup)", badge="Best for coffee lovers", price="$$", f=["food","home"],
+        tags=["Stovetop coffee maker"],
+        summary="The classic Italian stovetop pot that brews strong, rich coffee with no electricity or pods — a gift BestReviews singles out for coffee fans.",
+        pros=["Simple and long-lasting","No pods or filters to buy","Iconic design"],
+        cons=["Hand wash only","Takes a little practice"]),
+   dict(name="Warmies Microwavable Slippers", badge="Best practical gift", price="$$", f=["home","selfcare"],
+        tags=["Heatable slippers"],
+        summary="Plush slippers you warm up in the microwave for toasty feet on cold mornings — Forbes Vetted's pick for a practical gift.",
+        pros=["Cozy and comforting","No cords or batteries","Fun twist on a classic gift"],
+        cons=["Warmth fades after a while","Check the size range"]),
+   dict(name="Kosterina Olive Oil & Balsamic Duo", badge="Best food gift", price="$$", f=["food"],
+        tags=["Greek olive oil","Gift set"],
+        summary="A pairing of Greek extra virgin olive oil and balsamic vinegar in good-looking bottles — Forbes Vetted's favorite food gift under $50.",
+        pros=["Great host or hostess gift","Gets used up — no clutter","Attractive packaging"],
+        cons=["Set contents vary by retailer"]),
+   dict(name="LEGO Botanicals Orchid", badge="Best for crafty adults", price="$$", f=["fun","home"],
+        tags=["Build-and-display"],
+        summary="A lifelike orchid built from LEGO bricks that makes a relaxing project and then a no-watering-needed decoration.",
+        pros=["Relaxing build","Looks great on a shelf","Never wilts"],
+        cons=["Not a real plant","Usually near the top of this budget"]),
+   dict(name="Nodpod Gentle Pressure Sleep Mask", badge="Best for better sleep", price="$$", f=["selfcare"],
+        tags=["Weighted eye mask"],
+        summary="A sleep mask with softly weighted pods that block light without straps pressing on the face; BestReviews notes it suits any sleeping position.",
+        pros=["Blocks light well","Comfortable for side sleepers","Light, gentle pressure"],
+        cons=["Pricey for an eye mask"]),
+   dict(name="Q-Less Crossword Dice Game", badge="Best game", price="$", f=["fun"],
+        tags=["Word game","Solo or group"],
+        summary="A quick crossword-style dice game you can play solo or with friends — NBC Select recommends it as a portable brain teaser.",
+        pros=["Fast to learn","Small enough to travel","Great for word-game fans"],
+        cons=["Best for people who like puzzles"]),
+   dict(name="LANEIGE Lip Sleeping Mask", badge="Best stocking stuffer", price="$", f=["selfcare"],
+        tags=["Overnight lip treatment"],
+        summary="A cult-favorite overnight lip treatment that leaves lips soft by morning — an inexpensive add-on that rarely misses.",
+        pros=["Beloved by beauty fans","Affordable treat","One jar lasts a long time"],
+        cons=["Small jar"]),
+  ],
+  "tips": [
+   ("Pick something they'll use up or use daily","Food, coffee gear and self-care treats feel generous without adding clutter."),
+   ("Lean cozy in winter","Heated throws and warm slippers are easy wins from November through February."),
+   ("Check compatibility","Tech gifts like AirTag need the right phone — make sure it fits what they already own."),
+  ],
+  "faq": [
+   ("What's a good gift under $50 for almost anyone?","A heated throw blanket is a safe bet — it's useful, cozy and works for nearly any age or relationship."),
+   ("What are good tech gifts under $50?","A small Bluetooth speaker like the JBL Go 4, or an Apple AirTag for iPhone owners."),
+   ("What's a good gift under $25?","A word game like Q-Less or the LANEIGE Lip Sleeping Mask both usually come in under $25."),
+   ("Are prices guaranteed to stay under $50?","No — prices change often, especially around Black Friday. Always check the current price before you buy."),
+  ],
+  "sources": [
+   ("Forbes Vetted — Best gifts under $50 (updated 2026)","https://www.forbes.com/sites/forbes-personal-shopper/2025/11/03/best-gifts-under-50/"),
+   ("BestReviews — Best gifts under $50 (October 2026)","https://bestreviews.com/gift-guides/holiday/christmas/best-gifts-under-50"),
+   ("NBC Select — Best holiday gifts under $50","https://nbcnews.com/select/shopping/best-gifts-under-50-rcna242155"),
+  ],
+ },
 ]
 
 SOON = []
@@ -1356,6 +1433,7 @@ e = html.escape
 LISTS = [c for c in CATS if c.get("kind") != "gift"]
 GIFTS = [c for c in CATS if c.get("kind") == "gift"]
 for c in GIFTS:
+    if c.get("no_price_filters"): continue
     c["filters"] = [("under50","Under $50"),("under150","Under $150"),("splurge","Splurge")] + c["filters"]
     for p in c["products"]:
         extra = {"$":["under50","under150"],"$$":["under150"],"$$$":[],"$$$$":["splurge"]}[p["price"]]
@@ -1384,10 +1462,11 @@ RELATED = {
  "best-office-chairs": ["best-standing-desks","best-wireless-earbuds","best-mattresses"],
  "best-luggage": ["best-wireless-earbuds","best-electric-shavers","best-hair-dryers"],
  "best-cookware-sets": ["best-air-fryers","best-espresso-machines","best-mattresses"],
- "gifts-for-him": ["gifts-for-dad","best-wireless-earbuds","best-electric-shavers"],
+ "gifts-for-him": ["gifts-for-dad","gifts-under-50","best-wireless-earbuds"],
  "gifts-for-her": ["gifts-for-mom","best-hair-dryers","best-mattresses"],
  "gifts-for-dad": ["gifts-for-him","best-espresso-machines","best-projectors"],
- "gifts-for-mom": ["gifts-for-her","best-hair-dryers","best-cookware-sets"],
+ "gifts-for-mom": ["gifts-for-her","gifts-under-50","best-cookware-sets"],
+ "gifts-under-50": ["gifts-for-him","gifts-for-her","best-wireless-earbuds"],
 }
 BY_SLUG = {c["slug"]: c for c in CATS}
 
@@ -1507,7 +1586,7 @@ NOUN = {"best-tvs":"TV","best-projectors":"projector","best-electric-shavers":"e
  "best-wireless-earbuds":"wireless earbuds","best-air-fryers":"air fryer","best-robot-vacuums":"robot vacuum","best-standing-desks":"standing desk",
  "best-mattresses":"mattress","best-hair-dryers":"hair dryer","best-office-chairs":"office chair","best-luggage":"carry-on","best-cookware-sets":"cookware set"}
 PLURAL = {"best-wireless-earbuds"}
-WHO = {"gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
+WHO = {"gifts-under-50":"anyone on your list","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
 QOVERRIDE = {
  ("best-tvs","Best OLED deal"):"What's the best OLED TV deal?",
  ("best-tvs","Best big screen on a budget"):"What's the best big-screen TV on a budget?",
@@ -1580,7 +1659,11 @@ def quick_answer(cat):
         who = WHO[cat["slug"]]
         picks = [(1, ps[0]), (2, ps[1]), (3, ps[2])]
         cheap = next(((n, p) for n, p in enumerate(ps, 1) if p["price"] == "$" and n > 3), None)
-        text = f"Our top gift ideas for {who} in 2026 are the {ps[0]['name']}, the {ps[1]['name']} and the {ps[2]['name']}."
+        if cat["slug"] == "gifts-under-50":
+            cheap = None
+            text = f"Our top gift ideas under $50 in 2026 are the {ps[0]['name']}, the {ps[1]['name']} and the {ps[2]['name']}."
+        else:
+            text = f"Our top gift ideas for {who} in 2026 are the {ps[0]['name']}, the {ps[1]['name']} and the {ps[2]['name']}."
         if cheap: text += f" Under $50, we like the {cheap[1]['name']}."
         others = picks[1:] + ([cheap] if cheap else [])
     else:

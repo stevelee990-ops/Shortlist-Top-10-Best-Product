@@ -4,7 +4,7 @@ Pick the first unchecked item that fits today's slot. Mark it `[x]` with the dat
 Priorities: holiday-season pages first (Nov–Dec), then categories with high prices or higher Amazon commission (Kitchen 4.5%), then refreshes.
 
 ## Timely (do these first)
-- [ ] Gifts under $50 (gift guide) — reuse vetted products where they fit, add new ones from current gift guides
+- [x] 2026-10-31 — Gifts under $50 (gift guide) — reuse vetted products where they fit, add new ones from current gift guides
 - [ ] Black Friday deals on our picks — build by Nov 20. Only list deals verified on the day from reputable deal roundups; say "prices change fast"; update daily Nov 24–Dec 1, remove expired deals
 - [ ] Gifts for coffee lovers (gift guide)
 - [ ] Gifts for gamers (adult audience)

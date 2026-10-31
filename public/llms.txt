@@ -1,6 +1,6 @@
 # The Shortlist
 
-> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated October 28, 2026.
+> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated October 31, 2026.
 
 ## Buying guides
 
@@ -24,6 +24,7 @@
 - [The 10 Best Gifts for Her in 2026 (Wife, Girlfriend & Women)](https://the-shortlist-top10best.netlify.app/gifts-for-her.html): Our top gift ideas for her in 2026 are the Dyson Airwrap Multi-Styler, the Oura Ring 4 and the KitchenAid Artisan Stand Mixer. Under $50, we like the Capri Blue Volcano Candle.
 - [The 10 Best Gifts for Dad in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-dad.html): Our top gift ideas for dad in 2026 are the KODAK Luma 350 Projector, the Aura Carver Digital Photo Frame and the Breville Barista Express Impress. Under $50, we like the YETI Rambler Colster.
 - [The 10 Best Gifts for Mom in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-mom.html): Our top gift ideas for mom in 2026 are the Aura Carver Digital Photo Frame, the Kindle Paperwhite and the Ember Mug 3. Under $50, we like the Sunbeam Royal Luxe Heated Throw.
+- [The 10 Best Gifts Under $50 in 2026](https://the-shortlist-top10best.netlify.app/gifts-under-50.html): Our top gift ideas under $50 in 2026 are the Sunbeam Royal Luxe Heated Throw, the JBL Go 4 and the Apple AirTag.
 
 ## About
 

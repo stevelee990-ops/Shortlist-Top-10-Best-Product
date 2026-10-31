@@ -147,7 +147,7 @@ section { padding: 48px 0; }
 
 /* ---------- Gift guides ---------- */
 .gifts-band { padding-top: 56px; }
-.gift-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gift-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
 .gift-card { display: flex; flex-direction: column; gap: 8px; min-height: 260px; padding: 22px; border-radius: var(--radius); text-decoration: none; color: #fff; }
 .gift-card h3 { font-size: 24px; color: #fff; }
 .gift-card p { margin: 0; font-size: 15px; color: rgba(255,255,255,.85); }
@@ -156,11 +156,13 @@ section { padding: 48px 0; }
 .gift-peek li::before { content: "✓ "; color: var(--sticker); font-weight: 700; }
 .gift-card .go { margin-top: auto; padding-top: 10px; font-weight: 600; font-size: 15px; text-decoration: underline; text-decoration-color: var(--sticker); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .gift-card:hover .go { text-decoration-thickness: 4px; }
-@media (max-width: 1000px) { .gift-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 1100px) { .gift-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px) { .gift-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .gift-grid { grid-template-columns: 1fr; } .gift-card { min-height: 0; } }
 
 .tint-gift-him { background: #1f4e79; } .tint-gift-her { background: #8c2f55; }
 .tint-gift-dad { background: #24573d; } .tint-gift-mom { background: #9a4f1c; }
+.tint-gift-50 { background: #5b3a8c; }
 .tint-tv, .tint-projector, .tint-shaver, .tint-espresso, .tint-earbuds, .tint-airfryer, .tint-vacuum,
 .tint-desk, .tint-mattress, .tint-hairdryer, .tint-chair, .tint-luggage, .tint-cookware, .tint-soon { background: var(--surface-2); color: var(--ink); }
 .gift-ico { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,.18); display: grid; place-items: center; }
@@ -197,7 +199,7 @@ section { padding: 48px 0; }
 .hero-photo figcaption { position: absolute; right: 10px; bottom: 10px; }
 .hero-art { border-radius: var(--radius); aspect-ratio: 4 / 3; display: grid; place-items: center; }
 .hero-art svg { width: 45%; height: auto; }
-.tint-gift-him.hero-art, .tint-gift-her.hero-art, .tint-gift-dad.hero-art, .tint-gift-mom.hero-art { color: #fff; }
+.tint-gift-him.hero-art, .tint-gift-her.hero-art, .tint-gift-dad.hero-art, .tint-gift-mom.hero-art, .tint-gift-50.hero-art { color: #fff; }
 .credit { font-size: 11px; line-height: 1; padding: 6px 9px; border-radius: 999px; background: rgba(0,0,0,.55); color: #fff; }
 .credit a { color: #fff; text-decoration: none; }
 .credit a:hover { text-decoration: underline; }
