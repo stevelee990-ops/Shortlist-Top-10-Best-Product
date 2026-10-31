@@ -14,6 +14,7 @@ python3 generator/build.py
   Each product: `name`, `badge`, `price` (`$`–`$$$$`), `f` (filter keys), `tags`, `summary`, `pros` (2–3), `cons` (1–2).
 - `ASIN` — product name → Amazon ASIN for exact product links. `QUERY` — product name → Amazon search phrase when no exact single listing exists.
   Every product needs one or the other. The Amazon tag (`shortlisttop1-20`) is added by `public/assets/config.js`; never hard-code it.
+- Design: navy + white with yellow round "stickers" for ranks; display font Adventor Bold (self-hosted from `generator/fonts/`, GUST font license), body Inter. Keep new pages consistent with this look.
 - `PHOTOS` — Unsplash photos (free Unsplash License only, never Unsplash+). `ICONS` — SVG icons. New category tints go in `style.css`.
 - `NOUN`, `QOVERRIDE` — wording for the "Quick answer" box and the "by need" questions. Add a `NOUN` entry for every new product list, and override any question that reads awkwardly.
 - `RELATED` — 3 related pages for each guide (add one for every new guide, and link it from 1–2 existing guides).

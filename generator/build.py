@@ -1433,7 +1433,7 @@ def page(fname, title, desc, body, active="", jsonld=None, image_key=None, ptype
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 {robots}<link rel="canonical" href="{canonical}">
-<meta name="theme-color" content="#e2553a">
+<meta name="theme-color" content="#1b2559">
 <meta property="og:site_name" content="{e(SITE)}">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
@@ -1450,18 +1450,20 @@ def page(fname, title, desc, body, active="", jsonld=None, image_key=None, ptype
 {ld}<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/adventor-bold.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html"><span class="logo-mark">S</span>{e(SITE)}</a>
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">10</span>{e(SITE)}</a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
 {nav(active)}
     </nav>
   </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
 </header>
 <main>
 {body}
@@ -1470,7 +1472,7 @@ def page(fname, title, desc, body, active="", jsonld=None, image_key=None, ptype
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">S</span>{e(SITE)}</a>
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">10</span>{e(SITE)}</a>
         <p>Short, honest lists of the best things to buy — researched from trusted expert reviews and updated regularly.</p>
       </div>
       <div>
@@ -1493,6 +1495,7 @@ def page(fname, title, desc, body, active="", jsonld=None, image_key=None, ptype
     <p class="fine">As an Amazon Associate we earn from qualifying purchases. Prices and availability change often — always check the retailer for current details. &copy; <span id="yr">2026</span> {e(SITE)}.</p>
   </div>
 </footer>
+<a class="to-top" href="#" aria-label="Back to top">Top</a>
 <script src="assets/config.js"></script>
 <script src="assets/site.js"></script>
 </body>
@@ -1595,16 +1598,28 @@ def quick_answer(cat):
 
 def answer_box(cat):
     text, picks = quick_answer(cat)
-    items = "".join(f'<li><span class="qa-badge">{e(p["badge"])}</span> <a href="#{cat["slug"]}-{k}">{e(p["name"])}</a></li>' for k, p in picks)
+    top = cat["products"][0]
+    items = "".join(f'<li><a href="#{cat["slug"]}-{k}"><span class="mini-sticker" aria-hidden="true">{k}</span><span><span class="qa-badge">{e(p["badge"])}</span> {e(p["name"])}</span></a></li>' for k, p in picks[1:])
     return f'''<div class="answer-box" id="quick-answer">
-      <h2 class="answer-title">Quick answer</h2>
-      <p class="answer-text">{e(text)}</p>
-      <ul class="answer-list">{items}</ul>
+      <div class="top-pick">
+        <span class="sticker big" aria-hidden="true">1</span>
+        <div class="top-pick-txt">
+          <h2 class="answer-title">Our top pick</h2>
+          <p class="top-name"><a href="#{cat["slug"]}-1">{e(top["name"])}</a></p>
+          <p class="top-why">{e(top["summary"].split(". ")[0].rstrip(".") + ".")}</p>
+          <a class="btn buy" data-amazon href="{amz(top["name"])}" target="_blank" rel="sponsored nofollow noopener">Check price on Amazon</a>
+        </div>
+      </div>
+      <div class="quick">
+        <h2 class="answer-title">Quick answer</h2>
+        <p class="answer-text">{e(text)}</p>
+        <ul class="answer-list">{items}</ul>
+      </div>
     </div>''', text
 
 def compare_table(cat):
     rows = "".join(f'''<tr>
-        <td class="ct-rank">{k}</td>
+        <td class="ct-rank"><span class="mini-sticker">{k}</span></td>
         <th scope="row"><a href="#{cat["slug"]}-{k}">{e(p["name"])}</a></th>
         <td>{e(p["badge"])}</td>
         <td>{e(" · ".join(p["tags"]))}</td>
@@ -1649,25 +1664,30 @@ def product_card(cat, i, p):
     cons = "".join(f"<li>{e(x)}</li>" for x in p["cons"])
     tags = "".join(f'<span class="pill">{e(t)}</span>' for t in p["tags"])
     return f"""
-<article class="product" id="{pid}" data-f="{' '.join(p['f'])}">
-  <div class="rank-tile" aria-hidden="true">
-    <span class="rk">{i}</span><span class="lb">{e(p['badge'])}</span>
-  </div>
-  <div>
-    <span class="badge">{e(p['badge'])}</span>
+<article class="product{' is-top' if i == 1 else ''}" id="{pid}" data-f="{' '.join(p['f'])}">
+  <div class="p-rank"><span class="sticker" aria-label="Rank {i}">{i}</span></div>
+  <div class="p-body">
+    <p class="badge">{e(p['badge'])}</p>
     <h3>{e(p['name'])}</h3>
-    <div class="tags">{tags}<span class="pill" title="{e(notes(cat)[p['price']])}">Price: {p['price']}</span></div>
+    <div class="tags">{tags}<span class="pill price-pill" title="{e(notes(cat)[p['price']])}">{p['price']}</span></div>
     <p class="summary">{e(p['summary'])}</p>{xref(cat, p)}
     <div class="proscons">
       <div class="pros"><h4>What we like</h4><ul>{pros}</ul></div>
       <div class="cons"><h4>Keep in mind</h4><ul>{cons}</ul></div>
     </div>
     <div class="cta-row">
-      <a class="btn" data-amazon href="{amz(p['name'])}" target="_blank" rel="sponsored nofollow noopener">Check price on Amazon →</a>
-      <small>Price: {e(notes(cat)[p['price']])}</small>
+      <a class="btn buy" data-amazon href="{amz(p['name'])}" target="_blank" rel="sponsored nofollow noopener">Check price on Amazon</a>
+      <small>{e(notes(cat)[p['price']])}</small>
     </div>
   </div>
 </article>"""
+
+def rel_card(c):
+    is_gift = c.get("kind") == "gift"
+    media = (f'<div class="rel-photo">{photo(c["icon"], sizes="(max-width: 760px) 100vw, 360px")}</div>' if c["icon"] in PHOTOS
+             else f'<div class="rel-photo {c["tint"]}"><span class="gift-ico">{ICONS["gift"]}</span></div>')
+    return (f'<a class="rel-card" href="{c["slug"]}.html">{media}<span class="rel-body"><span class="rel-title">{e(label(c))}</span>'
+            f'<span class="rel-sub">{"Top gift" if is_gift else "#1 pick"}: {e(c["products"][0]["name"])}</span></span></a>')
 
 def guide(cat):
     quick = "".join(f"""
@@ -1692,7 +1712,9 @@ def guide(cat):
         how_text = (f"We compared the latest hands-on testing and buying guides from {src_names}, and kept the products "
                     "that consistently rank near the top. Then we grouped them by what each is best for — overall, budget, premium and specific needs — "
                     "and summarized the strengths and trade-offs in plain language. We haven't tested every product ourselves; our picks reflect the consensus of expert testers.")
-    related = "".join(f'''<a class="rel-card" href="{r}.html"><span class="rel-kind">{"Gift guide" if BY_SLUG[r].get("kind")=="gift" else "Top 10"}</span><span class="rel-title">{e(label(BY_SLUG[r]))}</span><span class="rel-sub">{e(BY_SLUG[r]["card"])}</span></a>''' for r in RELATED.get(cat["slug"], []))
+    related = "".join(rel_card(BY_SLUG[r]) for r in RELATED.get(cat["slug"], []))
+    more = "".join(f'<a class="chip-link" href="{c["slug"]}.html">{e(label(c))}</a>' for c in LISTS + GIFTS if c["slug"] != cat["slug"] and c["slug"] not in RELATED.get(cat["slug"], []))
+    rail = "".join(f'<a href="#{cat["slug"]}-{k}" title="{e(p["name"])}">{k}</a>' for k, p in enumerate(cat["products"], 1))
     answer_html, answer_text = answer_box(cat)
     page_url = f"{DOMAIN}/{cat['slug']}.html"
     section_name = "Gift guides" if is_gift else "Best-of lists"
@@ -1723,11 +1745,9 @@ def guide(cat):
     <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#{"gifts" if is_gift else "categories"}">{"Gift guides" if is_gift else "Best-of lists"}</a> / {e(cat['short'])}</div>
     <div class="guide-hero-inner">
       <div>
-        <span class="eyebrow">{kind_label} · Updated {UPDATED}</span>
         <h1>{e(cat['title'])}</h1>
         <p class="lead">{e(cat['lead'])}</p>
-        <div class="meta"><span class="pill">10 {"gifts" if is_gift else "picks"}</span><span class="pill">Based on expert reviews</span><span class="pill">Updated {UPDATED}</span></div>
-        <p class="byline">By {e(SITE)} editors · Researched from {len(cat["sources"])} expert sources · Last updated <time datetime="{UPDATED_ISO}">{UPDATED_LONG}</time></p>
+        <p class="byline">{kind_label} by {e(SITE)} editors, based on {len(cat["sources"])} expert sources. Updated <time datetime="{UPDATED_ISO}">{UPDATED_LONG}</time>.</p>
       </div>
       {hero_media}
     </div>
@@ -1735,6 +1755,7 @@ def guide(cat):
     <p class="disclosure-note">We may earn a commission when you buy through links on this page, at no extra cost to you. <a href="disclosure.html">Learn more</a>.</p>
   </div>
 </section>
+<nav class="rank-rail" aria-label="Jump to a pick"><div class="wrap"><span class="rail-label">Jump to</span><div class="rail-links">{rail}</div></div></nav>
 <section>
   <div class="wrap">
     <div class="section-head"><div><h2>Comparison at a glance</h2><p>All {len(cat["products"])} {"gifts" if is_gift else "picks"} side by side. Tap a name for the full details.</p></div></div>
@@ -1768,8 +1789,9 @@ def guide(cat):
 </section>
 <section>
   <div class="wrap">
-    <div class="section-head"><div><h2>You might also like</h2></div></div>
+    <div class="section-head"><div><h2>Keep browsing</h2><p>More shortlists people read next.</p></div></div>
     <div class="related">{related}</div>
+    <div class="more-links">{more}</div>
   </div>
 </section>"""
     full = f"{cat['title']} | {SITE}"
@@ -1779,63 +1801,64 @@ def guide(cat):
 
 def home():
     cards = "".join(f"""
-<a class="cat-card" href="{c['slug']}.html">
-  <div class="cat-photo {c['tint']}">{photo(c['icon'], sizes="(max-width: 760px) 100vw, 360px")}</div>
-  <h3>Best {e(c['short'])}</h3><p>{e(c['card'])}</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="{c['slug']}.html" data-k="{e(' '.join([c['short'], c['card']] + [p['name'] for p in c['products']]).lower())}">
+  <div class="cat-photo">{photo(c['icon'], sizes="(max-width: 760px) 100vw, 360px")}</div>
+  <div class="cat-body">
+    <h3>Best {e(c['short'])}</h3><p>{e(c['card'])}</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>{e(c['products'][0]['name'])}</span></span>
+  </div>
 </a>""" for c in LISTS)
-    cards += "".join(f"""
-<div class="cat-card soon" aria-disabled="true">
-  <div class="cat-art tint-soon">{ICONS[k]}</div>
-  <h3>Best {e(t)}</h3><p>{e(d)}</p><span class="pill">Coming soon</span>
-</div>""" for k,t,d in SOON)
     gifts = "".join(f"""
 <a class="gift-card {c['tint']}" href="{c['slug']}.html">
-  <span class="gift-ico">{ICONS['gift']}</span>
-  <h3>{e(c['short'])}</h3><p>{e(c['card'])}</p><span class="go">See all 10 gifts →</span>
+  <h3>{e(c['short'])}</h3><p>{e(c['card'])}</p>
+  <ul class="gift-peek">{''.join(f'<li>{e(p["name"])}</li>' for p in c['products'][:3])}</ul>
+  <span class="go">See all 10 gifts</span>
 </a>""" for c in GIFTS)
-    board = "".join(f"""
-     <a class="board-row" href="{c['slug']}.html">
-       <span class="board-n">{n}</span>
-       <span class="board-txt"><span class="board-cat">Best {e(c['short'])}</span><span class="board-pick">#1: {e(c['products'][0]['name'])}</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>""" for n, c in enumerate(LISTS, 1))
+    receipt = "".join(f"""
+     <li><a href="{c['slug']}.html"><span class="r-cat">{e(c['short'])}</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">{e(c['products'][0]['name'])}</span></a></li>""" for c in LISTS)
+    index = [{"t": label(c), "u": c["slug"] + ".html"} for c in LISTS + GIFTS]
+    index += [{"t": p["name"], "u": f'{c["slug"]}.html#{c["slug"]}-{k}', "s": f'#{k} in {label(c)}'} for c in LISTS + GIFTS for k, p in enumerate(c["products"], 1)]
+    popular = "".join(f'<a href="{c["slug"]}.html">{e(c["short"])}</a>' for c in [BY_SLUG[x] for x in ("best-tvs","best-wireless-earbuds","best-air-fryers","best-robot-vacuums","gifts-for-him","gifts-for-her")])
     body = f"""
 <section class="hero">
   <div class="wrap hero-grid">
-   <div>
-    <span class="eyebrow">Updated {UPDATED}</span>
-    <h1>Skip the research. <em>Buy the best.</em></h1>
-    <p class="lead">We read the expert reviews so you don't have to, then boil them down into short, honest top-10 lists for the things people actually buy.</p>
-    <div class="btn-row">
-      <a class="btn" href="#categories">Browse the lists</a>
-      <a class="btn ghost" href="#gifts">Gift guides</a>
-    </div>
+   <div class="hero-copy">
+    <h1>The ten best of everything you’re about to buy.</h1>
+    <p class="lead">We read the expert reviews and keep only the top 10 in each category, so you can choose in minutes instead of evenings.</p>
+    <form class="search" role="search" action="#" onsubmit="return false">
+      <label class="vh" for="q">Search products and guides</label>
+      <input id="q" type="search" placeholder="Search products, like “earbuds”" autocomplete="off">
+      <ul class="search-results" id="results" role="listbox" hidden></ul>
+    </form>
+    <p class="popular"><span>Popular:</span>{popular}</p>
    </div>
-   <div class="board" aria-label="Our lists">
-     <div class="board-head"><span class="board-title">The Shortlist</span><span class="board-date">{UPDATED}</span></div>
-     {board}
-     <div class="board-foot">New top-10 lists added regularly</div>
+   <div class="receipt" aria-labelledby="receipt-title">
+     <span class="sticker big slap" aria-hidden="true">1</span>
+     <h2 id="receipt-title">This month’s #1 picks</h2>
+     <ol class="receipt-list">{receipt}</ol>
+     <p class="receipt-foot">Updated {UPDATED}</p>
    </div>
   </div>
+  <script type="application/json" id="search-index">{json.dumps(index, ensure_ascii=False)}</script>
 </section>
-<section id="gifts">
+<section id="gifts" class="gifts-band">
   <div class="wrap">
-    <div class="section-head"><div><h2>Holiday gift guides</h2><p>The 10 best gifts for everyone on your list.</p></div></div>
+    <div class="section-head"><div><h2>Holiday gift guides</h2><p id="countdown">The 10 best gifts for everyone on your list.</p></div></div>
     <div class="gift-grid">{gifts}</div>
   </div>
 </section>
 <section id="categories">
   <div class="wrap">
-    <div class="section-head"><div><h2>Best-of lists</h2><p>Pick a category to see our top 10.</p></div></div>
+    <div class="section-head"><div><h2>Every top 10</h2><p>Pick a category. Each card shows our #1 pick.</p></div></div>
     <div class="cat-grid">{cards}</div>
   </div>
 </section>
 <section>
   <div class="wrap">
     <div class="trust">
-      <div><h3>Researched, not guessed</h3><p>Every pick is backed by trusted, hands-on reviewers. We link our sources on every list.</p></div>
-      <div><h3>Every budget</h3><p>Each list covers budget, mid-range and premium options, so there's a pick for you.</p></div>
-      <div><h3>Kept up to date</h3><p>We refresh our lists as new models launch and prices change.</p></div>
+      <div><h3>Researched, not guessed</h3><p>Every pick comes from the consensus of trusted, hands-on reviewers, and we link our sources on every list.</p></div>
+      <div><h3>Every budget</h3><p>Each list mixes budget, mid-range and premium options, so there’s a pick for you.</p></div>
+      <div><h3>Kept up to date</h3><p>We refresh lists as new models launch and add new guides every week.</p></div>
     </div>
   </div>
 </section>"""
@@ -1897,8 +1920,9 @@ window.SITE_CONFIG = {
 };
 """
 SITE_JS = """(function () {
+  var doc = document;
   // Mobile menu
-  var btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  var btn = doc.querySelector('.menu-btn'), nav = doc.getElementById('nav');
   if (btn && nav) btn.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -1906,25 +1930,76 @@ SITE_JS = """(function () {
   // Affiliate tag
   var tag = (window.SITE_CONFIG || {}).amazonTag;
   if (tag && tag !== 'YOURTAG-20') {
-    document.querySelectorAll('a[data-amazon]').forEach(function (a) {
+    doc.querySelectorAll('a[data-amazon]').forEach(function (a) {
       try { var u = new URL(a.href); u.searchParams.set('tag', tag); a.href = u.toString(); } catch (e) {}
     });
   }
   // Filters
-  var chips = document.querySelectorAll('.chip');
+  var chips = doc.querySelectorAll('.chip');
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       var f = c.getAttribute('data-filter');
       chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
-      document.querySelectorAll('.product').forEach(function (p) {
+      doc.querySelectorAll('.product').forEach(function (p) {
         p.hidden = !(f === 'all' || (' ' + p.getAttribute('data-f') + ' ').indexOf(' ' + f + ' ') > -1);
       });
     });
   });
-  var y = document.getElementById('yr'); if (y) y.textContent = new Date().getFullYear();
+  // Reading progress + back to top
+  var bar = doc.querySelector('.progress span'), top = doc.querySelector('.to-top'), isGuide = !!doc.querySelector('.products');
+  function onScroll() {
+    var h = doc.documentElement, max = h.scrollHeight - h.clientHeight, y = h.scrollTop || doc.body.scrollTop;
+    if (bar && isGuide) bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+    if (top) top.classList.toggle('show', y > 1400);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  // Rank rail: highlight the pick in view
+  var rail = doc.querySelectorAll('.rail-links a');
+  if (rail.length && 'IntersectionObserver' in window) {
+    var map = {}; rail.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (en.isIntersecting) {
+          rail.forEach(function (a) { a.removeAttribute('aria-current'); });
+          var a = map[en.target.id]; if (a) { a.setAttribute('aria-current', 'true'); }
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    doc.querySelectorAll('.product').forEach(function (p) { io.observe(p); });
+  }
+  // Holiday countdown
+  var cd = doc.getElementById('countdown');
+  if (cd) {
+    var now = new Date(), xmas = new Date(now.getFullYear(), 11, 25);
+    var days = Math.ceil((xmas - now) / 864e5);
+    if (days > 1 && days < 70) cd.textContent = 'Christmas is ' + days + ' days away. Here are the 10 best gifts for everyone on your list.';
+  }
+  // Search
+  var q = doc.getElementById('q'), out = doc.getElementById('results'), idxEl = doc.getElementById('search-index');
+  if (q && out && idxEl) {
+    var idx = JSON.parse(idxEl.textContent);
+    function esc(t) { return t.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    q.addEventListener('input', function () {
+      var v = q.value.trim().toLowerCase();
+      if (v.length < 2) { out.hidden = true; out.innerHTML = ''; return; }
+      var words = v.split(/\\s+/), hits = idx.filter(function (it) {
+        var t = (it.t + ' ' + (it.s || '')).toLowerCase();
+        return words.every(function (w) { return t.indexOf(w) > -1; });
+      }).slice(0, 8);
+      out.innerHTML = hits.length ? hits.map(function (it) {
+        return '<li><a href="' + it.u + '"><strong>' + esc(it.t) + '</strong>' + (it.s ? '<span>' + esc(it.s) + '</span>' : '<span>Guide</span>') + '</a></li>';
+      }).join('') : '<li class="none">No match yet. Try a category like “TV”, “coffee” or “gifts”.</li>';
+      out.hidden = false;
+    });
+    q.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { var a = out.querySelector('a'); if (a) location.href = a.href; }
+      if (e.key === 'Escape') { out.hidden = true; }
+    });
+  }
+  var y = doc.getElementById('yr'); if (y) y.textContent = new Date().getFullYear();
 })();
 """
-FAVICON = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#e2553a"/><text x="32" y="44" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="800" fill="#fff">S</text></svg>'
+FAVICON = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#ffcf33"/><text x="32" y="42" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#1b2559">10</text></svg>'
 
 README = f"""THE SHORTLIST — YOUR AFFILIATE WEBSITE
 ======================================
@@ -1960,6 +2035,7 @@ def main():
             shutil.rmtree(fp) if os.path.isdir(fp) else os.remove(fp)
     os.makedirs(OUT+"/assets", exist_ok=True)
     shutil.copy(STYLE, OUT+"/assets/style.css")
+    shutil.copy(os.path.join(HERE, "fonts", "adventor-bold.woff"), OUT+"/assets/adventor-bold.woff")
     w = lambda p,s: open(os.path.join(OUT,p),"w").write(s)
     w("index.html", home())
     for c in CATS: w(c["slug"]+".html", guide(c))

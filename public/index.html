@@ -9,7 +9,7 @@
 <meta name="description" content="Short, honest top-10 lists and holiday gift guides — the best TVs, earbuds, air fryers, gifts for him and her, and more, based on expert reviews.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://the-shortlist-top10best.netlify.app/">
-<meta name="theme-color" content="#e2553a">
+<meta name="theme-color" content="#1b2559">
 <meta property="og:site_name" content="The Shortlist">
 <meta property="og:title" content="The Shortlist: Best Products &amp; Gift Guides for 2026">
 <meta property="og:description" content="Short, honest top-10 lists and holiday gift guides — the best TVs, earbuds, air fryers, gifts for him and her, and more, based on expert reviews.">
@@ -29,13 +29,14 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/adventor-bold.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html"><span class="logo-mark">S</span>The Shortlist</a>
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">10</span>The Shortlist</a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav">
 <a href="index.html" aria-current="page">Home</a>
@@ -44,178 +45,173 @@
 <a href="about.html">About</a>
     </nav>
   </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
 </header>
 <main>
 
 <section class="hero">
   <div class="wrap hero-grid">
-   <div>
-    <span class="eyebrow">Updated October 2026</span>
-    <h1>Skip the research. <em>Buy the best.</em></h1>
-    <p class="lead">We read the expert reviews so you don't have to, then boil them down into short, honest top-10 lists for the things people actually buy.</p>
-    <div class="btn-row">
-      <a class="btn" href="#categories">Browse the lists</a>
-      <a class="btn ghost" href="#gifts">Gift guides</a>
-    </div>
+   <div class="hero-copy">
+    <h1>The ten best of everything you’re about to buy.</h1>
+    <p class="lead">We read the expert reviews and keep only the top 10 in each category, so you can choose in minutes instead of evenings.</p>
+    <form class="search" role="search" action="#" onsubmit="return false">
+      <label class="vh" for="q">Search products and guides</label>
+      <input id="q" type="search" placeholder="Search products, like “earbuds”" autocomplete="off">
+      <ul class="search-results" id="results" role="listbox" hidden></ul>
+    </form>
+    <p class="popular"><span>Popular:</span><a href="best-tvs.html">TVs</a><a href="best-wireless-earbuds.html">Wireless Earbuds</a><a href="best-air-fryers.html">Air Fryers</a><a href="best-robot-vacuums.html">Robot Vacuums</a><a href="gifts-for-him.html">Gifts for Him</a><a href="gifts-for-her.html">Gifts for Her</a></p>
    </div>
-   <div class="board" aria-label="Our lists">
-     <div class="board-head"><span class="board-title">The Shortlist</span><span class="board-date">October 2026</span></div>
-     
-     <a class="board-row" href="best-tvs.html">
-       <span class="board-n">1</span>
-       <span class="board-txt"><span class="board-cat">Best TVs</span><span class="board-pick">#1: LG C6 OLED</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-projectors.html">
-       <span class="board-n">2</span>
-       <span class="board-txt"><span class="board-cat">Best Projectors</span><span class="board-pick">#1: Hisense C2 Ultra</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-electric-shavers.html">
-       <span class="board-n">3</span>
-       <span class="board-txt"><span class="board-cat">Best Electric Shavers</span><span class="board-pick">#1: Braun Series 9 Pro+</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-espresso-machines.html">
-       <span class="board-n">4</span>
-       <span class="board-txt"><span class="board-cat">Best Espresso Machines</span><span class="board-pick">#1: Breville Barista Express Impress</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-wireless-earbuds.html">
-       <span class="board-n">5</span>
-       <span class="board-txt"><span class="board-cat">Best Wireless Earbuds</span><span class="board-pick">#1: Sony WF-1000XM6</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-air-fryers.html">
-       <span class="board-n">6</span>
-       <span class="board-txt"><span class="board-cat">Best Air Fryers</span><span class="board-pick">#1: Ninja Air Fryer Max XL</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-robot-vacuums.html">
-       <span class="board-n">7</span>
-       <span class="board-txt"><span class="board-cat">Best Robot Vacuums</span><span class="board-pick">#1: Dreame X60 Max Ultra Complete</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-standing-desks.html">
-       <span class="board-n">8</span>
-       <span class="board-txt"><span class="board-cat">Best Standing Desks</span><span class="board-pick">#1: Branch Duo Standing Desk</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-mattresses.html">
-       <span class="board-n">9</span>
-       <span class="board-txt"><span class="board-cat">Best Mattresses</span><span class="board-pick">#1: Helix Midnight Luxe</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-hair-dryers.html">
-       <span class="board-n">10</span>
-       <span class="board-txt"><span class="board-cat">Best Hair Dryers &amp; Stylers</span><span class="board-pick">#1: T3 AireLuxe</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-office-chairs.html">
-       <span class="board-n">11</span>
-       <span class="board-txt"><span class="board-cat">Best Office Chairs</span><span class="board-pick">#1: Steelcase Series 2</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-luggage.html">
-       <span class="board-n">12</span>
-       <span class="board-txt"><span class="board-cat">Best Luggage</span><span class="board-pick">#1: Away Bigger Carry-On</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <a class="board-row" href="best-cookware-sets.html">
-       <span class="board-n">13</span>
-       <span class="board-txt"><span class="board-cat">Best Cookware Sets</span><span class="board-pick">#1: All-Clad D3 Stainless 10-Piece</span></span>
-       <span class="board-go" aria-hidden="true">→</span>
-     </a>
-     <div class="board-foot">New top-10 lists added regularly</div>
+   <div class="receipt" aria-labelledby="receipt-title">
+     <span class="sticker big slap" aria-hidden="true">1</span>
+     <h2 id="receipt-title">This month’s #1 picks</h2>
+     <ol class="receipt-list">
+     <li><a href="best-tvs.html"><span class="r-cat">TVs</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">LG C6 OLED</span></a></li>
+     <li><a href="best-projectors.html"><span class="r-cat">Projectors</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Hisense C2 Ultra</span></a></li>
+     <li><a href="best-electric-shavers.html"><span class="r-cat">Electric Shavers</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Braun Series 9 Pro+</span></a></li>
+     <li><a href="best-espresso-machines.html"><span class="r-cat">Espresso Machines</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Breville Barista Express Impress</span></a></li>
+     <li><a href="best-wireless-earbuds.html"><span class="r-cat">Wireless Earbuds</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Sony WF-1000XM6</span></a></li>
+     <li><a href="best-air-fryers.html"><span class="r-cat">Air Fryers</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Ninja Air Fryer Max XL</span></a></li>
+     <li><a href="best-robot-vacuums.html"><span class="r-cat">Robot Vacuums</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Dreame X60 Max Ultra Complete</span></a></li>
+     <li><a href="best-standing-desks.html"><span class="r-cat">Standing Desks</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Branch Duo Standing Desk</span></a></li>
+     <li><a href="best-mattresses.html"><span class="r-cat">Mattresses</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Helix Midnight Luxe</span></a></li>
+     <li><a href="best-hair-dryers.html"><span class="r-cat">Hair Dryers &amp; Stylers</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">T3 AireLuxe</span></a></li>
+     <li><a href="best-office-chairs.html"><span class="r-cat">Office Chairs</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Steelcase Series 2</span></a></li>
+     <li><a href="best-luggage.html"><span class="r-cat">Luggage</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">Away Bigger Carry-On</span></a></li>
+     <li><a href="best-cookware-sets.html"><span class="r-cat">Cookware Sets</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">All-Clad D3 Stainless 10-Piece</span></a></li></ol>
+     <p class="receipt-foot">Updated October 2026</p>
    </div>
   </div>
+  <script type="application/json" id="search-index">[{"t": "Best TVs", "u": "best-tvs.html"}, {"t": "Best Projectors", "u": "best-projectors.html"}, {"t": "Best Electric Shavers", "u": "best-electric-shavers.html"}, {"t": "Best Espresso Machines", "u": "best-espresso-machines.html"}, {"t": "Best Wireless Earbuds", "u": "best-wireless-earbuds.html"}, {"t": "Best Air Fryers", "u": "best-air-fryers.html"}, {"t": "Best Robot Vacuums", "u": "best-robot-vacuums.html"}, {"t": "Best Standing Desks", "u": "best-standing-desks.html"}, {"t": "Best Mattresses", "u": "best-mattresses.html"}, {"t": "Best Hair Dryers & Stylers", "u": "best-hair-dryers.html"}, {"t": "Best Office Chairs", "u": "best-office-chairs.html"}, {"t": "Best Luggage", "u": "best-luggage.html"}, {"t": "Best Cookware Sets", "u": "best-cookware-sets.html"}, {"t": "Gifts for Him", "u": "gifts-for-him.html"}, {"t": "Gifts for Her", "u": "gifts-for-her.html"}, {"t": "Gifts for Dad", "u": "gifts-for-dad.html"}, {"t": "Gifts for Mom", "u": "gifts-for-mom.html"}, {"t": "LG C6 OLED", "u": "best-tvs.html#best-tvs-1", "s": "#1 in Best TVs"}, {"t": "Samsung S95H QD-OLED", "u": "best-tvs.html#best-tvs-2", "s": "#2 in Best TVs"}, {"t": "LG G6 OLED", "u": "best-tvs.html#best-tvs-3", "s": "#3 in Best TVs"}, {"t": "Sony Bravia 9 II", "u": "best-tvs.html#best-tvs-4", "s": "#4 in Best TVs"}, {"t": "Hisense UR9", "u": "best-tvs.html#best-tvs-5", "s": "#5 in Best TVs"}, {"t": "LG C5 OLED (2025)", "u": "best-tvs.html#best-tvs-6", "s": "#6 in Best TVs"}, {"t": "TCL QM8L", "u": "best-tvs.html#best-tvs-7", "s": "#7 in Best TVs"}, {"t": "Hisense U7SG", "u": "best-tvs.html#best-tvs-8", "s": "#8 in Best TVs"}, {"t": "Vizio Mini LED Quantum 4K", "u": "best-tvs.html#best-tvs-9", "s": "#9 in Best TVs"}, {"t": "TCL X11L", "u": "best-tvs.html#best-tvs-10", "s": "#10 in Best TVs"}, {"t": "Hisense C2 Ultra", "u": "best-projectors.html#best-projectors-1", "s": "#1 in Best Projectors"}, {"t": "Epson Home Cinema LS11000", "u": "best-projectors.html#best-projectors-2", "s": "#2 in Best Projectors"}, {"t": "Hisense PX4-Pro", "u": "best-projectors.html#best-projectors-3", "s": "#3 in Best Projectors"}, {"t": "AWOL Vision Aetherion Max", "u": "best-projectors.html#best-projectors-4", "s": "#4 in Best Projectors"}, {"t": "BenQ W2720i", "u": "best-projectors.html#best-projectors-5", "s": "#5 in Best Projectors"}, {"t": "Hisense M2 Pro", "u": "best-projectors.html#best-projectors-6", "s": "#6 in Best Projectors"}, {"t": "Sony Bravia Projector 8", "u": "best-projectors.html#best-projectors-7", "s": "#7 in Best Projectors"}, {"t": "JVC DLA-NZ800", "u": "best-projectors.html#best-projectors-8", "s": "#8 in Best Projectors"}, {"t": "Aurzen ZIP Tri-Fold", "u": "best-projectors.html#best-projectors-9", "s": "#9 in Best Projectors"}, {"t": "Nebula Capsule 3 GTV", "u": "best-projectors.html#best-projectors-10", "s": "#10 in Best Projectors"}, {"t": "Braun Series 9 Pro+", "u": "best-electric-shavers.html#best-electric-shavers-1", "s": "#1 in Best Electric Shavers"}, {"t": "Philips Norelco i9000 Prestige Ultra", "u": "best-electric-shavers.html#best-electric-shavers-2", "s": "#2 in Best Electric Shavers"}, {"t": "Panasonic Arc5 (ES-LV67-K)", "u": "best-electric-shavers.html#best-electric-shavers-3", "s": "#3 in Best Electric Shavers"}, {"t": "Braun Series 8", "u": "best-electric-shavers.html#best-electric-shavers-4", "s": "#4 in Best Electric Shavers"}, {"t": "Philips Norelco 7800", "u": "best-electric-shavers.html#best-electric-shavers-5", "s": "#5 in Best Electric Shavers"}, {"t": "Philips Norelco 5400", "u": "best-electric-shavers.html#best-electric-shavers-6", "s": "#6 in Best Electric Shavers"}, {"t": "Philips Norelco OneBlade 360", "u": "best-electric-shavers.html#best-electric-shavers-7", "s": "#7 in Best Electric Shavers"}, {"t": "Remington F5-5800", "u": "best-electric-shavers.html#best-electric-shavers-8", "s": "#8 in Best Electric Shavers"}, {"t": "Philips Norelco Shaver 3600", "u": "best-electric-shavers.html#best-electric-shavers-9", "s": "#9 in Best Electric Shavers"}, {"t": "Philips Norelco Head Shaver Pro 7000", "u": "best-electric-shavers.html#best-electric-shavers-10", "s": "#10 in Best Electric Shavers"}, {"t": "Breville Barista Express Impress", "u": "best-espresso-machines.html#best-espresso-machines-1", "s": "#1 in Best Espresso Machines"}, {"t": "De'Longhi La Specialista Touch", "u": "best-espresso-machines.html#best-espresso-machines-2", "s": "#2 in Best Espresso Machines"}, {"t": "Breville Bambino Plus", "u": "best-espresso-machines.html#best-espresso-machines-3", "s": "#3 in Best Espresso Machines"}, {"t": "Breville Bambino", "u": "best-espresso-machines.html#best-espresso-machines-4", "s": "#4 in Best Espresso Machines"}, {"t": "Gaggia Classic E24", "u": "best-espresso-machines.html#best-espresso-machines-5", "s": "#5 in Best Espresso Machines"}, {"t": "De'Longhi Stilosa", "u": "best-espresso-machines.html#best-espresso-machines-6", "s": "#6 in Best Espresso Machines"}, {"t": "Ninja Luxe Café Premier", "u": "best-espresso-machines.html#best-espresso-machines-7", "s": "#7 in Best Espresso Machines"}, {"t": "Terra Kaffe Demi", "u": "best-espresso-machines.html#best-espresso-machines-8", "s": "#8 in Best Espresso Machines"}, {"t": "Nespresso VertuoPlus", "u": "best-espresso-machines.html#best-espresso-machines-9", "s": "#9 in Best Espresso Machines"}, {"t": "Breville Oracle", "u": "best-espresso-machines.html#best-espresso-machines-10", "s": "#10 in Best Espresso Machines"}, {"t": "Sony WF-1000XM6", "u": "best-wireless-earbuds.html#best-wireless-earbuds-1", "s": "#1 in Best Wireless Earbuds"}, {"t": "Apple AirPods Pro 3", "u": "best-wireless-earbuds.html#best-wireless-earbuds-2", "s": "#2 in Best Wireless Earbuds"}, {"t": "Bose QuietComfort Ultra Earbuds (2nd Gen)", "u": "best-wireless-earbuds.html#best-wireless-earbuds-3", "s": "#3 in Best Wireless Earbuds"}, {"t": "Apple AirPods 5", "u": "best-wireless-earbuds.html#best-wireless-earbuds-4", "s": "#4 in Best Wireless Earbuds"}, {"t": "Samsung Galaxy Buds 4 Pro", "u": "best-wireless-earbuds.html#best-wireless-earbuds-5", "s": "#5 in Best Wireless Earbuds"}, {"t": "Google Pixel Buds Pro 2", "u": "best-wireless-earbuds.html#best-wireless-earbuds-6", "s": "#6 in Best Wireless Earbuds"}, {"t": "Beats Powerbeats Pro 2", "u": "best-wireless-earbuds.html#best-wireless-earbuds-7", "s": "#7 in Best Wireless Earbuds"}, {"t": "Sony WF-C710N", "u": "best-wireless-earbuds.html#best-wireless-earbuds-8", "s": "#8 in Best Wireless Earbuds"}, {"t": "Soundcore Liberty 4 NC", "u": "best-wireless-earbuds.html#best-wireless-earbuds-9", "s": "#9 in Best Wireless Earbuds"}, {"t": "Sony WF-C510", "u": "best-wireless-earbuds.html#best-wireless-earbuds-10", "s": "#10 in Best Wireless Earbuds"}, {"t": "Ninja Air Fryer Max XL", "u": "best-air-fryers.html#best-air-fryers-1", "s": "#1 in Best Air Fryers"}, {"t": "Ninja AF101 Air Fryer", "u": "best-air-fryers.html#best-air-fryers-2", "s": "#2 in Best Air Fryers"}, {"t": "Cosori TurboBlaze", "u": "best-air-fryers.html#best-air-fryers-3", "s": "#3 in Best Air Fryers"}, {"t": "Instant Vortex Plus ClearCook", "u": "best-air-fryers.html#best-air-fryers-4", "s": "#4 in Best Air Fryers"}, {"t": "Ninja Foodi DualZone 2-Basket", "u": "best-air-fryers.html#best-air-fryers-5", "s": "#5 in Best Air Fryers"}, {"t": "Ninja Speedi Rapid Cooker", "u": "best-air-fryers.html#best-air-fryers-6", "s": "#6 in Best Air Fryers"}, {"t": "Breville Smart Oven Air Fryer Pro", "u": "best-air-fryers.html#best-air-fryers-7", "s": "#7 in Best Air Fryers"}, {"t": "Dreo ChefMaker Combi Fryer", "u": "best-air-fryers.html#best-air-fryers-8", "s": "#8 in Best Air Fryers"}, {"t": "Typhur Dome 2", "u": "best-air-fryers.html#best-air-fryers-9", "s": "#9 in Best Air Fryers"}, {"t": "BLACK+DECKER Purifry 2-Quart", "u": "best-air-fryers.html#best-air-fryers-10", "s": "#10 in Best Air Fryers"}, {"t": "Dreame X60 Max Ultra Complete", "u": "best-robot-vacuums.html#best-robot-vacuums-1", "s": "#1 in Best Robot Vacuums"}, {"t": "Roborock Saros 10R", "u": "best-robot-vacuums.html#best-robot-vacuums-2", "s": "#2 in Best Robot Vacuums"}, {"t": "Roborock Saros 20", "u": "best-robot-vacuums.html#best-robot-vacuums-3", "s": "#3 in Best Robot Vacuums"}, {"t": "Shark PowerDetect UV Reveal", "u": "best-robot-vacuums.html#best-robot-vacuums-4", "s": "#4 in Best Robot Vacuums"}, {"t": "Dyson Spot+Scrub Ai", "u": "best-robot-vacuums.html#best-robot-vacuums-5", "s": "#5 in Best Robot Vacuums"}, {"t": "Roborock QV 35S", "u": "best-robot-vacuums.html#best-robot-vacuums-6", "s": "#6 in Best Robot Vacuums"}, {"t": "Dreame L40 Ultra", "u": "best-robot-vacuums.html#best-robot-vacuums-7", "s": "#7 in Best Robot Vacuums"}, {"t": "Shark Matrix Plus", "u": "best-robot-vacuums.html#best-robot-vacuums-8", "s": "#8 in Best Robot Vacuums"}, {"t": "SwitchBot Mini K10+", "u": "best-robot-vacuums.html#best-robot-vacuums-9", "s": "#9 in Best Robot Vacuums"}, {"t": "Dreame D10 Plus Gen 2", "u": "best-robot-vacuums.html#best-robot-vacuums-10", "s": "#10 in Best Robot Vacuums"}, {"t": "Branch Duo Standing Desk", "u": "best-standing-desks.html#best-standing-desks-1", "s": "#1 in Best Standing Desks"}, {"t": "FlexiSpot E7 Pro", "u": "best-standing-desks.html#best-standing-desks-2", "s": "#2 in Best Standing Desks"}, {"t": "Uplift V3", "u": "best-standing-desks.html#best-standing-desks-3", "s": "#3 in Best Standing Desks"}, {"t": "Fully Jarvis Bamboo", "u": "best-standing-desks.html#best-standing-desks-4", "s": "#4 in Best Standing Desks"}, {"t": "FlexiSpot E7 Plus", "u": "best-standing-desks.html#best-standing-desks-5", "s": "#5 in Best Standing Desks"}, {"t": "Secretlab Magnus Pro", "u": "best-standing-desks.html#best-standing-desks-6", "s": "#6 in Best Standing Desks"}, {"t": "ApexDesk Elite Pro (Curved)", "u": "best-standing-desks.html#best-standing-desks-7", "s": "#7 in Best Standing Desks"}, {"t": "FEZIBO Electric Standing Desk", "u": "best-standing-desks.html#best-standing-desks-8", "s": "#8 in Best Standing Desks"}, {"t": "FlexiSpot M7 Desk Converter", "u": "best-standing-desks.html#best-standing-desks-9", "s": "#9 in Best Standing Desks"}, {"t": "FlexiSpot H7 Mobile Table", "u": "best-standing-desks.html#best-standing-desks-10", "s": "#10 in Best Standing Desks"}, {"t": "Helix Midnight Luxe", "u": "best-mattresses.html#best-mattresses-1", "s": "#1 in Best Mattresses"}, {"t": "DreamCloud Hybrid", "u": "best-mattresses.html#best-mattresses-2", "s": "#2 in Best Mattresses"}, {"t": "Nectar Premier", "u": "best-mattresses.html#best-mattresses-3", "s": "#3 in Best Mattresses"}, {"t": "Tuft & Needle Mint Hybrid", "u": "best-mattresses.html#best-mattresses-4", "s": "#4 in Best Mattresses"}, {"t": "Leesa Sapira Chill Hybrid", "u": "best-mattresses.html#best-mattresses-5", "s": "#5 in Best Mattresses"}, {"t": "Allswell Luxe", "u": "best-mattresses.html#best-mattresses-6", "s": "#6 in Best Mattresses"}, {"t": "Nolah Evolution", "u": "best-mattresses.html#best-mattresses-7", "s": "#7 in Best Mattresses"}, {"t": "Plank Firm", "u": "best-mattresses.html#best-mattresses-8", "s": "#8 in Best Mattresses"}, {"t": "Brooklyn Bedding Aurora Luxe", "u": "best-mattresses.html#best-mattresses-9", "s": "#9 in Best Mattresses"}, {"t": "Helix Plus", "u": "best-mattresses.html#best-mattresses-10", "s": "#10 in Best Mattresses"}, {"t": "T3 AireLuxe", "u": "best-hair-dryers.html#best-hair-dryers-1", "s": "#1 in Best Hair Dryers & Stylers"}, {"t": "Dyson Supersonic Nural", "u": "best-hair-dryers.html#best-hair-dryers-2", "s": "#2 in Best Hair Dryers & Stylers"}, {"t": "BaBylissPRO Nano Titanium", "u": "best-hair-dryers.html#best-hair-dryers-3", "s": "#3 in Best Hair Dryers & Stylers"}, {"t": "Dyson Airwrap Multi-Styler", "u": "best-hair-dryers.html#best-hair-dryers-4", "s": "#4 in Best Hair Dryers & Stylers"}, {"t": "Shark FlexStyle", "u": "best-hair-dryers.html#best-hair-dryers-5", "s": "#5 in Best Hair Dryers & Stylers"}, {"t": "Shark SpeedStyle Pro Flex", "u": "best-hair-dryers.html#best-hair-dryers-6", "s": "#6 in Best Hair Dryers & Stylers"}, {"t": "Revlon One-Step Volumizer", "u": "best-hair-dryers.html#best-hair-dryers-7", "s": "#7 in Best Hair Dryers & Stylers"}, {"t": "GA.MA iQ Perfetto", "u": "best-hair-dryers.html#best-hair-dryers-8", "s": "#8 in Best Hair Dryers & Stylers"}, {"t": "Bio Ionic PowerLight Pro", "u": "best-hair-dryers.html#best-hair-dryers-9", "s": "#9 in Best Hair Dryers & Stylers"}, {"t": "BondiBoost Blowout Brush Pro", "u": "best-hair-dryers.html#best-hair-dryers-10", "s": "#10 in Best Hair Dryers & Stylers"}, {"t": "Steelcase Series 2", "u": "best-office-chairs.html#best-office-chairs-1", "s": "#1 in Best Office Chairs"}, {"t": "Branch Verve Chair", "u": "best-office-chairs.html#best-office-chairs-2", "s": "#2 in Best Office Chairs"}, {"t": "Herman Miller Aeron", "u": "best-office-chairs.html#best-office-chairs-3", "s": "#3 in Best Office Chairs"}, {"t": "Steelcase Leap V2", "u": "best-office-chairs.html#best-office-chairs-4", "s": "#4 in Best Office Chairs"}, {"t": "LiberNovo Omni", "u": "best-office-chairs.html#best-office-chairs-5", "s": "#5 in Best Office Chairs"}, {"t": "Autonomous ErgoChair Pro", "u": "best-office-chairs.html#best-office-chairs-6", "s": "#6 in Best Office Chairs"}, {"t": "SIHOO Doro C300 Pro V2", "u": "best-office-chairs.html#best-office-chairs-7", "s": "#7 in Best Office Chairs"}, {"t": "FlexiSpot C7", "u": "best-office-chairs.html#best-office-chairs-8", "s": "#8 in Best Office Chairs"}, {"t": "Boulies EP200", "u": "best-office-chairs.html#best-office-chairs-9", "s": "#9 in Best Office Chairs"}, {"t": "SIHOO M57", "u": "best-office-chairs.html#best-office-chairs-10", "s": "#10 in Best Office Chairs"}, {"t": "Away Bigger Carry-On", "u": "best-luggage.html#best-luggage-1", "s": "#1 in Best Luggage"}, {"t": "CALPAK Ambeur Carry-On", "u": "best-luggage.html#best-luggage-2", "s": "#2 in Best Luggage"}, {"t": "Samsonite Freeform Carry-On", "u": "best-luggage.html#best-luggage-3", "s": "#3 in Best Luggage"}, {"t": "Monos Carry-On Pro Plus", "u": "best-luggage.html#best-luggage-4", "s": "#4 in Best Luggage"}, {"t": "Samsonite Proxis Global Carry-On", "u": "best-luggage.html#best-luggage-5", "s": "#5 in Best Luggage"}, {"t": "Briggs & Riley Baseline Essential", "u": "best-luggage.html#best-luggage-6", "s": "#6 in Best Luggage"}, {"t": "CALPAK Ambeur Large", "u": "best-luggage.html#best-luggage-7", "s": "#7 in Best Luggage"}, {"t": "Osprey Sojourn Porter 46L", "u": "best-luggage.html#best-luggage-8", "s": "#8 in Best Luggage"}, {"t": "CALPAK Luka Duffel", "u": "best-luggage.html#best-luggage-9", "s": "#9 in Best Luggage"}, {"t": "Amazon Basics 21\" Hardside Spinner", "u": "best-luggage.html#best-luggage-10", "s": "#10 in Best Luggage"}, {"t": "All-Clad D3 Stainless 10-Piece", "u": "best-cookware-sets.html#best-cookware-sets-1", "s": "#1 in Best Cookware Sets"}, {"t": "All-Clad HA1 Nonstick 10-Piece", "u": "best-cookware-sets.html#best-cookware-sets-2", "s": "#2 in Best Cookware Sets"}, {"t": "Made In 10-Piece Stainless", "u": "best-cookware-sets.html#best-cookware-sets-3", "s": "#3 in Best Cookware Sets"}, {"t": "HexClad Hybrid 12-Piece", "u": "best-cookware-sets.html#best-cookware-sets-4", "s": "#4 in Best Cookware Sets"}, {"t": "GreenPan Valencia Pro 11-Piece", "u": "best-cookware-sets.html#best-cookware-sets-5", "s": "#5 in Best Cookware Sets"}, {"t": "Caraway 12-Piece Ceramic", "u": "best-cookware-sets.html#best-cookware-sets-6", "s": "#6 in Best Cookware Sets"}, {"t": "Tramontina Tri-Ply Clad 10-Piece", "u": "best-cookware-sets.html#best-cookware-sets-7", "s": "#7 in Best Cookware Sets"}, {"t": "Calphalon Ceramic 12-Piece", "u": "best-cookware-sets.html#best-cookware-sets-8", "s": "#8 in Best Cookware Sets"}, {"t": "T-fal Advanced Nonstick 12-Piece", "u": "best-cookware-sets.html#best-cookware-sets-9", "s": "#9 in Best Cookware Sets"}, {"t": "Tramontina PrimaWare 18-Piece", "u": "best-cookware-sets.html#best-cookware-sets-10", "s": "#10 in Best Cookware Sets"}, {"t": "Therabody Theragun Pro", "u": "gifts-for-him.html#gifts-for-him-1", "s": "#1 in Gifts for Him"}, {"t": "Solo Stove Bonfire 2.0", "u": "gifts-for-him.html#gifts-for-him-2", "s": "#2 in Gifts for Him"}, {"t": "Ooni Karu 12", "u": "gifts-for-him.html#gifts-for-him-3", "s": "#3 in Gifts for Him"}, {"t": "Apple AirPods Pro 3", "u": "gifts-for-him.html#gifts-for-him-4", "s": "#4 in Gifts for Him"}, {"t": "Braun Series 9 Pro+", "u": "gifts-for-him.html#gifts-for-him-5", "s": "#5 in Gifts for Him"}, {"t": "LEGO Technic McLaren MCL39 F1 Car", "u": "gifts-for-him.html#gifts-for-him-6", "s": "#6 in Gifts for Him"}, {"t": "Leatherman ARC", "u": "gifts-for-him.html#gifts-for-him-7", "s": "#7 in Gifts for Him"}, {"t": "Cuisinart Griddler", "u": "gifts-for-him.html#gifts-for-him-8", "s": "#8 in Gifts for Him"}, {"t": "Ekster Leather Smart Wallet", "u": "gifts-for-him.html#gifts-for-him-9", "s": "#9 in Gifts for Him"}, {"t": "YETI Rambler 20 oz Travel Mug", "u": "gifts-for-him.html#gifts-for-him-10", "s": "#10 in Gifts for Him"}, {"t": "Dyson Airwrap Multi-Styler", "u": "gifts-for-her.html#gifts-for-her-1", "s": "#1 in Gifts for Her"}, {"t": "Oura Ring 4", "u": "gifts-for-her.html#gifts-for-her-2", "s": "#2 in Gifts for Her"}, {"t": "KitchenAid Artisan Stand Mixer", "u": "gifts-for-her.html#gifts-for-her-3", "s": "#3 in Gifts for Her"}, {"t": "Omnilux Contour Face", "u": "gifts-for-her.html#gifts-for-her-4", "s": "#4 in Gifts for Her"}, {"t": "Swarovski Matrix Tennis Bracelet", "u": "gifts-for-her.html#gifts-for-her-5", "s": "#5 in Gifts for Her"}, {"t": "Hatch Restore 3", "u": "gifts-for-her.html#gifts-for-her-6", "s": "#6 in Gifts for Her"}, {"t": "Bearaby Cotton Weighted Blanket", "u": "gifts-for-her.html#gifts-for-her-7", "s": "#7 in Gifts for Her"}, {"t": "LEGO Botanicals Pretty Pink Bouquet", "u": "gifts-for-her.html#gifts-for-her-8", "s": "#8 in Gifts for Her"}, {"t": "Capri Blue Volcano Candle", "u": "gifts-for-her.html#gifts-for-her-9", "s": "#9 in Gifts for Her"}, {"t": "Grace & Stella Under Eye Masks", "u": "gifts-for-her.html#gifts-for-her-10", "s": "#10 in Gifts for Her"}, {"t": "KODAK Luma 350 Projector", "u": "gifts-for-dad.html#gifts-for-dad-1", "s": "#1 in Gifts for Dad"}, {"t": "Aura Carver Digital Photo Frame", "u": "gifts-for-dad.html#gifts-for-dad-2", "s": "#2 in Gifts for Dad"}, {"t": "Breville Barista Express Impress", "u": "gifts-for-dad.html#gifts-for-dad-3", "s": "#3 in Gifts for Dad"}, {"t": "Birdsnap TUC Smart Bird Feeder", "u": "gifts-for-dad.html#gifts-for-dad-4", "s": "#4 in Gifts for Dad"}, {"t": "TUMI Alpha Split Travel Kit", "u": "gifts-for-dad.html#gifts-for-dad-5", "s": "#5 in Gifts for Dad"}, {"t": "Hoka Clifton 10", "u": "gifts-for-dad.html#gifts-for-dad-6", "s": "#6 in Gifts for Dad"}, {"t": "Logitech MX Keys Mini", "u": "gifts-for-dad.html#gifts-for-dad-7", "s": "#7 in Gifts for Dad"}, {"t": "Anker MagGo Power Bank", "u": "gifts-for-dad.html#gifts-for-dad-8", "s": "#8 in Gifts for Dad"}, {"t": "Harry & David Meat & Cheese Gift Box", "u": "gifts-for-dad.html#gifts-for-dad-9", "s": "#9 in Gifts for Dad"}, {"t": "YETI Rambler Colster", "u": "gifts-for-dad.html#gifts-for-dad-10", "s": "#10 in Gifts for Dad"}, {"t": "Aura Carver Digital Photo Frame", "u": "gifts-for-mom.html#gifts-for-mom-1", "s": "#1 in Gifts for Mom"}, {"t": "Kindle Paperwhite", "u": "gifts-for-mom.html#gifts-for-mom-2", "s": "#2 in Gifts for Mom"}, {"t": "Ember Mug 3", "u": "gifts-for-mom.html#gifts-for-mom-3", "s": "#3 in Gifts for Mom"}, {"t": "Shark FlexStyle", "u": "gifts-for-mom.html#gifts-for-mom-4", "s": "#4 in Gifts for Mom"}, {"t": "Le Creuset Signature Dutch Oven (5.5 qt)", "u": "gifts-for-mom.html#gifts-for-mom-5", "s": "#5 in Gifts for Mom"}, {"t": "TheraFace Mask Glo", "u": "gifts-for-mom.html#gifts-for-mom-6", "s": "#6 in Gifts for Mom"}, {"t": "Sunbeam Royal Luxe Heated Throw", "u": "gifts-for-mom.html#gifts-for-mom-7", "s": "#7 in Gifts for Mom"}, {"t": "LEGO Botanicals Orchid", "u": "gifts-for-mom.html#gifts-for-mom-8", "s": "#8 in Gifts for Mom"}, {"t": "LANEIGE Lip Sleeping Mask", "u": "gifts-for-mom.html#gifts-for-mom-9", "s": "#9 in Gifts for Mom"}, {"t": "Tell Me Your Life Story, Mom", "u": "gifts-for-mom.html#gifts-for-mom-10", "s": "#10 in Gifts for Mom"}]</script>
 </section>
-<section id="gifts">
+<section id="gifts" class="gifts-band">
   <div class="wrap">
-    <div class="section-head"><div><h2>Holiday gift guides</h2><p>The 10 best gifts for everyone on your list.</p></div></div>
+    <div class="section-head"><div><h2>Holiday gift guides</h2><p id="countdown">The 10 best gifts for everyone on your list.</p></div></div>
     <div class="gift-grid">
 <a class="gift-card tint-gift-him" href="gifts-for-him.html">
-  <span class="gift-ico"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="20" width="48" height="12" rx="2"/><path d="M12 32v20h40V32M32 20v32"/><path d="M32 20c-4-10-16-12-16-4 0 4 8 4 16 4zM32 20c4-10 16-12 16-4 0 4-8 4-16 4z"/></svg></span>
-  <h3>Gifts for Him</h3><p>Gifts he&#x27;ll actually use — for husbands, boyfriends and every guy on your list.</p><span class="go">See all 10 gifts →</span>
+  <h3>Gifts for Him</h3><p>Gifts he&#x27;ll actually use — for husbands, boyfriends and every guy on your list.</p>
+  <ul class="gift-peek"><li>Therabody Theragun Pro</li><li>Solo Stove Bonfire 2.0</li><li>Ooni Karu 12</li></ul>
+  <span class="go">See all 10 gifts</span>
 </a>
 <a class="gift-card tint-gift-her" href="gifts-for-her.html">
-  <span class="gift-ico"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="20" width="48" height="12" rx="2"/><path d="M12 32v20h40V32M32 20v32"/><path d="M32 20c-4-10-16-12-16-4 0 4 8 4 16 4zM32 20c4-10 16-12 16-4 0 4-8 4-16 4z"/></svg></span>
-  <h3>Gifts for Her</h3><p>Thoughtful gifts for your wife, girlfriend or any woman on your list.</p><span class="go">See all 10 gifts →</span>
+  <h3>Gifts for Her</h3><p>Thoughtful gifts for your wife, girlfriend or any woman on your list.</p>
+  <ul class="gift-peek"><li>Dyson Airwrap Multi-Styler</li><li>Oura Ring 4</li><li>KitchenAid Artisan Stand Mixer</li></ul>
+  <span class="go">See all 10 gifts</span>
 </a>
 <a class="gift-card tint-gift-dad" href="gifts-for-dad.html">
-  <span class="gift-ico"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="20" width="48" height="12" rx="2"/><path d="M12 32v20h40V32M32 20v32"/><path d="M32 20c-4-10-16-12-16-4 0 4 8 4 16 4zM32 20c4-10 16-12 16-4 0 4-8 4-16 4z"/></svg></span>
-  <h3>Gifts for Dad</h3><p>Useful, fun and sentimental gifts for every kind of dad.</p><span class="go">See all 10 gifts →</span>
+  <h3>Gifts for Dad</h3><p>Useful, fun and sentimental gifts for every kind of dad.</p>
+  <ul class="gift-peek"><li>KODAK Luma 350 Projector</li><li>Aura Carver Digital Photo Frame</li><li>Breville Barista Express Impress</li></ul>
+  <span class="go">See all 10 gifts</span>
 </a>
 <a class="gift-card tint-gift-mom" href="gifts-for-mom.html">
-  <span class="gift-ico"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="20" width="48" height="12" rx="2"/><path d="M12 32v20h40V32M32 20v32"/><path d="M32 20c-4-10-16-12-16-4 0 4 8 4 16 4zM32 20c4-10 16-12 16-4 0 4-8 4-16 4z"/></svg></span>
-  <h3>Gifts for Mom</h3><p>Thoughtful, cozy and sentimental gifts she&#x27;ll truly use.</p><span class="go">See all 10 gifts →</span>
+  <h3>Gifts for Mom</h3><p>Thoughtful, cozy and sentimental gifts she&#x27;ll truly use.</p>
+  <ul class="gift-peek"><li>Aura Carver Digital Photo Frame</li><li>Kindle Paperwhite</li><li>Ember Mug 3</li></ul>
+  <span class="go">See all 10 gifts</span>
 </a></div>
   </div>
 </section>
 <section id="categories">
   <div class="wrap">
-    <div class="section-head"><div><h2>Best-of lists</h2><p>Pick a category to see our top 10.</p></div></div>
+    <div class="section-head"><div><h2>Every top 10</h2><p>Pick a category. Each card shows our #1 pick.</p></div></div>
     <div class="cat-grid">
-<a class="cat-card" href="best-tvs.html">
-  <div class="cat-photo tint-tv"><img src="https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Living room with a large television on the wall" loading="lazy" decoding="async"></div>
-  <h3>Best TVs</h3><p>OLED, Mini-LED and budget 4K sets for every room and price.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-tvs.html" data-k="tvs oled, mini-led and budget 4k sets for every room and price. lg c6 oled samsung s95h qd-oled lg g6 oled sony bravia 9 ii hisense ur9 lg c5 oled (2025) tcl qm8l hisense u7sg vizio mini led quantum 4k tcl x11l">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Living room with a large television on the wall" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best TVs</h3><p>OLED, Mini-LED and budget 4K sets for every room and price.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>LG C6 OLED</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-projectors.html">
-  <div class="cat-photo tint-projector"><img src="https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Projector on a wooden coffee table in a living room" loading="lazy" decoding="async"></div>
-  <h3>Best Projectors</h3><p>Home theater, ultra-short-throw and portable projectors for a giant screen.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-projectors.html" data-k="projectors home theater, ultra-short-throw and portable projectors for a giant screen. hisense c2 ultra epson home cinema ls11000 hisense px4-pro awol vision aetherion max benq w2720i hisense m2 pro sony bravia projector 8 jvc dla-nz800 aurzen zip tri-fold nebula capsule 3 gtv">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1756729924464-7e6a0ec1c82a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Projector on a wooden coffee table in a living room" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Projectors</h3><p>Home theater, ultra-short-throw and portable projectors for a giant screen.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Hisense C2 Ultra</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-electric-shavers.html">
-  <div class="cat-photo tint-shaver"><img src="https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Man getting a shave and trim at a barber" loading="lazy" decoding="async"></div>
-  <h3>Best Electric Shavers</h3><p>Foil, rotary and hybrid shavers for every beard and skin type.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-electric-shavers.html" data-k="electric shavers foil, rotary and hybrid shavers for every beard and skin type. braun series 9 pro+ philips norelco i9000 prestige ultra panasonic arc5 (es-lv67-k) braun series 8 philips norelco 7800 philips norelco 5400 philips norelco oneblade 360 remington f5-5800 philips norelco shaver 3600 philips norelco head shaver pro 7000">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1533245270348-821d4d5c7514?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Man getting a shave and trim at a barber" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Electric Shavers</h3><p>Foil, rotary and hybrid shavers for every beard and skin type.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Braun Series 9 Pro+</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-espresso-machines.html">
-  <div class="cat-photo tint-espresso"><img src="https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Making espresso at home in a kitchen" loading="lazy" decoding="async"></div>
-  <h3>Best Espresso Machines</h3><p>Café-quality espresso at home, from easy beginner machines to barista favorites.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-espresso-machines.html" data-k="espresso machines café-quality espresso at home, from easy beginner machines to barista favorites. breville barista express impress de&#x27;longhi la specialista touch breville bambino plus breville bambino gaggia classic e24 de&#x27;longhi stilosa ninja luxe café premier terra kaffe demi nespresso vertuoplus breville oracle">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1504194377022-9e04c123352f?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Making espresso at home in a kitchen" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Espresso Machines</h3><p>Café-quality espresso at home, from easy beginner machines to barista favorites.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Breville Barista Express Impress</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-wireless-earbuds.html">
-  <div class="cat-photo tint-earbuds"><img src="https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="White wireless earbuds and charging case" loading="lazy" decoding="async"></div>
-  <h3>Best Wireless Earbuds</h3><p>Noise-cancelling, workout and budget earbuds for iPhone, Android and everyone else.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-wireless-earbuds.html" data-k="wireless earbuds noise-cancelling, workout and budget earbuds for iphone, android and everyone else. sony wf-1000xm6 apple airpods pro 3 bose quietcomfort ultra earbuds (2nd gen) apple airpods 5 samsung galaxy buds 4 pro google pixel buds pro 2 beats powerbeats pro 2 sony wf-c710n soundcore liberty 4 nc sony wf-c510">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="White wireless earbuds and charging case" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Wireless Earbuds</h3><p>Noise-cancelling, workout and budget earbuds for iPhone, Android and everyone else.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Sony WF-1000XM6</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-air-fryers.html">
-  <div class="cat-photo tint-airfryer"><img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A basket of crispy french fries" loading="lazy" decoding="async"></div>
-  <h3>Best Air Fryers</h3><p>Crispy food with less oil — compact, family-size and multi-cooker picks.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-air-fryers.html" data-k="air fryers crispy food with less oil — compact, family-size and multi-cooker picks. ninja air fryer max xl ninja af101 air fryer cosori turboblaze instant vortex plus clearcook ninja foodi dualzone 2-basket ninja speedi rapid cooker breville smart oven air fryer pro dreo chefmaker combi fryer typhur dome 2 black+decker purifry 2-quart">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A basket of crispy french fries" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Air Fryers</h3><p>Crispy food with less oil — compact, family-size and multi-cooker picks.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Ninja Air Fryer Max XL</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-robot-vacuums.html">
-  <div class="cat-photo tint-vacuum"><img src="https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A robot vacuum on a wooden floor" loading="lazy" decoding="async"></div>
-  <h3>Best Robot Vacuums</h3><p>Hands-free cleaning, from budget vacuums to self-emptying vacuum-and-mop combos.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-robot-vacuums.html" data-k="robot vacuums hands-free cleaning, from budget vacuums to self-emptying vacuum-and-mop combos. dreame x60 max ultra complete roborock saros 10r roborock saros 20 shark powerdetect uv reveal dyson spot+scrub ai roborock qv 35s dreame l40 ultra shark matrix plus switchbot mini k10+ dreame d10 plus gen 2">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A robot vacuum on a wooden floor" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Robot Vacuums</h3><p>Hands-free cleaning, from budget vacuums to self-emptying vacuum-and-mop combos.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Dreame X60 Max Ultra Complete</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-standing-desks.html">
-  <div class="cat-photo tint-desk"><img src="https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Wooden standing desk in a home office" loading="lazy" decoding="async"></div>
-  <h3>Best Standing Desks</h3><p>Sit-stand desks and converters for a healthier, more comfortable workday.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-standing-desks.html" data-k="standing desks sit-stand desks and converters for a healthier, more comfortable workday. branch duo standing desk flexispot e7 pro uplift v3 fully jarvis bamboo flexispot e7 plus secretlab magnus pro apexdesk elite pro (curved) fezibo electric standing desk flexispot m7 desk converter flexispot h7 mobile table">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1623177623442-979c1e42c255?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Wooden standing desk in a home office" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Standing Desks</h3><p>Sit-stand desks and converters for a healthier, more comfortable workday.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Branch Duo Standing Desk</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-mattresses.html">
-  <div class="cat-photo tint-mattress"><img src="https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A neatly made bed with white linens" loading="lazy" decoding="async"></div>
-  <h3>Best Mattresses</h3><p>Mattress-in-a-box picks for every sleeping position, budget and body type.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-mattresses.html" data-k="mattresses mattress-in-a-box picks for every sleeping position, budget and body type. helix midnight luxe dreamcloud hybrid nectar premier tuft &amp; needle mint hybrid leesa sapira chill hybrid allswell luxe nolah evolution plank firm brooklyn bedding aurora luxe helix plus">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1762199904138-d163fe89540a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A neatly made bed with white linens" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Mattresses</h3><p>Mattress-in-a-box picks for every sleeping position, budget and body type.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Helix Midnight Luxe</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-hair-dryers.html">
-  <div class="cat-photo tint-hairdryer"><img src="https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A red hair dryer on a table" loading="lazy" decoding="async"></div>
-  <h3>Best Hair Dryers &amp; Stylers</h3><p>Fast, gentle hair dryers and all-in-one stylers like the Dyson Airwrap.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-hair-dryers.html" data-k="hair dryers &amp; stylers fast, gentle hair dryers and all-in-one stylers like the dyson airwrap. t3 aireluxe dyson supersonic nural babylisspro nano titanium dyson airwrap multi-styler shark flexstyle shark speedstyle pro flex revlon one-step volumizer ga.ma iq perfetto bio ionic powerlight pro bondiboost blowout brush pro">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1727755868077-22f0d2ff8353?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A red hair dryer on a table" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Hair Dryers &amp; Stylers</h3><p>Fast, gentle hair dryers and all-in-one stylers like the Dyson Airwrap.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>T3 AireLuxe</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-office-chairs.html">
-  <div class="cat-photo tint-chair"><img src="https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A black office chair in a bright room" loading="lazy" decoding="async"></div>
-  <h3>Best Office Chairs</h3><p>Ergonomic chairs for long workdays, from under $150 to Herman Miller.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-office-chairs.html" data-k="office chairs ergonomic chairs for long workdays, from under $150 to herman miller. steelcase series 2 branch verve chair herman miller aeron steelcase leap v2 libernovo omni autonomous ergochair pro sihoo doro c300 pro v2 flexispot c7 boulies ep200 sihoo m57">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1626379501846-0df4067b8bb9?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="A black office chair in a bright room" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Office Chairs</h3><p>Ergonomic chairs for long workdays, from under $150 to Herman Miller.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Steelcase Series 2</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-luggage.html">
-  <div class="cat-photo tint-luggage"><img src="https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Three pieces of white luggage in a room" loading="lazy" decoding="async"></div>
-  <h3>Best Luggage</h3><p>Carry-ons, checked bags and travel backpacks that last.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-luggage.html" data-k="luggage carry-ons, checked bags and travel backpacks that last. away bigger carry-on calpak ambeur carry-on samsonite freeform carry-on monos carry-on pro plus samsonite proxis global carry-on briggs &amp; riley baseline essential calpak ambeur large osprey sojourn porter 46l calpak luka duffel amazon basics 21&quot; hardside spinner">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1639597784714-4905e95de813?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Three pieces of white luggage in a room" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Luggage</h3><p>Carry-ons, checked bags and travel backpacks that last.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>Away Bigger Carry-On</span></span>
+  </div>
 </a>
-<a class="cat-card" href="best-cookware-sets.html">
-  <div class="cat-photo tint-cookware"><img src="https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Stainless steel pots on a gas stove" loading="lazy" decoding="async"></div>
-  <h3>Best Cookware Sets</h3><p>Stainless, nonstick and ceramic pots and pans worth the investment.</p><span class="go">See the top 10 →</span>
+<a class="cat-card" href="best-cookware-sets.html" data-k="cookware sets stainless, nonstick and ceramic pots and pans worth the investment. all-clad d3 stainless 10-piece all-clad ha1 nonstick 10-piece made in 10-piece stainless hexclad hybrid 12-piece greenpan valencia pro 11-piece caraway 12-piece ceramic tramontina tri-ply clad 10-piece calphalon ceramic 12-piece t-fal advanced nonstick 12-piece tramontina primaware 18-piece">
+  <div class="cat-photo"><img src="https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1200" srcset="https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=480 480w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=800 800w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1200 1200w,https://images.unsplash.com/photo-1580929753603-10519c6e480a?auto=format&fit=crop&q=75&w=1600 1600w" sizes="(max-width: 760px) 100vw, 360px" alt="Stainless steel pots on a gas stove" loading="lazy" decoding="async"></div>
+  <div class="cat-body">
+    <h3>Best Cookware Sets</h3><p>Stainless, nonstick and ceramic pots and pans worth the investment.</p>
+    <span class="cat-top"><span class="mini-sticker" aria-hidden="true">1</span><span><span class="vh">Number one pick: </span>All-Clad D3 Stainless 10-Piece</span></span>
+  </div>
 </a></div>
   </div>
 </section>
 <section>
   <div class="wrap">
     <div class="trust">
-      <div><h3>Researched, not guessed</h3><p>Every pick is backed by trusted, hands-on reviewers. We link our sources on every list.</p></div>
-      <div><h3>Every budget</h3><p>Each list covers budget, mid-range and premium options, so there's a pick for you.</p></div>
-      <div><h3>Kept up to date</h3><p>We refresh our lists as new models launch and prices change.</p></div>
+      <div><h3>Researched, not guessed</h3><p>Every pick comes from the consensus of trusted, hands-on reviewers, and we link our sources on every list.</p></div>
+      <div><h3>Every budget</h3><p>Each list mixes budget, mid-range and premium options, so there’s a pick for you.</p></div>
+      <div><h3>Kept up to date</h3><p>We refresh lists as new models launch and add new guides every week.</p></div>
     </div>
   </div>
 </section>
@@ -224,7 +220,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">S</span>The Shortlist</a>
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">10</span>The Shortlist</a>
         <p>Short, honest lists of the best things to buy — researched from trusted expert reviews and updated regularly.</p>
       </div>
       <div>
@@ -247,6 +243,7 @@
     <p class="fine">As an Amazon Associate we earn from qualifying purchases. Prices and availability change often — always check the retailer for current details. &copy; <span id="yr">2026</span> The Shortlist.</p>
   </div>
 </footer>
+<a class="to-top" href="#" aria-label="Back to top">Top</a>
 <script src="assets/config.js"></script>
 <script src="assets/site.js"></script>
 </body>
