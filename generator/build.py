@@ -7,9 +7,9 @@ OUT = os.path.join(os.path.dirname(HERE), "public")   # what Netlify publishes
 STYLE = os.path.join(HERE, "style.css")              # edit styles here
 SITE = "The Shortlist"
 DOMAIN = "https://the-shortlist-top10best.netlify.app"   # change after you buy a domain
-UPDATED = "October 2026"
-UPDATED_ISO = "2026-10-31"
-UPDATED_LONG = "October 31, 2026"
+UPDATED = "November 2026"
+UPDATED_ISO = "2026-11-14"
+UPDATED_LONG = "November 14, 2026"
 
 ICONS = {
  "tv": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="56" height="36" rx="4"/><path d="M24 52h16M32 40v12"/><path d="M12 32l10-10 7 7 9-11 14 14" stroke-width="2.5" opacity=".7"/></svg>',
@@ -59,8 +59,8 @@ def credit(key):
     return (f'<span class="credit">Photo: <a href="https://unsplash.com/@{ph["user"]}?utm_source=the_shortlist&amp;utm_medium=referral" target="_blank" rel="noopener">{html.escape(ph["by"])}</a> / '
             f'<a href="https://unsplash.com/?utm_source=the_shortlist&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>')
 
-ASIN = {'LG C6 OLED': 'B0GRK5D3RW', 'Samsung S95H QD-OLED': 'B0H5G3H55T', 'TCL QM8L': 'B0GPSYT2KN', 'Hisense U7SG': 'B0GR9BLPJ8', 'Vizio Mini LED Quantum 4K': 'B0GVV3NXPV', 'TCL X11L': 'B0GFDJGFG7', 'Hisense C2 Ultra': 'B0DHLH7VPH', 'Epson Home Cinema LS11000': 'B09TS2M1ZS', 'Hisense PX4-Pro': 'B0H6DDBCNQ', 'AWOL Vision Aetherion Max': 'B0GN3XX19L', 'BenQ W2720i': 'B0DPJDK31N', 'Hisense M2 Pro': 'B0F6ZV1367', 'Sony Bravia Projector 8': 'B0DGRCB57X', 'JVC DLA-NZ800': 'B0D45ZGZ4N', 'Aurzen ZIP Tri-Fold': 'B0DYJP2JY6', 'Braun Series 9 Pro+': 'B0FGLF3SDT', 'Philips Norelco i9000 Prestige Ultra': 'B0F1P4RZMK', 'Panasonic Arc5 (ES-LV67-K)': 'B07W7XK55Q', 'Braun Series 8': 'B0CFBV91YQ', 'Philips Norelco 7800': 'B0BPZR1MBC', 'Philips Norelco 5400': 'B0BF9QHHLJ', 'Philips Norelco OneBlade 360': 'B0BZDPFH45', 'Remington F5-5800': 'B00BB5YHEI', 'Philips Norelco Shaver 3600': 'B0CLWDF9NK', 'Philips Norelco Head Shaver Pro 7000': 'B0FHJ55R4L', 'Breville Barista Express Impress': 'B0BBYNPV33', "De'Longhi La Specialista Touch": 'B0F6DY1DGR', 'Breville Bambino Plus': 'B07JVD78TT', 'Breville Bambino': 'B0B1JPPG2L', 'Gaggia Classic E24': 'B07RQ3NL76', "De'Longhi Stilosa": 'B08C96BG9H', 'Ninja Luxe Café Premier': 'B0D45PK5V4', 'Terra Kaffe Demi': 'B0FGWSD63C', 'Nespresso VertuoPlus': 'B01N7GO468', 'Sony WF-1000XM6': 'B0G6HLWS6Q', 'Apple AirPods Pro 3': 'B0FQFB8FMG', 'Bose QuietComfort Ultra Earbuds (2nd Gen)': 'B0F7M3HPBD', 'Samsung Galaxy Buds 4 Pro': 'B0G1PJLWLZ', 'Google Pixel Buds Pro 2': 'B0D79ND3N7', 'Beats Powerbeats Pro 2': 'B0DT2344N3', 'Sony WF-C710N': 'B0DWHPBK42', 'Soundcore Liberty 4 NC': 'B0BZV4QFP8', 'Sony WF-C510': 'B0D9R4GYTN', 'Ninja Air Fryer Max XL': 'B07S6529ZZ', 'Ninja AF101 Air Fryer': 'B07FDJMC9Q', 'Cosori TurboBlaze': 'B0C33CHG99', 'Instant Vortex Plus ClearCook': 'B096N3FTZP', 'Ninja Foodi DualZone 2-Basket': 'B089TQWJKK', 'Ninja Speedi Rapid Cooker': 'B0B3QT6H7H', 'Breville Smart Oven Air Fryer Pro': 'B01N5UPTZS', 'Dreo ChefMaker Combi Fryer': 'B0C5JHKGFP', 'Typhur Dome 2': 'B0CKP6Y6KB', 'BLACK+DECKER Purifry 2-Quart': 'B0D384TSVC', 'Dreame X60 Max Ultra Complete': 'B0G5X4H4PS', 'Roborock Saros 10R': 'B0DHCJ571Z', 'Roborock Saros 20': 'B0G64MM1HM', 'Shark PowerDetect UV Reveal': 'B0GJFVJGXL', 'Dyson Spot+Scrub Ai': 'B0GKC52QZP', 'Roborock QV 35S': 'B0FB419PLY', 'Dreame L40 Ultra': 'B0D6VS4SLX', 'Shark Matrix Plus': 'B0B8B6N2G4', 'SwitchBot Mini K10+': 'B0CHBC7BW1', 'Dreame D10 Plus Gen 2': 'B0D6TTRTPL', 'Branch Duo Standing Desk': 'B0C3WS16XP', 'FlexiSpot E7 Pro': 'B08B3X9CKH', 'Uplift V3': 'B07HYGZXP7', 'Fully Jarvis Bamboo': 'B07GVQF5HM', 'Secretlab Magnus Pro': 'B0G1S75G2K', 'ApexDesk Elite Pro (Curved)': 'B09CJJHJSJ', 'FEZIBO Electric Standing Desk': 'B0F8MHPVPH', 'FlexiSpot M7 Desk Converter': 'B078HGW7FP', 'FlexiSpot H7 Mobile Table': 'B0B2VZZQVG', 'Helix Midnight Luxe': 'B0D3SJ2FXN', 'DreamCloud Hybrid': 'B0DP3F2RWH', 'Nectar Premier': 'B0DCXHY632', 'Tuft & Needle Mint Hybrid': 'B0BV5CS62W', 'Leesa Sapira Chill Hybrid': 'B0F7B18GGP', 'Nolah Evolution': 'B0CDJ9RZ2T', 'Brooklyn Bedding Aurora Luxe': 'B0GQH4CL4L', 'Helix Plus': 'B0D54YMPNT', 'T3 AireLuxe': 'B09SPBNKGR', 'Dyson Supersonic Nural': 'B0DMXJPM4T', 'BaBylissPRO Nano Titanium': 'B091KB6H1F', 'Dyson Airwrap Multi-Styler': 'B0B61XH5YT', 'Shark FlexStyle': 'B0B89P16MC', 'Shark SpeedStyle Pro Flex': 'B0DDYDWVD1', 'Revlon One-Step Volumizer': 'B097CNMZF5', 'GA.MA iQ Perfetto': 'B092RD44N3', 'Therabody Theragun Pro': 'B0B6RL7NQJ', 'Solo Stove Bonfire 2.0': 'B0B7BFJ5Y6', 'Ooni Karu 12': 'B083WGMTGZ', 'LEGO Technic McLaren MCL39 F1 Car': 'B0FMZRRYFP', 'Leatherman ARC': 'B0D7JTK4KM', 'Cuisinart Griddler': 'B002YD99Y4', 'Ekster Leather Smart Wallet': 'B0F3P42YK1', 'KitchenAid Artisan Stand Mixer': 'B01H424IU4', 'Swarovski Matrix Tennis Bracelet': 'B0FG49S9N5', 'Hatch Restore 3': 'B0DLLSCVZW', 'Bearaby Cotton Weighted Blanket': 'B0C1F9MFH1', 'LEGO Botanicals Pretty Pink Bouquet': 'B0DHLJ6TR9', 'Capri Blue Volcano Candle': 'B07H14RYTV', 'Grace & Stella Under Eye Masks': 'B01DZ7C502', 'KODAK Luma 350 Projector': 'B07RB7P439', 'Aura Carver Digital Photo Frame': 'B0CBQRVL7H', 'TUMI Alpha Split Travel Kit': 'B09J1Q6F6B', 'Logitech MX Keys Mini': 'B098JPSVKY', 'Anker MagGo Power Bank': 'B0CFDSMNT7', 'Harry & David Meat & Cheese Gift Box': 'B07D19J4J1', 'YETI Rambler Colster': 'B0BVGF1DJG', 'Sunbeam Royal Luxe Heated Throw': 'B008BF2OF0', 'LEGO Botanicals Orchid': 'B09Q4L157D', 'LANEIGE Lip Sleeping Mask': 'B07XXPHQZK', 'TheraFace Mask Glo': 'B0FKD3826X', 'Tell Me Your Life Story, Mom': '1952568099', 'Steelcase Series 2': 'B08L8GCCDV', 'Branch Verve Chair': 'B0CK3NSMM6', 'Herman Miller Aeron': 'B007WU4NFO', 'Steelcase Leap V2': 'B00TYE4SKG', 'LiberNovo Omni': 'B0FYCKPWP9', 'Autonomous ErgoChair Pro': 'B0FL2JGMK5', 'SIHOO Doro C300 Pro V2': 'B0GSFPTKD5', 'FlexiSpot C7': 'B0DPQQ2L22', 'SIHOO M57': 'B07BDFW1Y7', 'CALPAK Ambeur Carry-On': 'B0HLSB3PGC', 'CALPAK Ambeur Large': 'B0HNNP4JWZ', 'Osprey Sojourn Porter 46L': 'B0CB6YWXNJ', 'CALPAK Luka Duffel': 'B0GKV9M82F', 'All-Clad D3 Stainless 10-Piece': 'B008PLB15Y', 'All-Clad HA1 Nonstick 10-Piece': 'B016SJHAOA', 'Made In 10-Piece Stainless': 'B09HR6MV21', 'HexClad Hybrid 12-Piece': 'B0CVH8FXKB', 'GreenPan Valencia Pro 11-Piece': 'B071HVQL76', 'Caraway 12-Piece Ceramic': 'B08XM1B6ZX', 'Tramontina Tri-Ply Clad 10-Piece': 'B00JDL0TA8', 'Calphalon Ceramic 12-Piece': 'B0GS7KS6MB', 'T-fal Advanced Nonstick 12-Piece': 'B076682L7W', 'Tramontina PrimaWare 18-Piece': 'B01M5H9UCV'}
-QUERY = {'JBL Go 4': 'JBL Go 4 portable Bluetooth speaker', 'Apple AirTag': 'Apple AirTag', 'Bialetti Moka Express (3-Cup)': 'Bialetti Moka Express 3 cup stovetop espresso maker', 'Warmies Microwavable Slippers': 'Warmies microwavable slippers', 'Kosterina Olive Oil & Balsamic Duo': 'Kosterina olive oil balsamic vinegar duo', 'Nodpod Gentle Pressure Sleep Mask': 'Nodpod gentle pressure sleep mask', 'Q-Less Crossword Dice Game': 'Q-Less crossword dice game', 'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
+ASIN = {'Baratza Encore': 'B007F183LK', 'AeroPress Original': 'B0047BIWSK', 'Fellow Atmos Vacuum Canister (0.7 L)': 'B07PY4WXXV', 'LG C6 OLED': 'B0GRK5D3RW', 'Samsung S95H QD-OLED': 'B0H5G3H55T', 'TCL QM8L': 'B0GPSYT2KN', 'Hisense U7SG': 'B0GR9BLPJ8', 'Vizio Mini LED Quantum 4K': 'B0GVV3NXPV', 'TCL X11L': 'B0GFDJGFG7', 'Hisense C2 Ultra': 'B0DHLH7VPH', 'Epson Home Cinema LS11000': 'B09TS2M1ZS', 'Hisense PX4-Pro': 'B0H6DDBCNQ', 'AWOL Vision Aetherion Max': 'B0GN3XX19L', 'BenQ W2720i': 'B0DPJDK31N', 'Hisense M2 Pro': 'B0F6ZV1367', 'Sony Bravia Projector 8': 'B0DGRCB57X', 'JVC DLA-NZ800': 'B0D45ZGZ4N', 'Aurzen ZIP Tri-Fold': 'B0DYJP2JY6', 'Braun Series 9 Pro+': 'B0FGLF3SDT', 'Philips Norelco i9000 Prestige Ultra': 'B0F1P4RZMK', 'Panasonic Arc5 (ES-LV67-K)': 'B07W7XK55Q', 'Braun Series 8': 'B0CFBV91YQ', 'Philips Norelco 7800': 'B0BPZR1MBC', 'Philips Norelco 5400': 'B0BF9QHHLJ', 'Philips Norelco OneBlade 360': 'B0BZDPFH45', 'Remington F5-5800': 'B00BB5YHEI', 'Philips Norelco Shaver 3600': 'B0CLWDF9NK', 'Philips Norelco Head Shaver Pro 7000': 'B0FHJ55R4L', 'Breville Barista Express Impress': 'B0BBYNPV33', "De'Longhi La Specialista Touch": 'B0F6DY1DGR', 'Breville Bambino Plus': 'B07JVD78TT', 'Breville Bambino': 'B0B1JPPG2L', 'Gaggia Classic E24': 'B07RQ3NL76', "De'Longhi Stilosa": 'B08C96BG9H', 'Ninja Luxe Café Premier': 'B0D45PK5V4', 'Terra Kaffe Demi': 'B0FGWSD63C', 'Nespresso VertuoPlus': 'B01N7GO468', 'Sony WF-1000XM6': 'B0G6HLWS6Q', 'Apple AirPods Pro 3': 'B0FQFB8FMG', 'Bose QuietComfort Ultra Earbuds (2nd Gen)': 'B0F7M3HPBD', 'Samsung Galaxy Buds 4 Pro': 'B0G1PJLWLZ', 'Google Pixel Buds Pro 2': 'B0D79ND3N7', 'Beats Powerbeats Pro 2': 'B0DT2344N3', 'Sony WF-C710N': 'B0DWHPBK42', 'Soundcore Liberty 4 NC': 'B0BZV4QFP8', 'Sony WF-C510': 'B0D9R4GYTN', 'Ninja Air Fryer Max XL': 'B07S6529ZZ', 'Ninja AF101 Air Fryer': 'B07FDJMC9Q', 'Cosori TurboBlaze': 'B0C33CHG99', 'Instant Vortex Plus ClearCook': 'B096N3FTZP', 'Ninja Foodi DualZone 2-Basket': 'B089TQWJKK', 'Ninja Speedi Rapid Cooker': 'B0B3QT6H7H', 'Breville Smart Oven Air Fryer Pro': 'B01N5UPTZS', 'Dreo ChefMaker Combi Fryer': 'B0C5JHKGFP', 'Typhur Dome 2': 'B0CKP6Y6KB', 'BLACK+DECKER Purifry 2-Quart': 'B0D384TSVC', 'Dreame X60 Max Ultra Complete': 'B0G5X4H4PS', 'Roborock Saros 10R': 'B0DHCJ571Z', 'Roborock Saros 20': 'B0G64MM1HM', 'Shark PowerDetect UV Reveal': 'B0GJFVJGXL', 'Dyson Spot+Scrub Ai': 'B0GKC52QZP', 'Roborock QV 35S': 'B0FB419PLY', 'Dreame L40 Ultra': 'B0D6VS4SLX', 'Shark Matrix Plus': 'B0B8B6N2G4', 'SwitchBot Mini K10+': 'B0CHBC7BW1', 'Dreame D10 Plus Gen 2': 'B0D6TTRTPL', 'Branch Duo Standing Desk': 'B0C3WS16XP', 'FlexiSpot E7 Pro': 'B08B3X9CKH', 'Uplift V3': 'B07HYGZXP7', 'Fully Jarvis Bamboo': 'B07GVQF5HM', 'Secretlab Magnus Pro': 'B0G1S75G2K', 'ApexDesk Elite Pro (Curved)': 'B09CJJHJSJ', 'FEZIBO Electric Standing Desk': 'B0F8MHPVPH', 'FlexiSpot M7 Desk Converter': 'B078HGW7FP', 'FlexiSpot H7 Mobile Table': 'B0B2VZZQVG', 'Helix Midnight Luxe': 'B0D3SJ2FXN', 'DreamCloud Hybrid': 'B0DP3F2RWH', 'Nectar Premier': 'B0DCXHY632', 'Tuft & Needle Mint Hybrid': 'B0BV5CS62W', 'Leesa Sapira Chill Hybrid': 'B0F7B18GGP', 'Nolah Evolution': 'B0CDJ9RZ2T', 'Brooklyn Bedding Aurora Luxe': 'B0GQH4CL4L', 'Helix Plus': 'B0D54YMPNT', 'T3 AireLuxe': 'B09SPBNKGR', 'Dyson Supersonic Nural': 'B0DMXJPM4T', 'BaBylissPRO Nano Titanium': 'B091KB6H1F', 'Dyson Airwrap Multi-Styler': 'B0B61XH5YT', 'Shark FlexStyle': 'B0B89P16MC', 'Shark SpeedStyle Pro Flex': 'B0DDYDWVD1', 'Revlon One-Step Volumizer': 'B097CNMZF5', 'GA.MA iQ Perfetto': 'B092RD44N3', 'Therabody Theragun Pro': 'B0B6RL7NQJ', 'Solo Stove Bonfire 2.0': 'B0B7BFJ5Y6', 'Ooni Karu 12': 'B083WGMTGZ', 'LEGO Technic McLaren MCL39 F1 Car': 'B0FMZRRYFP', 'Leatherman ARC': 'B0D7JTK4KM', 'Cuisinart Griddler': 'B002YD99Y4', 'Ekster Leather Smart Wallet': 'B0F3P42YK1', 'KitchenAid Artisan Stand Mixer': 'B01H424IU4', 'Swarovski Matrix Tennis Bracelet': 'B0FG49S9N5', 'Hatch Restore 3': 'B0DLLSCVZW', 'Bearaby Cotton Weighted Blanket': 'B0C1F9MFH1', 'LEGO Botanicals Pretty Pink Bouquet': 'B0DHLJ6TR9', 'Capri Blue Volcano Candle': 'B07H14RYTV', 'Grace & Stella Under Eye Masks': 'B01DZ7C502', 'KODAK Luma 350 Projector': 'B07RB7P439', 'Aura Carver Digital Photo Frame': 'B0CBQRVL7H', 'TUMI Alpha Split Travel Kit': 'B09J1Q6F6B', 'Logitech MX Keys Mini': 'B098JPSVKY', 'Anker MagGo Power Bank': 'B0CFDSMNT7', 'Harry & David Meat & Cheese Gift Box': 'B07D19J4J1', 'YETI Rambler Colster': 'B0BVGF1DJG', 'Sunbeam Royal Luxe Heated Throw': 'B008BF2OF0', 'LEGO Botanicals Orchid': 'B09Q4L157D', 'LANEIGE Lip Sleeping Mask': 'B07XXPHQZK', 'TheraFace Mask Glo': 'B0FKD3826X', 'Tell Me Your Life Story, Mom': '1952568099', 'Steelcase Series 2': 'B08L8GCCDV', 'Branch Verve Chair': 'B0CK3NSMM6', 'Herman Miller Aeron': 'B007WU4NFO', 'Steelcase Leap V2': 'B00TYE4SKG', 'LiberNovo Omni': 'B0FYCKPWP9', 'Autonomous ErgoChair Pro': 'B0FL2JGMK5', 'SIHOO Doro C300 Pro V2': 'B0GSFPTKD5', 'FlexiSpot C7': 'B0DPQQ2L22', 'SIHOO M57': 'B07BDFW1Y7', 'CALPAK Ambeur Carry-On': 'B0HLSB3PGC', 'CALPAK Ambeur Large': 'B0HNNP4JWZ', 'Osprey Sojourn Porter 46L': 'B0CB6YWXNJ', 'CALPAK Luka Duffel': 'B0GKV9M82F', 'All-Clad D3 Stainless 10-Piece': 'B008PLB15Y', 'All-Clad HA1 Nonstick 10-Piece': 'B016SJHAOA', 'Made In 10-Piece Stainless': 'B09HR6MV21', 'HexClad Hybrid 12-Piece': 'B0CVH8FXKB', 'GreenPan Valencia Pro 11-Piece': 'B071HVQL76', 'Caraway 12-Piece Ceramic': 'B08XM1B6ZX', 'Tramontina Tri-Ply Clad 10-Piece': 'B00JDL0TA8', 'Calphalon Ceramic 12-Piece': 'B0GS7KS6MB', 'T-fal Advanced Nonstick 12-Piece': 'B076682L7W', 'Tramontina PrimaWare 18-Piece': 'B01M5H9UCV'}
+QUERY = {'Cosori Gooseneck Electric Kettle': 'COSORI gooseneck electric kettle temperature control', 'Fellow Aiden': 'Fellow Aiden precision coffee maker', 'Chemex Pour-Over Glass Coffeemaker': 'Chemex pour-over glass coffeemaker classic', 'Takeya Deluxe Cold Brew Coffee Maker': 'Takeya Deluxe cold brew coffee maker', 'Frank Body Original Coffee Scrub': 'frank body original coffee scrub', 'JBL Go 4': 'JBL Go 4 portable Bluetooth speaker', 'Apple AirTag': 'Apple AirTag', 'Bialetti Moka Express (3-Cup)': 'Bialetti Moka Express 3 cup stovetop espresso maker', 'Warmies Microwavable Slippers': 'Warmies microwavable slippers', 'Kosterina Olive Oil & Balsamic Duo': 'Kosterina olive oil balsamic vinegar duo', 'Nodpod Gentle Pressure Sleep Mask': 'Nodpod gentle pressure sleep mask', 'Q-Less Crossword Dice Game': 'Q-Less crossword dice game', 'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
 
 def amz(name):
     """Direct product page when we've matched the exact listing, otherwise a focused search."""
@@ -1293,7 +1293,7 @@ CATS = [
         tags=["Smart mug","Keeps drinks hot"],
         summary="Keeps coffee or tea at her perfect temperature — no more reheating a forgotten cup.",
         pros=["Drinks stay at the perfect temperature","App-controlled","Elegant design"],
-        cons=["Pricey for a mug","Hand wash only"]),
+        cons=["Pricey for a mug","Charging coaster isn't dishwasher safe"]),
    dict(name="Shark FlexStyle", badge="Best beauty tool", price="$$$$", f=["beauty"],
         tags=["Dryer + styler"],
         summary="A hair dryer that converts into a multi-styler — a popular alternative to the Dyson Airwrap.",
@@ -1422,6 +1422,85 @@ CATS = [
    ("NBC Select — Best holiday gifts under $50","https://nbcnews.com/select/shopping/best-gifts-under-50-rcna242155"),
   ],
  },
+ {
+  "slug": "gifts-for-coffee-lovers", "kind": "gift", "icon": "espresso", "tint": "tint-gift-coffee", "short": "Gifts for Coffee Lovers",
+  "title": "The 10 Best Gifts for Coffee Lovers in 2026",
+  "card": "Smart mugs, grinders and brewers that upgrade every morning cup.",
+  "lead": "The best gift for a coffee lover in 2026 is the Ember Mug 3, a smart mug that keeps coffee hot. See 10 expert-backed coffee gifts from under $20 to $400.",
+  "filters": [("brewers","Coffee makers"),("gear","Grinders & gear"),("travel","Travel & office"),("fun","Fun extras")],
+  "products": [
+   dict(name="Ember Mug 3", badge="Best overall", price="$$", f=["travel"],
+        tags=["Smart mug","Dishwasher safe"],
+        summary="Ember's heated smart mug is a staple of this year's coffee gift guides, and the new Mug 3 adds on-mug buttons for five preset temperatures (125°F to 145°F) and, for the first time, top-rack dishwasher cleaning.",
+        pros=["Keeps coffee at a set temperature","About 90 minutes per charge (10 oz) or all day on its coaster","Comes in 10 oz and 14 oz sizes"],
+        cons=["Pricey for a mug","Charging coaster isn't dishwasher safe"]),
+   dict(name="Fellow Atmos Vacuum Canister (0.7 L)", badge="Best under $50", price="$", f=["gear"],
+        tags=["Coffee storage","Vacuum seal"],
+        summary="A coffee canister with a twist-to-pump vacuum lid that pulls air out to keep beans fresher for longer; the 0.7-liter size holds up to about 11 ounces of beans.",
+        pros=["Looks good on a counter","Seals out air and moisture","Glass, matte black or matte white"],
+        cons=["Need to twist the lid to re-seal each time"]),
+   dict(name="Baratza Encore", badge="Best coffee grinder", price="$$", f=["gear"],
+        tags=["Burr grinder","40 grind settings"],
+        summary="A compact electric burr grinder with 40 settings, from fine for espresso-style brews to coarse for French press; Baratza says it can last around 10 years of home use with proper care.",
+        pros=["Biggest flavor upgrade for whole-bean drinkers","Simple one-switch operation","Repairable, long-lived design"],
+        cons=["Not fine enough for serious espresso (look at the Encore ESP)"]),
+   dict(name="AeroPress Original", badge="Best for travel", price="$", f=["brewers","travel"],
+        tags=["Manual brewer","Portable"],
+        summary="A light, nearly unbreakable press that brews a smooth single cup in a couple of minutes using air pressure and microfilters — easy to pack for trips, camping or the office.",
+        pros=["Small and durable","Versatile — concentrated shots or full mugs","Inexpensive"],
+        cons=["Makes one or two cups at a time"]),
+   dict(name="Cosori Gooseneck Electric Kettle", badge="Best for pour-over fans", price="$$", f=["gear"],
+        tags=["Gooseneck kettle","Temperature presets"],
+        summary="A stainless-steel gooseneck kettle with five temperature presets and a keep-warm setting, so pour-over fans can pour slowly and precisely at the right temperature.",
+        pros=["Precise, slow pour","Five presets plus hold-temperature","Also great for tea"],
+        cons=["Smaller capacity than a standard kettle"]),
+   dict(name="Breville Bambino Plus", badge="Best espresso machine gift", price="$$$$", f=["brewers"],
+        tags=["Espresso machine","Auto milk frothing"],
+        summary="A compact espresso machine that's ready in about three seconds and textures milk automatically, making café-style lattes and cappuccinos simple for beginners.",
+        pros=["Very fast heat-up","Automatic steam wand for milk","Simple buttons, small footprint"],
+        cons=["Needs a good grinder or pre-ground espresso","A big-ticket gift"]),
+   dict(name="Fellow Aiden", badge="Best splurge", price="$$$$", f=["brewers"],
+        tags=["Smart drip coffee maker","Single cup or full pot"],
+        summary="A high-end drip brewer that makes either a single cup or a full carafe, with roast-specific presets and custom brew profiles you can download — a dream gift for the coffee nerd.",
+        pros=["Brews a single cup or a full pot","Presets for different roasts","Sleek, modern design"],
+        cons=["Expensive for a drip machine"]),
+   dict(name="Chemex Pour-Over Glass Coffeemaker", badge="Best classic pour-over", price="$", f=["brewers"],
+        tags=["Pour-over","Borosilicate glass"],
+        summary="The iconic hourglass-shaped glass brewer that makes clean, bright coffee and doubles as a serving carafe — a timeless gift that usually costs under $50.",
+        pros=["Beautiful on the counter","Non-porous glass doesn't hold flavors","Brews several cups at once"],
+        cons=["Needs Chemex-style paper filters","Glass can break"]),
+   dict(name="Takeya Deluxe Cold Brew Coffee Maker", badge="Best for cold brew fans", price="$", f=["brewers"],
+        tags=["Cold brew","Airtight pitcher"],
+        summary="An airtight pitcher with a fine mesh filter for making cold brew in the fridge; it keeps a batch fresh for up to two weeks and fits most fridge doors.",
+        pros=["Easy overnight cold brew","Airtight lid keeps it fresh","Fits in a fridge door"],
+        cons=["Takes about a day to steep"]),
+   dict(name="Frank Body Original Coffee Scrub", badge="Best stocking stuffer", price="$", f=["fun"],
+        tags=["Coffee body scrub","Under $20"],
+        summary="A cult-favorite exfoliating body scrub made with ground coffee plus almond oil and vitamin E — a fun, coffee-themed extra that shows up in multiple 2026 gift guides.",
+        pros=["Fun coffee-themed treat","Usually under $20","Great add-on to a bigger gift"],
+        cons=["Can be messy in the shower"]),
+  ],
+  "tips": [
+   ("Match the gift to how they brew","Pour-over fans get the most from a gooseneck kettle or a Chemex; latte lovers from an espresso machine with automatic milk like the Bambino Plus; travelers from an AeroPress."),
+   ("A burr grinder is the biggest upgrade","Freshly ground beans taste noticeably better. A burr grinder like the Baratza Encore (40 settings) gives a more even grind than a blade grinder."),
+   ("Keep beans fresh","Air, light and moisture make coffee go stale. A vacuum canister such as the Fellow Atmos 0.7 L holds about an 11-ounce bag."),
+   ("Check sizes and what they already own","The Ember Mug 3 comes in 10 oz and 14 oz; ask yourself if they drink pods, drip or espresso before buying a machine."),
+  ],
+  "faq": [
+   ("What do you get a coffee lover who has everything?","A smart mug like the Ember Mug 3 is a safe bet — most coffee lovers don't own one, and it keeps every cup at their favorite temperature. A vacuum canister or a gooseneck kettle are other upgrades people rarely buy for themselves."),
+   ("What are good coffee gifts under $50?","The Fellow Atmos vacuum canister, AeroPress Original, Chemex pour-over, Takeya cold brew maker and Frank Body coffee scrub all usually cost under $50."),
+   ("Is the Ember Mug worth it as a gift?","Yes, for anyone who lets coffee go cold. The Ember Mug 3 holds drinks at 125°F to 145°F for about 90 minutes per charge (10 oz) or all day on its coaster, and launched at $129.95 (10 oz) and $149.95 (14 oz)."),
+   ("What is the best coffee grinder to give as a gift?","The Baratza Encore is the go-to gift grinder: a burr grinder with 40 settings that Baratza says lasts around 10 years with care. For espresso, choose the Encore ESP version."),
+   ("What's a good gift for someone who wants to make espresso at home?","The Breville Bambino Plus. It heats up in about three seconds and froths milk automatically, so beginners can make lattes and cappuccinos with simple buttons."),
+   ("Is a coffee subscription a good gift?","Yes — a subscription brings fresh beans from different roasters every month. Good Morning America lists Trade Coffee plans at roughly $17 to $22 per delivery; they're bought from the roaster, not Amazon."),
+  ],
+  "sources": [
+   ("Forbes Vetted — Best gifts for coffee lovers (updated October 2026)","https://www.forbes.com/sites/forbes-personal-shopper/article/gifts-for-coffee-lovers/"),
+   ("Good Morning America — The coffee lover's gift guide (November 2026)","https://www.goodmorningamerica.com/shop/story/best-coffee-gifts-2026-138083898"),
+   ("Engadget — The best gifts for coffee lovers in 2026","https://www.engadget.com/best-gifts-for-coffee-lovers-130018731.html"),
+   ("9to5Toys — Ember Mug 3 launch details (October 2026)","https://9to5toys.com/2026/10/13/ember-dishwasher-safe-smart-mug-3-hits-amazon/"),
+  ],
+ },
 ]
 
 SOON = []
@@ -1452,7 +1531,7 @@ RELATED = {
  "best-tvs": ["best-projectors","best-wireless-earbuds","best-robot-vacuums"],
  "best-projectors": ["best-tvs","best-wireless-earbuds","best-standing-desks"],
  "best-electric-shavers": ["best-hair-dryers","best-wireless-earbuds","best-luggage"],
- "best-espresso-machines": ["best-air-fryers","best-cookware-sets","best-robot-vacuums"],
+ "best-espresso-machines": ["gifts-for-coffee-lovers","best-air-fryers","best-cookware-sets"],
  "best-wireless-earbuds": ["best-tvs","best-projectors","best-luggage"],
  "best-air-fryers": ["best-cookware-sets","best-espresso-machines","best-robot-vacuums"],
  "best-robot-vacuums": ["best-air-fryers","best-mattresses","best-tvs"],
@@ -1464,9 +1543,10 @@ RELATED = {
  "best-cookware-sets": ["best-air-fryers","best-espresso-machines","best-mattresses"],
  "gifts-for-him": ["gifts-for-dad","gifts-under-50","best-wireless-earbuds"],
  "gifts-for-her": ["gifts-for-mom","best-hair-dryers","best-mattresses"],
- "gifts-for-dad": ["gifts-for-him","best-espresso-machines","best-projectors"],
+ "gifts-for-dad": ["gifts-for-him","gifts-for-coffee-lovers","best-espresso-machines"],
  "gifts-for-mom": ["gifts-for-her","gifts-under-50","best-cookware-sets"],
- "gifts-under-50": ["gifts-for-him","gifts-for-her","best-wireless-earbuds"],
+ "gifts-under-50": ["gifts-for-him","gifts-for-her","gifts-for-coffee-lovers"],
+ "gifts-for-coffee-lovers": ["best-espresso-machines","gifts-under-50","gifts-for-dad"],
 }
 BY_SLUG = {c["slug"]: c for c in CATS}
 
@@ -1586,7 +1666,7 @@ NOUN = {"best-tvs":"TV","best-projectors":"projector","best-electric-shavers":"e
  "best-wireless-earbuds":"wireless earbuds","best-air-fryers":"air fryer","best-robot-vacuums":"robot vacuum","best-standing-desks":"standing desk",
  "best-mattresses":"mattress","best-hair-dryers":"hair dryer","best-office-chairs":"office chair","best-luggage":"carry-on","best-cookware-sets":"cookware set"}
 PLURAL = {"best-wireless-earbuds"}
-WHO = {"gifts-under-50":"anyone on your list","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
+WHO = {"gifts-under-50":"anyone on your list","gifts-for-coffee-lovers":"coffee lovers","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
 QOVERRIDE = {
  ("best-tvs","Best OLED deal"):"What's the best OLED TV deal?",
  ("best-tvs","Best big screen on a budget"):"What's the best big-screen TV on a budget?",
