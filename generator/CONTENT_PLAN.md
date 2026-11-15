@@ -12,7 +12,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 
 ## New product lists
 - [x] 2026-11-15 — Best coffee makers (drip) — Kitchen
-- [ ] Best blenders — Kitchen
+- [x] 2026-11-15 — Best blenders — Kitchen
 - [ ] Best stand mixers — Kitchen
 - [ ] Best kitchen knife sets — Kitchen
 - [ ] Best cordless stick vacuums
