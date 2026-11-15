@@ -22,7 +22,17 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Best smartwatches
 - [x] 2026-11-15 — Best soundbars
 - [x] 2026-11-15 — Best gaming chairs
-- [ ] Best air purifiers
+- [x] 2026-11-15 — Best air purifiers
+- [ ] Best electric toothbrushes (gift season, high buying intent)
+- [ ] Best massage guns
+- [ ] Best robot mops / wet-dry vacuums (skip if too close to Best Cordless Vacuums)
+- [ ] Best electric blankets & heated throws (seasonal, winter)
+- [ ] Best dehumidifiers
+- [ ] Best Dutch ovens — Kitchen
+- [ ] Best portable Bluetooth speakers
+- [ ] Best e-readers
+- [ ] Best weighted blankets
+- [ ] Gifts for home cooks (gift guide) — Kitchen
 
 ## Comparison pages (short, high buying intent)
 - [ ] Dyson Airwrap vs Shark FlexStyle
