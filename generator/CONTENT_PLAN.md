@@ -21,7 +21,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Best over-ear headphones
 - [x] 2026-11-15 — Best smartwatches
 - [x] 2026-11-15 — Best soundbars
-- [ ] Best gaming chairs
+- [x] 2026-11-15 — Best gaming chairs
 - [ ] Best air purifiers
 
 ## Comparison pages (short, high buying intent)
