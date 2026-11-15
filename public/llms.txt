@@ -1,6 +1,6 @@
 # The Shortlist
 
-> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated November 14, 2026.
+> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated November 15, 2026.
 
 ## Buying guides
 
@@ -26,6 +26,7 @@
 - [The 10 Best Gifts for Mom in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-mom.html): Our top gift ideas for mom in 2026 are the Aura Carver Digital Photo Frame, the Kindle Paperwhite and the Ember Mug 3. Under $50, we like the Sunbeam Royal Luxe Heated Throw.
 - [The 10 Best Gifts Under $50 in 2026](https://the-shortlist-top10best.netlify.app/gifts-under-50.html): Our top gift ideas under $50 in 2026 are the Sunbeam Royal Luxe Heated Throw, the JBL Go 4 and the Apple AirTag.
 - [The 10 Best Gifts for Coffee Lovers in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-coffee-lovers.html): Our top gift ideas for coffee lovers in 2026 are the Ember Mug 3, the Fellow Atmos Vacuum Canister (0.7 L) and the Baratza Encore. Under $50, we like the AeroPress Original.
+- [The 10 Best Gifts for Gamers in 2026](https://the-shortlist-top10best.netlify.app/gifts-for-gamers.html): Our top gift ideas for gamers in 2026 are the Nintendo Switch 2 Mario Kart World Bundle, the Steam Deck OLED and the Meta Quest 3S. Under $50, we like the KontrolFreek FPS Freek Galaxy.
 
 ## About
 

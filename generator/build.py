@@ -8,8 +8,8 @@ STYLE = os.path.join(HERE, "style.css")              # edit styles here
 SITE = "The Shortlist"
 DOMAIN = "https://the-shortlist-top10best.netlify.app"   # change after you buy a domain
 UPDATED = "November 2026"
-UPDATED_ISO = "2026-11-14"
-UPDATED_LONG = "November 14, 2026"
+UPDATED_ISO = "2026-11-15"
+UPDATED_LONG = "November 15, 2026"
 
 ICONS = {
  "tv": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="56" height="36" rx="4"/><path d="M24 52h16M32 40v12"/><path d="M12 32l10-10 7 7 9-11 14 14" stroke-width="2.5" opacity=".7"/></svg>',
@@ -27,6 +27,7 @@ ICONS = {
  "luggage": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="18" y="12" width="28" height="36" rx="5"/><path d="M26 12V6h12v6M26 20v20M38 20v20M24 52h0M40 52h0"/></svg>',
  "cookware": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M8 26h40v14a10 10 0 0 1-10 10H18A10 10 0 0 1 8 40z"/><path d="M48 30h10M20 26v-4a8 8 0 0 1 16 0v4M28 14v-4"/></svg>',
  "airfryer": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="12" y="4" width="40" height="48" rx="10"/><path d="M12 26h40M26 36h12"/><circle cx="32" cy="15" r="4"/></svg>',
+ "controller": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14h24c8 0 13 6 15 16l2 10c1 6-6 10-11 5l-6-6H20l-6 6c-5 5-12 1-11-5l2-10c2-10 7-16 15-16z"/><path d="M18 24v10M13 29h10"/><circle cx="42" cy="26" r="2"/><circle cx="48" cy="32" r="2"/></svg>',
 }
 
 PHOTOS = {
@@ -60,7 +61,7 @@ def credit(key):
             f'<a href="https://unsplash.com/?utm_source=the_shortlist&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>')
 
 ASIN = {'Baratza Encore': 'B007F183LK', 'AeroPress Original': 'B0047BIWSK', 'Fellow Atmos Vacuum Canister (0.7 L)': 'B07PY4WXXV', 'LG C6 OLED': 'B0GRK5D3RW', 'Samsung S95H QD-OLED': 'B0H5G3H55T', 'TCL QM8L': 'B0GPSYT2KN', 'Hisense U7SG': 'B0GR9BLPJ8', 'Vizio Mini LED Quantum 4K': 'B0GVV3NXPV', 'TCL X11L': 'B0GFDJGFG7', 'Hisense C2 Ultra': 'B0DHLH7VPH', 'Epson Home Cinema LS11000': 'B09TS2M1ZS', 'Hisense PX4-Pro': 'B0H6DDBCNQ', 'AWOL Vision Aetherion Max': 'B0GN3XX19L', 'BenQ W2720i': 'B0DPJDK31N', 'Hisense M2 Pro': 'B0F6ZV1367', 'Sony Bravia Projector 8': 'B0DGRCB57X', 'JVC DLA-NZ800': 'B0D45ZGZ4N', 'Aurzen ZIP Tri-Fold': 'B0DYJP2JY6', 'Braun Series 9 Pro+': 'B0FGLF3SDT', 'Philips Norelco i9000 Prestige Ultra': 'B0F1P4RZMK', 'Panasonic Arc5 (ES-LV67-K)': 'B07W7XK55Q', 'Braun Series 8': 'B0CFBV91YQ', 'Philips Norelco 7800': 'B0BPZR1MBC', 'Philips Norelco 5400': 'B0BF9QHHLJ', 'Philips Norelco OneBlade 360': 'B0BZDPFH45', 'Remington F5-5800': 'B00BB5YHEI', 'Philips Norelco Shaver 3600': 'B0CLWDF9NK', 'Philips Norelco Head Shaver Pro 7000': 'B0FHJ55R4L', 'Breville Barista Express Impress': 'B0BBYNPV33', "De'Longhi La Specialista Touch": 'B0F6DY1DGR', 'Breville Bambino Plus': 'B07JVD78TT', 'Breville Bambino': 'B0B1JPPG2L', 'Gaggia Classic E24': 'B07RQ3NL76', "De'Longhi Stilosa": 'B08C96BG9H', 'Ninja Luxe Café Premier': 'B0D45PK5V4', 'Terra Kaffe Demi': 'B0FGWSD63C', 'Nespresso VertuoPlus': 'B01N7GO468', 'Sony WF-1000XM6': 'B0G6HLWS6Q', 'Apple AirPods Pro 3': 'B0FQFB8FMG', 'Bose QuietComfort Ultra Earbuds (2nd Gen)': 'B0F7M3HPBD', 'Samsung Galaxy Buds 4 Pro': 'B0G1PJLWLZ', 'Google Pixel Buds Pro 2': 'B0D79ND3N7', 'Beats Powerbeats Pro 2': 'B0DT2344N3', 'Sony WF-C710N': 'B0DWHPBK42', 'Soundcore Liberty 4 NC': 'B0BZV4QFP8', 'Sony WF-C510': 'B0D9R4GYTN', 'Ninja Air Fryer Max XL': 'B07S6529ZZ', 'Ninja AF101 Air Fryer': 'B07FDJMC9Q', 'Cosori TurboBlaze': 'B0C33CHG99', 'Instant Vortex Plus ClearCook': 'B096N3FTZP', 'Ninja Foodi DualZone 2-Basket': 'B089TQWJKK', 'Ninja Speedi Rapid Cooker': 'B0B3QT6H7H', 'Breville Smart Oven Air Fryer Pro': 'B01N5UPTZS', 'Dreo ChefMaker Combi Fryer': 'B0C5JHKGFP', 'Typhur Dome 2': 'B0CKP6Y6KB', 'BLACK+DECKER Purifry 2-Quart': 'B0D384TSVC', 'Dreame X60 Max Ultra Complete': 'B0G5X4H4PS', 'Roborock Saros 10R': 'B0DHCJ571Z', 'Roborock Saros 20': 'B0G64MM1HM', 'Shark PowerDetect UV Reveal': 'B0GJFVJGXL', 'Dyson Spot+Scrub Ai': 'B0GKC52QZP', 'Roborock QV 35S': 'B0FB419PLY', 'Dreame L40 Ultra': 'B0D6VS4SLX', 'Shark Matrix Plus': 'B0B8B6N2G4', 'SwitchBot Mini K10+': 'B0CHBC7BW1', 'Dreame D10 Plus Gen 2': 'B0D6TTRTPL', 'Branch Duo Standing Desk': 'B0C3WS16XP', 'FlexiSpot E7 Pro': 'B08B3X9CKH', 'Uplift V3': 'B07HYGZXP7', 'Fully Jarvis Bamboo': 'B07GVQF5HM', 'Secretlab Magnus Pro': 'B0G1S75G2K', 'ApexDesk Elite Pro (Curved)': 'B09CJJHJSJ', 'FEZIBO Electric Standing Desk': 'B0F8MHPVPH', 'FlexiSpot M7 Desk Converter': 'B078HGW7FP', 'FlexiSpot H7 Mobile Table': 'B0B2VZZQVG', 'Helix Midnight Luxe': 'B0D3SJ2FXN', 'DreamCloud Hybrid': 'B0DP3F2RWH', 'Nectar Premier': 'B0DCXHY632', 'Tuft & Needle Mint Hybrid': 'B0BV5CS62W', 'Leesa Sapira Chill Hybrid': 'B0F7B18GGP', 'Nolah Evolution': 'B0CDJ9RZ2T', 'Brooklyn Bedding Aurora Luxe': 'B0GQH4CL4L', 'Helix Plus': 'B0D54YMPNT', 'T3 AireLuxe': 'B09SPBNKGR', 'Dyson Supersonic Nural': 'B0DMXJPM4T', 'BaBylissPRO Nano Titanium': 'B091KB6H1F', 'Dyson Airwrap Multi-Styler': 'B0B61XH5YT', 'Shark FlexStyle': 'B0B89P16MC', 'Shark SpeedStyle Pro Flex': 'B0DDYDWVD1', 'Revlon One-Step Volumizer': 'B097CNMZF5', 'GA.MA iQ Perfetto': 'B092RD44N3', 'Therabody Theragun Pro': 'B0B6RL7NQJ', 'Solo Stove Bonfire 2.0': 'B0B7BFJ5Y6', 'Ooni Karu 12': 'B083WGMTGZ', 'LEGO Technic McLaren MCL39 F1 Car': 'B0FMZRRYFP', 'Leatherman ARC': 'B0D7JTK4KM', 'Cuisinart Griddler': 'B002YD99Y4', 'Ekster Leather Smart Wallet': 'B0F3P42YK1', 'KitchenAid Artisan Stand Mixer': 'B01H424IU4', 'Swarovski Matrix Tennis Bracelet': 'B0FG49S9N5', 'Hatch Restore 3': 'B0DLLSCVZW', 'Bearaby Cotton Weighted Blanket': 'B0C1F9MFH1', 'LEGO Botanicals Pretty Pink Bouquet': 'B0DHLJ6TR9', 'Capri Blue Volcano Candle': 'B07H14RYTV', 'Grace & Stella Under Eye Masks': 'B01DZ7C502', 'KODAK Luma 350 Projector': 'B07RB7P439', 'Aura Carver Digital Photo Frame': 'B0CBQRVL7H', 'TUMI Alpha Split Travel Kit': 'B09J1Q6F6B', 'Logitech MX Keys Mini': 'B098JPSVKY', 'Anker MagGo Power Bank': 'B0CFDSMNT7', 'Harry & David Meat & Cheese Gift Box': 'B07D19J4J1', 'YETI Rambler Colster': 'B0BVGF1DJG', 'Sunbeam Royal Luxe Heated Throw': 'B008BF2OF0', 'LEGO Botanicals Orchid': 'B09Q4L157D', 'LANEIGE Lip Sleeping Mask': 'B07XXPHQZK', 'TheraFace Mask Glo': 'B0FKD3826X', 'Tell Me Your Life Story, Mom': '1952568099', 'Steelcase Series 2': 'B08L8GCCDV', 'Branch Verve Chair': 'B0CK3NSMM6', 'Herman Miller Aeron': 'B007WU4NFO', 'Steelcase Leap V2': 'B00TYE4SKG', 'LiberNovo Omni': 'B0FYCKPWP9', 'Autonomous ErgoChair Pro': 'B0FL2JGMK5', 'SIHOO Doro C300 Pro V2': 'B0GSFPTKD5', 'FlexiSpot C7': 'B0DPQQ2L22', 'SIHOO M57': 'B07BDFW1Y7', 'CALPAK Ambeur Carry-On': 'B0HLSB3PGC', 'CALPAK Ambeur Large': 'B0HNNP4JWZ', 'Osprey Sojourn Porter 46L': 'B0CB6YWXNJ', 'CALPAK Luka Duffel': 'B0GKV9M82F', 'All-Clad D3 Stainless 10-Piece': 'B008PLB15Y', 'All-Clad HA1 Nonstick 10-Piece': 'B016SJHAOA', 'Made In 10-Piece Stainless': 'B09HR6MV21', 'HexClad Hybrid 12-Piece': 'B0CVH8FXKB', 'GreenPan Valencia Pro 11-Piece': 'B071HVQL76', 'Caraway 12-Piece Ceramic': 'B08XM1B6ZX', 'Tramontina Tri-Ply Clad 10-Piece': 'B00JDL0TA8', 'Calphalon Ceramic 12-Piece': 'B0GS7KS6MB', 'T-fal Advanced Nonstick 12-Piece': 'B076682L7W', 'Tramontina PrimaWare 18-Piece': 'B01M5H9UCV'}
-QUERY = {'Cosori Gooseneck Electric Kettle': 'COSORI gooseneck electric kettle temperature control', 'Fellow Aiden': 'Fellow Aiden precision coffee maker', 'Chemex Pour-Over Glass Coffeemaker': 'Chemex pour-over glass coffeemaker classic', 'Takeya Deluxe Cold Brew Coffee Maker': 'Takeya Deluxe cold brew coffee maker', 'Frank Body Original Coffee Scrub': 'frank body original coffee scrub', 'JBL Go 4': 'JBL Go 4 portable Bluetooth speaker', 'Apple AirTag': 'Apple AirTag', 'Bialetti Moka Express (3-Cup)': 'Bialetti Moka Express 3 cup stovetop espresso maker', 'Warmies Microwavable Slippers': 'Warmies microwavable slippers', 'Kosterina Olive Oil & Balsamic Duo': 'Kosterina olive oil balsamic vinegar duo', 'Nodpod Gentle Pressure Sleep Mask': 'Nodpod gentle pressure sleep mask', 'Q-Less Crossword Dice Game': 'Q-Less crossword dice game', 'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
+QUERY = {'Nintendo Switch 2 Mario Kart World Bundle': 'Nintendo Switch 2 Mario Kart World bundle', 'Steam Deck OLED': 'Steam Deck OLED handheld', 'Meta Quest 3S': 'Meta Quest 3S', 'Turtle Beach Stealth Pro II': 'Turtle Beach Stealth Pro II wireless gaming headset', 'PlayStation DualSense Edge': 'DualSense Edge wireless controller PS5', 'Logitech G502 HERO': 'Logitech G502 HERO wired gaming mouse', 'LEGO Game Boy': 'LEGO Game Boy 72046', 'Evercade Nexus': 'Evercade Nexus handheld', 'KontrolFreek FPS Freek Galaxy': 'KontrolFreek FPS Freek Galaxy thumbsticks', 'The Elder Scrolls: The Official Cookbook': 'The Elder Scrolls Official Cookbook Chelsea Monroe-Cassel', 'Cosori Gooseneck Electric Kettle': 'COSORI gooseneck electric kettle temperature control', 'Fellow Aiden': 'Fellow Aiden precision coffee maker', 'Chemex Pour-Over Glass Coffeemaker': 'Chemex pour-over glass coffeemaker classic', 'Takeya Deluxe Cold Brew Coffee Maker': 'Takeya Deluxe cold brew coffee maker', 'Frank Body Original Coffee Scrub': 'frank body original coffee scrub', 'JBL Go 4': 'JBL Go 4 portable Bluetooth speaker', 'Apple AirTag': 'Apple AirTag', 'Bialetti Moka Express (3-Cup)': 'Bialetti Moka Express 3 cup stovetop espresso maker', 'Warmies Microwavable Slippers': 'Warmies microwavable slippers', 'Kosterina Olive Oil & Balsamic Duo': 'Kosterina olive oil balsamic vinegar duo', 'Nodpod Gentle Pressure Sleep Mask': 'Nodpod gentle pressure sleep mask', 'Q-Less Crossword Dice Game': 'Q-Less crossword dice game', 'LG G6 OLED': 'LG G6 OLED evo 2026 TV', 'Sony Bravia 9 II': 'Sony BRAVIA 9 II Mini LED TV', 'Hisense UR9': 'Hisense UR9 RGB MiniLED TV', 'LG C5 OLED (2025)': 'LG C5 OLED evo TV 2025', 'Nebula Capsule 3 GTV': 'NEBULA Capsule 3 GTV projector', 'Breville Oracle': 'Breville Oracle dual boiler espresso machine', 'Apple AirPods 5': 'Apple AirPods 5', 'FlexiSpot E7 Plus': 'FlexiSpot E7 Plus standing desk', 'Allswell Luxe': 'Allswell Luxe hybrid mattress', 'Plank Firm': 'Plank Firm mattress Brooklyn Bedding', 'Bio Ionic PowerLight Pro': 'Bio Ionic PowerLight Pro hair dryer', 'BondiBoost Blowout Brush Pro': 'BondiBoost Blowout Brush Pro', 'YETI Rambler 20 oz Travel Mug': 'YETI Rambler 20 oz travel mug', 'Oura Ring 4': 'Oura Ring 4', 'Omnilux Contour Face': 'Omnilux Contour Face LED mask', 'Birdsnap TUC Smart Bird Feeder': 'Birdsnap TUC smart bird feeder', 'Hoka Clifton 10': 'Hoka Clifton 10 men', 'Ember Mug 3': 'Ember Mug 3 10 oz', 'Kindle Paperwhite': 'Kindle Paperwhite', 'Le Creuset Signature Dutch Oven (5.5 qt)': 'Le Creuset Signature round Dutch oven 5.5 qt', 'Boulies EP200': 'boulies EP200 ergonomic office chair', 'Away The Bigger Carry-On': 'Away The Bigger Carry-On', 'Samsonite Freeform Carry-On': 'Samsonite Freeform carry-on spinner', 'Monos Carry-On Pro Plus': 'Monos Carry-On Pro Plus', 'Samsonite Proxis Global Carry-On': 'Samsonite Proxis Global carry-on spinner', 'Briggs & Riley Baseline Essential': 'Briggs & Riley Baseline Essential carry-on expandable spinner', 'Amazon Basics 21" Hardside Spinner': 'Amazon Basics 21 inch hardside carry-on spinner'}
 
 def amz(name):
     """Direct product page when we've matched the exact listing, otherwise a focused search."""
@@ -1426,6 +1427,7 @@ CATS = [
   "slug": "gifts-for-coffee-lovers", "kind": "gift", "icon": "espresso", "tint": "tint-gift-coffee", "short": "Gifts for Coffee Lovers",
   "title": "The 10 Best Gifts for Coffee Lovers in 2026",
   "card": "Smart mugs, grinders and brewers that upgrade every morning cup.",
+  "price_notes": GIFT_NOTES,
   "lead": "The best gift for a coffee lover in 2026 is the Ember Mug 3, a smart mug that keeps coffee hot. See 10 expert-backed coffee gifts from under $20 to $400.",
   "filters": [("brewers","Coffee makers"),("gear","Grinders & gear"),("travel","Travel & office"),("fun","Fun extras")],
   "products": [
@@ -1501,6 +1503,88 @@ CATS = [
    ("9to5Toys — Ember Mug 3 launch details (October 2026)","https://9to5toys.com/2026/10/13/ember-dishwasher-safe-smart-mug-3-hits-amazon/"),
   ],
  },
+ {
+  "slug": "gifts-for-gamers", "kind": "gift", "icon": "controller", "tint": "tint-gift-gamer", "short": "Gifts for Gamers",
+  "title": "The 10 Best Gifts for Gamers in 2026",
+  "card": "Consoles, handhelds, headsets and fun extras for every kind of player.",
+  "lead": "The best gift for a gamer in 2026 is the Nintendo Switch 2, which plays on a TV or on the go. See 10 expert-backed gamer gifts, from $17 add-ons to VR.",
+  "price_notes": GIFT_NOTES,
+  "filters": [("consoles","Consoles & VR"),("pc","PC gamers"),("accessories","Controllers & headsets"),("retro","Retro & fun")],
+  "products": [
+   dict(name="Nintendo Switch 2 Mario Kart World Bundle", badge="Best overall", price="$$$$", f=["consoles"],
+        tags=["Console","TV or handheld"],
+        summary="Nintendo's newest console is the gift that shows up in nearly every 2026 gamer guide: it plays docked on a TV or as a handheld, and Tom's Guide highlights this bundle, which adds Mario Kart World and three months of Nintendo Switch Online.",
+        pros=["Plays on the TV or on the go","Bundle includes Mario Kart World and 3 months of Switch Online","Joy-Con controllers detach for two-player games"],
+        cons=["No OLED screen","A big-ticket gift (Tom's Guide listed the bundle at $549)"]),
+   dict(name="Steam Deck OLED", badge="Best for PC gamers", price="$$$$", f=["consoles","pc"],
+        tags=["Handheld gaming PC","OLED screen"],
+        summary="Valve's handheld PC lets a PC gamer take their Steam library to the couch or on a trip. The OLED model has a better screen and longer battery life than the original, and Engadget notes that more than 22,000 Steam games are rated Verified or Playable on it.",
+        pros=["Plays the Steam games they already own","Better screen and battery than the LCD model","Huge library of verified games"],
+        cons=["Demanding games drain the battery quickly","Valve sells it on Steam — check the seller and condition on Amazon"]),
+   dict(name="Meta Quest 3S", badge="Best VR gift", price="$$$$", f=["consoles"],
+        tags=["Standalone VR","Mixed reality"],
+        summary="Tom's Guide calls the Quest 3S one of the best VR headsets for gamers, with many Quest 3 features for less money. It runs on its own with no PC or console, uses the same Snapdragon XR2 Gen 2 chip as the Quest 3, and has full-color passthrough for mixed reality.",
+        pros=["No PC or console needed","Same chip and 8GB RAM as the pricier Quest 3","128GB or 256GB storage"],
+        cons=["Lower-resolution screens and narrower view than the Quest 3","Battery lasts up to about 2.5 hours"]),
+   dict(name="Turtle Beach Stealth Pro II", badge="Best gaming headset", price="$$$", f=["accessories","pc"],
+        tags=["Wireless headset","Noise cancelling"],
+        summary="Game Informer's headset pick for 2026: a wireless gaming headset that switches between devices, with active noise cancellation, Dolby Atmos and large 60mm drivers.",
+        pros=["Switches between devices","Active noise cancellation","Dolby Atmos and 60mm drivers"],
+        cons=["About $300","Xbox and PlayStation/PC versions are sold separately — pick the right one"]),
+   dict(name="PlayStation DualSense Edge", badge="Best pro controller", price="$$$", f=["accessories"],
+        tags=["PS5 controller","Back buttons"],
+        summary="Sony's pro controller for PS5 adds mappable back buttons, adjustable trigger lengths and swappable stick caps and modules, and saves quick-swap control profiles. Which? suggests the Xbox Elite Series 2 instead for Xbox players.",
+        pros=["Two styles of remappable back buttons","Adjustable triggers and swappable sticks","Carrying case and locking braided cable included"],
+        cons=["About $199","Replacement stick modules cost extra"]),
+   dict(name="Logitech G502 HERO", badge="Best gaming mouse", price="$$", f=["pc","accessories"],
+        tags=["Wired gaming mouse","11 programmable buttons"],
+        summary="A Which? members' favorite, Logitech's wired G502 HERO uses the HERO 25K sensor (up to 25,600 DPI) and has 11 programmable buttons plus repositionable weights, so a PC gamer can tune how it feels.",
+        pros=["Precise HERO 25K sensor","11 programmable buttons","Adjustable weights"],
+        cons=["Wired — the wireless G502 Lightspeed costs more"]),
+   dict(name="LEGO Game Boy", badge="Best for retro fans", price="$$", f=["retro"],
+        tags=["LEGO set for adults","421 pieces"],
+        summary="A near life-size brick replica of the original Game Boy, made as a build for adults, with swappable Game Paks for The Legend of Zelda: Link's Awakening and Super Mario Land and a display stand. GamesRadar includes it in its 2026 gamer gifts.",
+        pros=["Fun, nostalgic build","Swappable cartridges with lenticular screens","Comes with a display stand"],
+        cons=["Display piece only — no lights, sound or play"]),
+   dict(name="Evercade Nexus", badge="Best retro handheld", price="$$$", f=["consoles","retro"],
+        tags=["Retro handheld","Physical cartridges"],
+        summary="A retro handheld that plays officially licensed game cartridges (with manuals) and comes with Banjo-Kazooie and Banjo-Tooie. It has a 5.89-inch screen and dual analog sticks, works with existing Evercade cartridges, and two units can share one cartridge for local multiplayer.",
+        pros=["Comes with Banjo-Kazooie and Banjo-Tooie","Largest Evercade screen yet","Plays the existing Evercade cartridge library"],
+        cons=["Extra games are cartridges sold separately"]),
+   dict(name="KontrolFreek FPS Freek Galaxy", badge="Best stocking stuffer", price="$", f=["accessories"],
+        tags=["Thumbstick grips","Under $20"],
+        summary="A pair of clip-on thumbstick toppers — a mid-rise for the left stick and a high-rise for the right — with grippy rubber for shooters. They fit PS5/PS4 and Xbox controllers, and GamesRadar lists KontrolFreek sticks among its under-$20 gifts.",
+        pros=["Cheap, useful add-on","Extra height and grip for aiming","Versions for PlayStation and Xbox"],
+        cons=["Buy the version for their console"]),
+   dict(name="The Elder Scrolls: The Official Cookbook", badge="Best for gamers who cook", price="$", f=["retro"],
+        tags=["Cookbook","Hardcover"],
+        summary="A 192-page hardcover with more than 60 recipes inspired by the Elder Scrolls games — sweetrolls included — and a fun under-$50 pick from GamesRadar's gamer gift guide.",
+        pros=["Great for Skyrim fans","60+ recipes","Usually well under $50"],
+        cons=["Best for fans of the series"]),
+  ],
+  "tips": [
+   ("Check which console they own","Controllers, headsets and games are often platform-specific: the DualSense Edge is for PS5, the Turtle Beach Stealth Pro II comes in Xbox and PlayStation/PC versions, and KontrolFreek sticks come in PlayStation and Xbox versions."),
+   ("Match the gift to how they play","PC gamers get the most from a Steam Deck OLED or a Logitech G502 HERO; couch and family players from a Nintendo Switch 2; anyone curious about VR from a Meta Quest 3S, which needs no PC or console."),
+   ("For the gamer who has everything, go retro or collectible","Nostalgic gifts like the LEGO Game Boy (421 pieces) or the Evercade Nexus with Banjo-Kazooie are things most players don't buy for themselves."),
+   ("Under $50, upgrade what they already use","Thumbstick grips such as the KontrolFreek FPS Freek Galaxy (about $17) or a game-themed cookbook make easy stocking stuffers; a Steam, PlayStation, Xbox or Nintendo gift card is the safe choice if you're unsure."),
+  ],
+  "faq": [
+   ("What is the best gift for a gamer in 2026?","The Nintendo Switch 2 is the best all-round gamer gift in 2026: it plays on a TV or as a handheld, and Tom's Guide highlights the Mario Kart World Bundle, which includes the game and three months of Nintendo Switch Online."),
+   ("What do you get a gamer who has everything?","Get something they wouldn't buy themselves, like the LEGO Game Boy display set, the Evercade Nexus retro handheld or a pro controller such as the DualSense Edge. A gift card for their platform is the fallback when you're not sure what they own."),
+   ("What are good gifts for gamers under $50?","The KontrolFreek FPS Freek Galaxy thumbsticks (about $17) and The Elder Scrolls: The Official Cookbook are both under $50, and the Logitech G502 HERO mouse is often on sale near $40. Steam and console gift cards come in any amount."),
+   ("What should I get a PC gamer?","A Steam Deck OLED lets a PC gamer play their Steam library anywhere, with more than 22,000 games rated Verified or Playable. For their desk, the Logitech G502 HERO mouse (11 programmable buttons) is a Which? members' favorite."),
+   ("Is the Meta Quest 3S a good gift?","Yes, for anyone curious about VR: Tom's Guide calls it one of the best VR headsets for gamers, and it works on its own with no PC or console. The trade-offs versus the Quest 3 are lower-resolution screens and a narrower field of view."),
+   ("Is the PS5 DualSense Edge worth it?","It's worth it for serious PS5 players who want back buttons and adjustable triggers. It costs about $199 and includes swappable stick caps, two kinds of back buttons, a carrying case and a locking braided cable."),
+  ],
+  "sources": [
+   ("Game Informer — Holiday Gift Guide 2026 (November 2026)","https://gameinformer.com/gear/2026/11/03/holiday-gift-guide-2026"),
+   ("Tom's Guide — The best tech gifts for everyone on your list (October 2026)","https://www.tomsguide.com/tech/the-best-tech-gifts-for-everyone-on-your-list-and-every-budget"),
+   ("GamesRadar+ — The best gifts for gamers in 2026 (October 2026)","https://www.gamesradar.com/hardware/the-best-gifts-for-gamers-in-2026/"),
+   ("Which? — Best gifts for gamers (September 2026)","https://www.which.co.uk/reviews/gifts/article/best-gifts-for-gamers-aGmSm1f7RAgF"),
+   ("Engadget — The best gifts for gamers","https://www.engadget.com/best-gaming-gifts-for-gamers-150008483.html"),
+   ("Tom's Hardware — Meta Quest 3S review","https://tomshardware.com/virtual-reality/meta-quest-3s-review"),
+  ],
+ },
 ]
 
 SOON = []
@@ -1535,18 +1619,19 @@ RELATED = {
  "best-wireless-earbuds": ["best-tvs","best-projectors","best-luggage"],
  "best-air-fryers": ["best-cookware-sets","best-espresso-machines","best-robot-vacuums"],
  "best-robot-vacuums": ["best-air-fryers","best-mattresses","best-tvs"],
- "best-standing-desks": ["best-office-chairs","best-wireless-earbuds","best-projectors"],
+ "best-standing-desks": ["best-office-chairs","gifts-for-gamers","best-wireless-earbuds"],
  "best-mattresses": ["best-robot-vacuums","best-office-chairs","best-standing-desks"],
  "best-hair-dryers": ["best-electric-shavers","best-luggage","best-mattresses"],
- "best-office-chairs": ["best-standing-desks","best-wireless-earbuds","best-mattresses"],
+ "best-office-chairs": ["best-standing-desks","gifts-for-gamers","best-wireless-earbuds"],
  "best-luggage": ["best-wireless-earbuds","best-electric-shavers","best-hair-dryers"],
  "best-cookware-sets": ["best-air-fryers","best-espresso-machines","best-mattresses"],
- "gifts-for-him": ["gifts-for-dad","gifts-under-50","best-wireless-earbuds"],
+ "gifts-for-him": ["gifts-for-dad","gifts-for-gamers","gifts-under-50"],
  "gifts-for-her": ["gifts-for-mom","best-hair-dryers","best-mattresses"],
  "gifts-for-dad": ["gifts-for-him","gifts-for-coffee-lovers","best-espresso-machines"],
  "gifts-for-mom": ["gifts-for-her","gifts-under-50","best-cookware-sets"],
  "gifts-under-50": ["gifts-for-him","gifts-for-her","gifts-for-coffee-lovers"],
  "gifts-for-coffee-lovers": ["best-espresso-machines","gifts-under-50","gifts-for-dad"],
+ "gifts-for-gamers": ["gifts-for-him","gifts-under-50","best-office-chairs"],
 }
 BY_SLUG = {c["slug"]: c for c in CATS}
 
@@ -1666,7 +1751,7 @@ NOUN = {"best-tvs":"TV","best-projectors":"projector","best-electric-shavers":"e
  "best-wireless-earbuds":"wireless earbuds","best-air-fryers":"air fryer","best-robot-vacuums":"robot vacuum","best-standing-desks":"standing desk",
  "best-mattresses":"mattress","best-hair-dryers":"hair dryer","best-office-chairs":"office chair","best-luggage":"carry-on","best-cookware-sets":"cookware set"}
 PLURAL = {"best-wireless-earbuds"}
-WHO = {"gifts-under-50":"anyone on your list","gifts-for-coffee-lovers":"coffee lovers","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
+WHO = {"gifts-under-50":"anyone on your list","gifts-for-gamers":"gamers","gifts-for-coffee-lovers":"coffee lovers","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
 QOVERRIDE = {
  ("best-tvs","Best OLED deal"):"What's the best OLED TV deal?",
  ("best-tvs","Best big screen on a budget"):"What's the best big-screen TV on a budget?",
