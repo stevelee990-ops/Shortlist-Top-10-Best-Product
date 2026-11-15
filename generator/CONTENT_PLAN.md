@@ -23,7 +23,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Best soundbars
 - [x] 2026-11-15 — Best gaming chairs
 - [x] 2026-11-15 — Best air purifiers
-- [ ] Best electric toothbrushes (gift season, high buying intent)
+- [x] 2026-11-15 — Best electric toothbrushes (gift season, high buying intent)
 - [ ] Best massage guns
 - [ ] Best robot mops / wet-dry vacuums (skip if too close to Best Cordless Vacuums)
 - [ ] Best electric blankets & heated throws (seasonal, winter)
