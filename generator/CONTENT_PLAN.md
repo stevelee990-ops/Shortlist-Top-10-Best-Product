@@ -15,7 +15,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Best blenders — Kitchen
 - [x] 2026-11-15 — Best stand mixers — Kitchen
 - [x] 2026-11-15 — Best kitchen knife sets — Kitchen
-- [ ] Best cordless stick vacuums
+- [x] 2026-11-15 — Best cordless stick vacuums
 - [x] 2026-11-15 — Best space heaters (seasonal, winter)
 - [x] 2026-11-15 — Best humidifiers (seasonal, winter)
 - [ ] Best over-ear headphones

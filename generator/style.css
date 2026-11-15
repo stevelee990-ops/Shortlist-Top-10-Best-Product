@@ -165,7 +165,7 @@ section { padding: 48px 0; }
 .tint-gift-50 { background: #5b3a8c; } .tint-gift-coffee { background: #6b4226; }
 .tint-gift-gamer { background: #1d5c63; } .tint-gift-stocking { background: #9b2335; }
 .tint-tv, .tint-projector, .tint-shaver, .tint-espresso, .tint-earbuds, .tint-airfryer, .tint-vacuum,
-.tint-desk, .tint-mattress, .tint-hairdryer, .tint-chair, .tint-luggage, .tint-cookware, .tint-heater, .tint-humidifier, .tint-coffeemaker, .tint-blender, .tint-mixer, .tint-knife, .tint-soon { background: var(--surface-2); color: var(--ink); }
+.tint-desk, .tint-mattress, .tint-hairdryer, .tint-chair, .tint-luggage, .tint-cookware, .tint-heater, .tint-humidifier, .tint-coffeemaker, .tint-blender, .tint-mixer, .tint-knife, .tint-stickvac, .tint-soon { background: var(--surface-2); color: var(--ink); }
 .gift-ico { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,.18); display: grid; place-items: center; }
 .gift-ico svg { width: 28px; height: 28px; }
 
