@@ -8,7 +8,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [ ] Black Friday deals on our picks — build by Nov 20. Only list deals verified on the day from reputable deal roundups; say "prices change fast"; update daily Nov 24–Dec 1, remove expired deals. Build it on the Nov 18–20 run so the deals are fresh (early-deal roundups are live by then)
 - [x] 2026-11-14 — Gifts for coffee lovers (gift guide)
 - [x] 2026-11-15 — Gifts for gamers (adult audience)
-- [ ] Stocking stuffers for adults (gift guide)
+- [x] 2026-11-15 — Stocking stuffers for adults (gift guide)
 
 ## New product lists
 - [ ] Best coffee makers (drip) — Kitchen
