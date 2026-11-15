@@ -11,7 +11,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Stocking stuffers for adults (gift guide)
 
 ## New product lists
-- [ ] Best coffee makers (drip) — Kitchen
+- [x] 2026-11-15 — Best coffee makers (drip) — Kitchen
 - [ ] Best blenders — Kitchen
 - [ ] Best stand mixers — Kitchen
 - [ ] Best kitchen knife sets — Kitchen
