@@ -1,6 +1,6 @@
 # The Shortlist
 
-> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated November 16, 2026.
+> Short, independent top-10 buying guides and holiday gift guides. Each guide summarizes the consensus of trusted expert reviewers, links its sources, and is updated regularly. Last updated November 17, 2026.
 
 ## Buying guides
 
@@ -31,6 +31,7 @@
 - [The 10 Best Air Purifiers of 2026](https://the-shortlist-top10best.netlify.app/best-air-purifiers.html): The best air purifier for most people in 2026 is the Winix 5530. Best smart: the Levoit Core 400S. Best for smoke and odors: the Blueair Blue Signature. Best under $100: the Oneisall Pet Air Purifier.
 - [The 10 Best Electric Toothbrushes of 2026](https://the-shortlist-top10best.netlify.app/best-electric-toothbrushes.html): The best electric toothbrush for most people in 2026 is the Philips Sonicare 4100. Best for sensitive teeth: the Philips Sonicare 7100. Best eco-friendly: the Suri 2.0. Best value: the Suri Core 1.0.
 - [The 10 Best Massage Guns of 2026](https://the-shortlist-top10best.netlify.app/best-massage-guns.html): The best massage gun for most people in 2026 is the Theragun Prime (6th Gen). Best for travel: the Hypervolt Go 2. Best Theragun alternative: the Bob and Brad D6 Pro. Best under $100: the Bob and Brad Q2 Mini.
+- [The 10 Best Electric Blankets & Heated Throws of 2026](https://the-shortlist-top10best.netlify.app/best-electric-blankets.html): The best electric blanket for most people in 2026 is the Beautyrest Microfleece Heated Blanket. Best heated throw: the Bedsure Heated Throw Blanket. Most comfortable: the Shavel Thermee Micro Flannel Heated Blanket. Best budget: the Tefici Electric Throw Blanket.
 
 ## Gift guides
 

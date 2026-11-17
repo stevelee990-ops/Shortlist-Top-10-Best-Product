@@ -26,7 +26,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-15 — Best electric toothbrushes (gift season, high buying intent)
 - [x] 2026-11-16 — Best massage guns
 - [ ] Best robot mops / wet-dry vacuums (skip if too close to Best Cordless Vacuums)
-- [ ] Best electric blankets & heated throws (seasonal, winter)
+- [x] 2026-11-17 — Best electric blankets & heated throws (seasonal, winter)
 - [ ] Best dehumidifiers
 - [ ] Best Dutch ovens — Kitchen
 - [ ] Best portable Bluetooth speakers
