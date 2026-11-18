@@ -8,8 +8,8 @@ STYLE = os.path.join(HERE, "style.css")              # edit styles here
 SITE = "The Shortlist"
 DOMAIN = "https://the-shortlist-top10best.netlify.app"   # change after you buy a domain
 UPDATED = "November 2026"
-UPDATED_ISO = "2026-11-17"
-UPDATED_LONG = "November 17, 2026"
+UPDATED_ISO = "2026-11-18"
+UPDATED_LONG = "November 18, 2026"
 
 ICONS = {
  "blanket": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h40a8 8 0 0 1 8 8v26a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4z"/><path d="M8 34h48" stroke-width="2.5" opacity=".7"/><path d="M16 18c3-3 6 3 9 0s6 3 9 0 6 3 9 0" stroke-width="2.5" opacity=".7"/><path d="M14 48v4M14 52h-6"/><rect x="2" y="40" width="10" height="8" rx="2" stroke-width="2.5"/></svg>',
@@ -33,6 +33,7 @@ ICONS = {
  "luggage": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="18" y="12" width="28" height="36" rx="5"/><path d="M26 12V6h12v6M26 20v20M38 20v20M24 52h0M40 52h0"/></svg>',
  "cookware": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M8 26h40v14a10 10 0 0 1-10 10H18A10 10 0 0 1 8 40z"/><path d="M48 30h10M20 26v-4a8 8 0 0 1 16 0v4M28 14v-4"/></svg>',
  "airfryer": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="12" y="4" width="40" height="48" rx="10"/><path d="M12 26h40M26 36h12"/><circle cx="32" cy="15" r="4"/></svg>',
+ "pricetag": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 4h22a4 4 0 0 1 4 4v22L30 56 4 30z"/><circle cx="45" cy="15" r="4"/><path d="M22 30l10 10M18 36l8 8" stroke-width="2.5" opacity=".7"/></svg>',
  "stocking": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="3" width="24" height="9" rx="2"/><path d="M24 12v22L12 42c-5 4-2 12 5 11l10-2c6-1 10-5 13-10l4-7V12"/><path d="M26 22h16" stroke-width="2" opacity=".7"/></svg>',
  "heater": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="8" width="44" height="38" rx="6"/><path d="M20 16v22M28 16v22M36 16v22M44 16v22" stroke-width="2.5" opacity=".7"/><path d="M16 46v4M48 46v4"/></svg>',
  "humidifier": '<svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 22h28l4 26a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4z"/><path d="M24 22v-4h16v4"/><circle cx="32" cy="38" r="5"/><path d="M26 12c0-4 4-4 4-8M34 12c0-4 4-4 4-8" stroke-width="2.5" opacity=".7"/></svg>',
@@ -2335,6 +2336,105 @@ CATS = [
   ],
  },
  {
+  "slug": "black-friday-deals", "kind": "gift", "deals": True, "icon": "pricetag", "tint": "tint-gift-deals", "short": "Black Friday Deals",
+  "title": "The 10 Best Black Friday Deals of 2026",
+  "card": "Verified Black Friday deals on top-rated picks from our lists: headphones, AirPods, an OLED TV, smartwatches and more.",
+  "lead": "The best Black Friday deal on our picks right now is the Sony WH-1000XM6, our #1 headphones, at $378 on Amazon (was $459.99). See 10 verified deals.",
+  "price_notes": GIFT_NOTES,
+  "no_price_filters": True,
+  "filters": [("under200","Under $200"),("save100","$100+ off"),("audio","Headphones & earbuds"),("watches","Smartwatches"),("apple","Apple"),("home","TV & home")],
+  "products": [
+   dict(name="Sony WH-1000XM6", badge="Best headphones deal", price="$$$$", f=["audio"],
+        deal=dict(now="$378", was="$459.99", where="Amazon", note="About $82 off.", seen="Nov 18, 2026", src="TechRadar"),
+        tags=["Noise cancelling","Over-ear, foldable"],
+        summary="Our #1 over-ear headphones, named best overall by NBC Select, TechRadar and Engadget for their noise cancelling and detailed sound. TechRadar's Amazon Black Friday roundup listed this price on November 18, and Forbes Vetted tracked the same $81.99 cut earlier in the month.",
+        pros=["Top-rated noise cancelling and sound","Folds flat; about 30 hours of battery with ANC on","About 18% off the usual price"],
+        cons=["Still a premium price","No water resistance (TechRadar)"]),
+   dict(name="Apple AirPods Pro 3", badge="Best earbuds deal", price="$$$", f=["audio","apple","under200"],
+        deal=dict(now="$179", was="$249", where="Amazon", note="$70 off; Target and Best Buy listed $179.99, per NBC Select.", seen="Nov 18, 2026", src="NBC Select and TechRadar"),
+        tags=["Noise cancelling","Heart-rate sensing, IP57"],
+        summary="Tom's Guide's top earbuds overall and our pick for iPhone owners, with stronger noise cancelling, a natural transparency mode and heart-rate sensing. NBC Select, TechRadar and MacRumors all reported this $179 Amazon price in the days before Amazon's Black Friday Week.",
+        pros=["Strong noise cancelling and transparency mode","Heart-rate sensing and IP57 water resistance","28% off"],
+        cons=["Best with an iPhone","Apple products have an earlier holiday return deadline (Jan 15, 2027)"]),
+   dict(name="LG C6 OLED", badge="Best TV deal", price="$$$$", f=["home","save100"],
+        deal=dict(now="$1,399.99 (65-inch)", was="$2,699.99", where="Amazon", note="The deal is for the 65-inch size; other sizes are priced differently.", seen="Nov 18, 2026", src="TechRadar"),
+        tags=["OLED","65-inch deal","Gaming"],
+        summary="Our #1 TV: the C6 tops several major 2026 roundups by pairing OLED's perfect blacks with more brightness than earlier C-series sets. Both of TechRadar's November 18 Black Friday roundups highlighted the 65-inch model at this Amazon price.",
+        pros=["Deep contrast and rich, accurate color","Excellent for console and PC gaming","$1,300 off the listed price"],
+        cons=["Only the 65-inch size is at this price","Built-in speakers are just okay; budget for a soundbar"]),
+   dict(name="Apple Watch Series 12", badge="Best smartwatch deal", price="$$$$", f=["watches","apple"],
+        deal=dict(now="$329", was="$399", where="Amazon", note="42mm GPS model; $70 off.", seen="Nov 18, 2026", src="Tom's Guide and TechRadar"),
+        tags=["42mm GPS","iPhone only"],
+        summary="Our best smartwatch overall, the top pick at Engadget and TechRadar, with health features like a free daily Readiness score, hypertension alerts and sleep apnea detection. Tom's Guide and TechRadar both listed the 42mm GPS model at $329 on Amazon on November 18.",
+        pros=["Best smartwatch for iPhone owners","Advanced health tracking with no subscription","$70 off"],
+        cons=["Works only with iPhone","About 24 hours of battery, so it needs daily charging"]),
+   dict(name="Bose QuietComfort Ultra Headphones (2nd Gen)", badge="Best noise-cancelling deal", price="$$$$", f=["audio"],
+        deal=dict(now="$359", was="$449", where="Amazon", note="$90 off.", seen="Nov 18, 2026", src="TechRadar"),
+        tags=["Noise cancelling","30 hr battery"],
+        summary="Our pick for the best noise cancelling; NBC Select, TechRadar and Engadget all praise how well it handles sudden noise. It runs about 30 hours per charge, plays lossless audio over USB-C and folds into its case. TechRadar's Amazon Black Friday roundup listed it at $359 on November 18.",
+        pros=["Best-in-class noise cancelling","Very comfortable fit","$90 off"],
+        cons=["Touch controls can be finicky (NBC Select)","Fewer EQ options than the Sony"]),
+   dict(name="Google Pixel Watch 5", badge="Best Android watch deal", price="$$$", f=["watches","save100"],
+        deal=dict(now="$299.99", was="$399.99", where="Amazon", note="$100 off, which TechRadar calls its lowest price yet. Check the size before you buy.", seen="Nov 18, 2026", src="TechRadar"),
+        tags=["For Android","Loss of Pulse Detection"],
+        summary="Engadget's best smartwatch for Android, with Loss of Pulse Detection, more accurate GPS, Gemini voice help and charging from 5% to full in under an hour. TechRadar reported this $100 Amazon discount on November 18.",
+        pros=["Top safety and sleep features","Works with any Android phone","$100 off"],
+        cons=["Not for iPhone users","Breathing Emergency Detection isn't available in the U.S. yet"]),
+   dict(name="Apple AirPods Max 2", badge="Best premium headphones deal", price="$$$$", f=["audio","apple","save100"],
+        deal=dict(now="$449", was="$549", where="Amazon", note="$100 off; Tom's Guide listed the Starlight color.", seen="Nov 16–18, 2026", src="MacRumors and Tom's Guide"),
+        tags=["Noise cancelling","For iPhone"],
+        summary="NBC Select's best Apple headphones and TechRadar's pick for iPhone owners, with great sound, strong noise cancelling and easy-to-replace ear cushions. MacRumors (November 16) and Tom's Guide (November 18) both listed them at $449 on Amazon.",
+        pros=["Great sound and noise cancelling","Seamless with iPhone, iPad and Mac","$100 off"],
+        cons=["Heavy, at about 13.6 oz","20-hour battery; soft cover instead of a hard case"]),
+   dict(name="Apple Watch SE 3", badge="Best budget smartwatch deal", price="$$$", f=["watches","apple","under200"],
+        deal=dict(now="$199", was="$249", where="Amazon", note="40mm GPS model; $50 off.", seen="Nov 18, 2026", src="Tom's Guide and TechRadar"),
+        tags=["40mm GPS","Always-on display"],
+        summary="NBC Select's best budget smartwatch for iPhone, now with an always-on display, the S10 chip, a Sleep Score and fast charging. Tom's Guide and TechRadar both listed the 40mm GPS model at $199 on Amazon on November 18.",
+        pros=["Best-value Apple Watch","Always-on display and fast performance","$50 off"],
+        cons=["No ECG, blood oxygen or hypertension alerts","Works only with iPhone"]),
+   dict(name="Keurig K-Duo", badge="Best kitchen deal", price="$$", f=["home","under200"],
+        deal=dict(now="$129.99", was="$219.99", where="Amazon", note="$90 off.", seen="Nov 18, 2026", src="TechRadar"),
+        tags=["12-cup carafe + K-Cups","Programmable"],
+        summary="HGTV's most versatile coffee maker and our best pod-and-carafe combo: one side brews a 12-cup carafe of ground coffee, the other brews single K-Cup pods, and both share one removable water tank. TechRadar's Amazon Black Friday roundup listed it at $129.99 on November 18.",
+        pros=["Full pots and single pods in one machine","Programmable brewing and adjustable strength","About 41% off"],
+        cons=["Carafe isn't dishwasher-safe","Reusable filters are sold separately"]),
+   dict(name="Nothing Headphone (a)", badge="Best deal under $150", price="$$", f=["audio","under200"],
+        deal=dict(now="$109", was="$199", where="Amazon", note="$90 off; Target and Best Buy also listed $109, per NBC Select.", seen="Nov 18, 2026", src="NBC Select"),
+        tags=["About 75 hr with ANC","Noise cancelling"],
+        summary="TechRadar's pick for battery life: about 75 hours with noise cancelling on and up to 135 hours with it off, far more than premium pairs. TechRadar also rates its sound and app highly. NBC Select reported this 45%-off price at Amazon on November 18.",
+        pros=["Huge battery life","Strong sound and an excellent app","45% off"],
+        cons=["Heavy, boxy design","No auto-pause and no case (TechRadar)"]),
+  ],
+  "tips": [
+   ("Check the price history, not just the percent off","Amazon product pages can show up to 365 days of price history, according to Amazon. dealnews warns that percent-off labels are sometimes measured against an inflated list price, so a real deal should beat recent prices too."),
+   ("Match the exact size and model","Deal prices usually apply to one version: the LG C6 price here is for the 65-inch set, the Apple Watch Series 12 deal is the 42mm GPS model and the Apple Watch SE 3 deal is the 40mm GPS model. Other sizes, colors and cellular versions cost more."),
+   ("Know Amazon's Black Friday dates","Amazon's Black Friday Week runs from 12:01 a.m. PT on November 19 through Cyber Monday, November 30, 2026. Several prices on this page, like AirPods Pro 3 at $179, were already live before it started."),
+   ("Buy gifts early and use the holiday return window","Amazon items bought November 1 to December 31, 2026 can be returned until January 31, 2027. Apple-brand products must be returned by January 15, 2027."),
+   ("Prioritize electronics; wait on toys and fitness gear","dealnews names high-ticket electronics and Apple products like AirPods among the strongest Black Friday categories, while toys can get cheaper after the holidays and fitness equipment deals peak in January and February."),
+  ],
+  "faq": [
+   ("When is Black Friday 2026?","Black Friday 2026 is Friday, November 27. Amazon's Black Friday Week starts at 12:01 a.m. PT on Thursday, November 19 and runs through Cyber Monday, November 30, 2026."),
+   ("What are the best Black Friday deals right now?","On top-rated products, the best deals we found on November 18 are the Sony WH-1000XM6 at $378 (was $459.99), Apple AirPods Pro 3 at $179 (was $249) and the 65-inch LG C6 OLED at $1,399.99 (was $2,699.99), all on Amazon. Prices change fast, so check before you buy."),
+   ("Do you need Prime for Amazon Black Friday deals?","No. You don't need a Prime membership to shop Amazon's Black Friday sale, according to Yahoo Shopping. Prime costs $14.99 a month or $139 a year and adds faster delivery, per Amazon."),
+   ("Are early Black Friday deals worth it?","Often, yes, for electronics: dealnews names high-ticket electronics and Apple products such as AirPods among the strongest Black Friday categories. But a sale isn't always the year's lowest price, so compare with Amazon's price history before you buy."),
+   ("Is Cyber Monday better than Black Friday?","Not necessarily. dealnews says Cyber Monday and the days after it can be as good as or better than Black Friday, especially online, so missing a Black Friday price doesn't mean the deal is gone for good."),
+   ("Can you return Amazon Black Friday purchases after Christmas?","Yes. Most items bought on Amazon between November 1 and December 31, 2026 can be returned until January 31, 2027. Apple-brand products have an earlier deadline of January 15, 2027."),
+  ],
+  "sources": [
+   ("TechRadar — Best Amazon Black Friday deals (live, November 18, 2026)","https://www.techradar.com/live/news/amazon-black-friday-deals-2026-november-18"),
+   ("TechRadar — Black Friday deals 2026: early sales (live, November 18, 2026)","https://www.techradar.com/live/news/early-black-friday-sales-us-18-november"),
+   ("NBC Select — Early Black Friday deals (updated November 18, 2026)","https://www.nbcnews.com/select/shopping/best-early-black-friday-deals-2026-rcna609512"),
+   ("Tom's Guide — Black Friday smartwatch deals (November 18, 2026)","https://www.tomsguide.com/wellness/smartwatches/11-black-friday-smartwatch-deals-worth-shopping-now-save-up-to-44-percent-on-my-favorite-garmin-fitbit-and-apple-watch-models"),
+   ("Tom's Guide — Apple Black Friday deals (live, November 18, 2026)","https://www.tomsguide.com/live/news/best-apple-black-friday-deals-wednesday-november-18-2026"),
+   ("MacRumors — Early AirPods Black Friday deals (November 16, 2026)","https://www.macrumors.com/2026/11/16/early-airpods-black-friday-deals/"),
+   ("Forbes Vetted — Best Amazon Black Friday deals (November 12, 2026)","https://www.forbes.com/sites/forbes-personal-shopper/2026/11/12/best-amazon-black-friday-deals/"),
+   ("About Amazon — When is Amazon Black Friday 2026","https://www.aboutamazon.com/news/retail/when-is-amazon-black-friday-faq"),
+   ("Yahoo Shopping — Amazon's Black Friday dates (November 14, 2026)","https://shopping.yahoo.com/deals/articles/amazon-black-friday-dates-best-150745140.html"),
+   ("Value Added Resource — Amazon's 2026 holiday return window","https://www.valueaddedresource.net/amazon-2026-holiday-returns/"),
+   ("dealnews — The facts behind Black Friday myths","https://dealnews.com/features/The-Facts-Behind-Black-Friday-Myths/"),
+  ],
+ },
+ {
   "slug": "gifts-for-him", "kind": "gift", "icon": "gift", "tint": "tint-gift-him", "short": "Gifts for Him",
   "title": "The 10 Best Gifts for Him in 2026 (Husband, Boyfriend & Men)",
   "card": "Gifts he'll actually use — for husbands, boyfriends and every guy on your list.",
@@ -2981,9 +3081,11 @@ for c in LISTS:
     for n, p in enumerate(c["products"], 1):
         LIST_RANKS.setdefault(p["name"], []).append((c, n))
 IN_GIFTS = {}   # product name -> [gift cats]
+IN_DEALS = {}   # product name -> (deals cat, rank) for deal pages
 for c in GIFTS:
-    for p in c["products"]:
-        IN_GIFTS.setdefault(p["name"], []).append(c)
+    for n, p in enumerate(c["products"], 1):
+        if c.get("deals"): IN_DEALS.setdefault(p["name"], (c, n))
+        else: IN_GIFTS.setdefault(p["name"], []).append(c)
 
 RELATED = {
  "best-tvs": ["best-soundbars","best-projectors","best-wireless-earbuds"],
@@ -3006,8 +3108,8 @@ RELATED = {
  "best-stand-mixers": ["best-blenders","best-cookware-sets","best-knife-sets"],
  "best-knife-sets": ["best-cookware-sets","best-stand-mixers","best-air-fryers"],
  "best-cordless-vacuums": ["best-robot-vacuums","best-humidifiers","best-space-heaters"],
- "best-over-ear-headphones": ["best-wireless-earbuds","best-smartwatches","best-soundbars"],
- "best-smartwatches": ["best-wireless-earbuds","best-massage-guns","gifts-for-him"],
+ "best-over-ear-headphones": ["best-wireless-earbuds","best-smartwatches","black-friday-deals"],
+ "best-smartwatches": ["best-wireless-earbuds","best-massage-guns","black-friday-deals"],
  "best-soundbars": ["best-tvs","best-projectors","best-over-ear-headphones"],
  "best-gaming-chairs": ["best-office-chairs","gifts-for-gamers","best-standing-desks"],
  "best-air-purifiers": ["best-humidifiers","best-cordless-vacuums","best-robot-vacuums"],
@@ -3018,10 +3120,11 @@ RELATED = {
  "gifts-for-her": ["gifts-for-mom","stocking-stuffers-for-adults","best-hair-dryers"],
  "gifts-for-dad": ["gifts-for-him","gifts-for-coffee-lovers","best-espresso-machines"],
  "gifts-for-mom": ["gifts-for-her","best-electric-blankets","best-stand-mixers"],
- "gifts-under-50": ["stocking-stuffers-for-adults","gifts-for-him","gifts-for-her"],
+ "gifts-under-50": ["black-friday-deals","stocking-stuffers-for-adults","gifts-for-him"],
  "gifts-for-coffee-lovers": ["best-espresso-machines","best-coffee-makers","gifts-under-50"],
  "gifts-for-gamers": ["best-gaming-chairs","gifts-for-him","gifts-under-50"],
  "stocking-stuffers-for-adults": ["gifts-under-50","gifts-for-her","best-massage-guns"],
+ "black-friday-deals": ["best-over-ear-headphones","best-smartwatches","best-tvs"],
 }
 BY_SLUG = {c["slug"]: c for c in CATS}
 
@@ -3141,8 +3244,8 @@ NOUN = {"best-electric-blankets":"electric blanket","best-tvs":"TV","best-projec
  "best-wireless-earbuds":"wireless earbuds","best-air-fryers":"air fryer","best-robot-vacuums":"robot vacuum","best-standing-desks":"standing desk",
  "best-mattresses":"mattress","best-hair-dryers":"hair dryer","best-office-chairs":"office chair","best-luggage":"carry-on","best-cookware-sets":"cookware set","best-space-heaters":"space heater","best-humidifiers":"humidifier","best-coffee-makers":"coffee maker","best-blenders":"blender","best-stand-mixers":"stand mixer","best-knife-sets":"knife set","best-cordless-vacuums":"cordless vacuum","best-over-ear-headphones":"over-ear headphones","best-smartwatches":"smartwatch","best-soundbars":"soundbar","best-gaming-chairs":"gaming chair","best-air-purifiers":"air purifier","best-electric-toothbrushes":"electric toothbrush","best-massage-guns":"massage gun"}
 PLURAL = {"best-wireless-earbuds","best-over-ear-headphones"}
-WHO = {"stocking-stuffers-for-adults":"adults","gifts-under-50":"anyone on your list","gifts-for-gamers":"gamers","gifts-for-coffee-lovers":"coffee lovers","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
-QA_LEAD = {"gifts-under-50":"Our top gift ideas under $50","stocking-stuffers-for-adults":"Our top stocking stuffers for adults"}
+WHO = {"black-friday-deals":"shoppers","stocking-stuffers-for-adults":"adults","gifts-under-50":"anyone on your list","gifts-for-gamers":"gamers","gifts-for-coffee-lovers":"coffee lovers","gifts-for-him":"him","gifts-for-her":"her","gifts-for-dad":"dad","gifts-for-mom":"mom"}
+QA_LEAD = {"black-friday-deals":"The best Black Friday deals on our top-rated picks","gifts-under-50":"Our top gift ideas under $50","stocking-stuffers-for-adults":"Our top stocking stuffers for adults"}
 QOVERRIDE = {
  ("best-electric-blankets","Best heated throw"):"What's the best heated throw blanket?",
  ("best-electric-blankets","Most comfortable"):"What's the most comfortable electric blanket?",
@@ -3324,7 +3427,7 @@ def compare_table(cat):
         <th scope="row"><a href="#{cat["slug"]}-{k}">{e(p["name"])}</a></th>
         <td>{e(p["badge"])}</td>
         <td>{e(" · ".join(p["tags"]))}</td>
-        <td class="ct-price">{e(notes(cat)[p["price"]])}</td>
+        <td class="ct-price">{e(p["deal"]["now"] + " (was " + p["deal"]["was"] + ")") if p.get("deal") else e(notes(cat)[p["price"]])}</td>
         <td><a class="btn ct-btn" data-amazon href="{amz(p["name"])}" target="_blank" rel="sponsored nofollow noopener">See price</a></td>
       </tr>''' for k, p in enumerate(cat["products"], 1))
     caption = f"Comparison of the {len(cat['products'])} {'gifts' if cat.get('kind')=='gift' else 'picks'} in this guide"
@@ -3361,7 +3464,16 @@ def xref(cat, p):
     if cat.get("kind") != "gift" and p["name"] in IN_GIFTS:
         links = " and ".join(f'<a href="{g["slug"]}.html">{e(g["short"])}</a>' for g in IN_GIFTS[p["name"]])
         bits.append(f"Also a top pick in our {links} guide")
+    if cat.get("kind") != "gift" and p["name"] in IN_DEALS:
+        dc, n = IN_DEALS[p["name"]]
+        bits.append(f'On sale now: see the price we found in our <a href="{dc["slug"]}.html#{dc["slug"]}-{n}">{e(dc["short"])}</a>')
     return f'<p class="xref">{". ".join(bits)}.</p>' if bits else ""
+
+def deal_line(p):
+    d = p.get("deal")
+    if not d: return ""
+    return (f'<p class="deal"><strong>Deal: {e(d["now"])}</strong> at {e(d["where"])} <span class="was">(was <s>{e(d["was"])}</s>)</span>'
+            f'<small>{e(d["note"])} Seen {e(d["seen"])} via {e(d["src"])}. Prices change fast; check the current price before you buy.</small></p>')
 
 def product_card(cat, i, p):
     pid = f"{cat['slug']}-{i}"
@@ -3375,7 +3487,7 @@ def product_card(cat, i, p):
     <p class="badge">{e(p['badge'])}</p>
     <h3>{e(p['name'])}</h3>
     <div class="tags">{tags}<span class="pill price-pill" title="{e(notes(cat)[p['price']])}">{p['price']}</span></div>
-    <p class="summary">{e(p['summary'])}</p>{xref(cat, p)}
+    {deal_line(p)}<p class="summary">{e(p['summary'])}</p>{xref(cat, p)}
     <div class="proscons">
       <div class="pros"><h4>What we like</h4><ul>{pros}</ul></div>
       <div class="cons"><h4>Keep in mind</h4><ul>{cons}</ul></div>
@@ -3407,9 +3519,13 @@ def guide(cat):
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q,a in cat["faq"])
     srcs = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{e(t)}</a></li>' for t,u in cat["sources"])
     is_gift = cat.get("kind") == "gift"
-    kind_label = "Gift guide" if is_gift else "Buying guide"
+    kind_label = "Deals guide" if cat.get("deals") else ("Gift guide" if is_gift else "Buying guide")
     src_names = ", ".join(t.split(" — ")[0] for t, _ in cat["sources"])
-    if is_gift:
+    if cat.get("deals"):
+        how_text = (f"We only included products that already rank in our own expert-based top-10 lists, then checked same-day deal roundups from {src_names}. "
+                    "A deal made the cut only if a reputable outlet reported the sale price on Amazon (or at a major retailer) on the date shown, and the discount was meaningful against the usual list price. "
+                    "We re-check these prices daily through Cyber Monday and remove deals that end. We haven't tested these products ourselves; the rankings come from the consensus of expert testers.")
+    elif is_gift:
         how_text = (f"We started with what shoppers search for most, then compared this year's gift guides from {src_names} "
                     "and kept the gifts that appear again and again. We favored gifts that are well-reviewed, easy to buy on Amazon, "
                     "and cover a range of budgets. Where a gift also appears in one of our product lists, we link to the full comparison.")
@@ -3517,7 +3633,7 @@ def home():
 <a class="gift-card {c['tint']}" href="{c['slug']}.html">
   <h3>{e(c['short'])}</h3><p>{e(c['card'])}</p>
   <ul class="gift-peek">{''.join(f'<li>{e(p["name"])}</li>' for p in c['products'][:3])}</ul>
-  <span class="go">See all 10 gifts</span>
+  <span class="go">See all 10 {'deals' if c.get('deals') else 'gifts'}</span>
 </a>""" for c in GIFTS)
     receipt = "".join(f"""
      <li><a href="{c['slug']}.html"><span class="r-cat">{e(c['short'])}</span><span class="r-dots" aria-hidden="true"></span><span class="r-pick">{e(c['products'][0]['name'])}</span></a></li>""" for c in LISTS)
