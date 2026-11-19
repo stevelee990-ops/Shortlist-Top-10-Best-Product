@@ -32,7 +32,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [ ] Best portable Bluetooth speakers
 - [ ] Best e-readers
 - [ ] Best weighted blankets
-- [ ] Gifts for home cooks (gift guide) — Kitchen
+- [x] 2026-11-19 — Gifts for home cooks (gift guide) — Kitchen
 
 ## Comparison pages (short, high buying intent)
 - [ ] Dyson Airwrap vs Shark FlexStyle
