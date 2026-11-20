@@ -166,7 +166,7 @@ section { padding: 48px 0; }
 .tint-gift-gamer { background: #1d5c63; } .tint-gift-stocking { background: #9b2335; }
 .tint-gift-deals { background: #14161f; }
 .tint-tv, .tint-projector, .tint-shaver, .tint-espresso, .tint-earbuds, .tint-airfryer, .tint-vacuum,
-.tint-desk, .tint-mattress, .tint-hairdryer, .tint-chair, .tint-luggage, .tint-cookware, .tint-heater, .tint-humidifier, .tint-coffeemaker, .tint-blender, .tint-mixer, .tint-knife, .tint-stickvac, .tint-headphones, .tint-smartwatch, .tint-soundbar, .tint-gamingchair, .tint-airpurifier, .tint-toothbrush, .tint-massagegun, .tint-blanket, .tint-soon { background: var(--surface-2); color: var(--ink); }
+.tint-desk, .tint-mattress, .tint-hairdryer, .tint-chair, .tint-luggage, .tint-cookware, .tint-heater, .tint-humidifier, .tint-coffeemaker, .tint-blender, .tint-mixer, .tint-knife, .tint-stickvac, .tint-headphones, .tint-smartwatch, .tint-soundbar, .tint-gamingchair, .tint-airpurifier, .tint-toothbrush, .tint-massagegun, .tint-blanket, .tint-speaker, .tint-soon { background: var(--surface-2); color: var(--ink); }
 .gift-ico { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,.18); display: grid; place-items: center; }
 .gift-ico svg { width: 28px; height: 28px; }
 

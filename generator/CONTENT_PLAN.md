@@ -29,7 +29,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-17 — Best electric blankets & heated throws (seasonal, winter)
 - [ ] Best dehumidifiers
 - [ ] Best Dutch ovens — Kitchen
-- [ ] Best portable Bluetooth speakers
+- [x] 2026-11-20 — Best portable Bluetooth speakers
 - [ ] Best e-readers
 - [ ] Best weighted blankets
 - [x] 2026-11-19 — Gifts for home cooks (gift guide) — Kitchen
