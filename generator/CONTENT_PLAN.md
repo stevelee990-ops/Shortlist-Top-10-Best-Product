@@ -28,7 +28,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [ ] Best robot mops / wet-dry vacuums (skip if too close to Best Cordless Vacuums)
 - [x] 2026-11-17 — Best electric blankets & heated throws (seasonal, winter)
 - [ ] Best dehumidifiers
-- [ ] Best Dutch ovens — Kitchen
+- [x] 2026-11-22 — Best Dutch ovens — Kitchen
 - [x] 2026-11-20 — Best portable Bluetooth speakers
 - [x] 2026-11-21 — Best e-readers
 - [ ] Best weighted blankets
