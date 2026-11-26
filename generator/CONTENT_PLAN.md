@@ -31,7 +31,7 @@ Priorities: holiday-season pages first (Nov–Dec), then categories with high pr
 - [x] 2026-11-22 — Best Dutch ovens — Kitchen
 - [x] 2026-11-20 — Best portable Bluetooth speakers
 - [x] 2026-11-21 — Best e-readers
-- [ ] Best weighted blankets
+- [x] 2026-11-26 — Best weighted blankets
 - [x] 2026-11-19 — Gifts for home cooks (gift guide) — Kitchen
 
 ## Comparison pages (short, high buying intent)
